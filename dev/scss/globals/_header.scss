@@ -28,19 +28,7 @@ body {
     float: left;
     line-height: 4rem;      
 
-    a {
-      border: 2px solid $gray-jet;
-      border-radius: 5px;
-      color: $gray-light;
-      font-size: 1rem;
-      padding: 0.5rem;
-      text-decoration: none;
-      transition: all 0.3s ease-out;
-
-      &:hover {
-        border: 2px solid $gray-light;
-      }
-    }
+    a { @include button($gray-jet, $gray-light); }
   }
 }
 
@@ -58,19 +46,6 @@ body {
     float: left;
     padding-right: 24px;
 
-    a {
-      border: 2px solid $gray-jet;
-      border-radius: 5px;
-      color: $gray-light;
-      font-size: 1rem;
-      padding: 0.5rem;
-      text-align: center;
-      text-decoration: none;
-      transition: all 0.3s ease-out;
-
-      &:hover {
-        border-color: $gray-light;
-      }
-    }
+    a { @include button($gray-jet, $gray-light); }
   }
 }
