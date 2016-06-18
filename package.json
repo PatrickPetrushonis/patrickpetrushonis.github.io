@@ -22,7 +22,8 @@
     "url": "https://github.com/PatrickPetrushonis/patrickpetrushonis.github.io/issues"
   },
   "homepage": "https://github.com/PatrickPetrushonis/patrickpetrushonis.github.io#readme",
-  "dependencies": {
+  "devDependencies": {
+    "bower": "^1.7.9",
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
