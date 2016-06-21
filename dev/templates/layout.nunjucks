@@ -2,18 +2,19 @@
 {% import '../templates/partials/footer.nunjucks' as footer %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css"/>
   <link href="app/css/main.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
   <div class="main-container">
-    {{ header.header() }}
-    {% block content %} {% endblock %}
-    {{ footer.footer() }}
+    <div class="main-content">
+      {{ header.header() }}
+      {% block content %} {% endblock %}
+      {{ footer.footer() }}
+    </div>
   </div>
   <footer><script src="app/js/main.js"></script></footer>
 </body>

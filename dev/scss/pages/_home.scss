@@ -1,6 +1,17 @@
+.main-container {
+  height: 100%;
+  background-color: $gray-jet;
+  color: $gray-light;
+  font-family: $default-font;
+}
+
+.main-content {
+  margin: 0 auto;
+  max-width: $large-screen;
+}
+
 .content {
-   margin: 2rem auto 0;
-   max-width: $large-screen;
+   padding: 8rem 1rem;
    
    p {
       text-align: center;
