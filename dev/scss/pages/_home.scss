@@ -21,13 +21,17 @@
   text-align: center;
 }
 
-.hero {
+.hero-container {
   margin: 0 auto 44px;
-  padding: 44px;
   height: auto;
-  min-height: 440px;
+  min-height: 100vh;
   background-color: $gray-jet;
   color: $gray-light;
+
+  .hero-image {
+    padding: 44px;
+    height: 100%;
+  }
 }
 
 hr {

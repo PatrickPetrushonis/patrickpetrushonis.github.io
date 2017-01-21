@@ -1,6 +1,25 @@
 .header-container {
-  //display: none;
+  position: fixed;
+  top: -65px;
   width: 100%;
+  max-height: 65px;
+
+  overflow: hidden;
+  z-index: 999;
+  opacity: 0;
+  
+  background-color: rgba($gray-light, 0.925);
+  border-bottom: 1px solid $gray-mild;
+  transition: all 0.3s ease-out;
+
+  &.fixed {
+    top: 0;
+    opacity: 1;
+  }
+
+  .button {
+    margin: 11px 0;
+  }
 }
 
 .header-controls {
