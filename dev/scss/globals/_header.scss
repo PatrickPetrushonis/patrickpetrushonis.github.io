@@ -2,7 +2,7 @@
   position: fixed;
   top: -65px;
   width: 100%;
-  max-height: 65px;
+  //max-height: 65px;
 
   overflow: hidden;
   z-index: 999;
@@ -29,7 +29,7 @@
   overflow: hidden; 
 
   .header-logo {
-    margin-left: 11px;
+    margin: 0 0 0 22px;
     float: left;
     line-height: 33px;
   }
@@ -37,16 +37,78 @@
 
 .header-controls ul {
   margin: 0;
+  padding: 0 11px;
+  display: none;
+  width: auto;
+  height: auto;
   float: right;
   line-height: 33px;
   list-style: none;
-  padding-left: 11px;
-  padding-right: 11px;
-  width: auto;
-  height: auto;
+
+  &.show-nav {
+    margin: 0 0 22px;
+    width: 100%;
+    display: block;
+    background-color: $gray-light;
+
+    li { 
+      float: none; 
+      text-align: right;
+    }
+  }
 
   li {
+    padding: 0 22px 0 0;
     float: left;
-    padding-right: 24px;
   }
+
+  @include breakpoint($small-screen) { display: block; }
+}
+
+.header-controls__nav-toggle {
+  margin: 20px 22px;
+  position: relative;
+  width: 28px;
+  height: 24px;
+  float: right;
+
+  input[type="checkbox"] {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+
+    &:checked + span {
+      background: transparent;
+
+      &:before { transform: rotate(-45deg) translate(-4px, 12px); }
+      &:after { transform: rotate(45deg) translate(-1px, -8px); }
+    }
+  }
+
+  @include breakpoint($small-screen) { display: none; }
+}
+
+.nav-icon {
+  position: absolute;
+  top: 9.5px;
+  width: 100%;
+  height: 5px;
+  background: $gray-dark;    
+
+  &:before, 
+  &:after {
+    position: absolute;    
+    width: 100%;
+    height: 5px;
+    content: "";
+    background: $gray-dark;
+    transition: all 0.3s ease-out;
+  }
+
+  &:before { top: -9px; }
+  &:after { top: 9px; }
 }
