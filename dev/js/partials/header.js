@@ -1,6 +1,6 @@
 // Sticky header that appears after scrolling past hero
 $(window).scroll(function() {
-    if($(window).scrollTop() > $(window).height()) {
+    if($(window).scrollTop() > $(window).height() - 100) {
       $('.header-container').addClass('fixed');
     } 
     else {

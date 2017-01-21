@@ -6,12 +6,14 @@
 // Default button with customizable colors
 @mixin button($default-color, $action-color) {
 	margin: 22px 0;
-	padding: 11px 22px;
+	padding: 11px;
 	display: inline-block;
+	min-width: 80px;
 
 	line-height: 16px;
 	font-size: 16px;
 	text-decoration: none;
+	text-align: center;
 
 	border: 2px solid $default-color;
 	border-radius: 5px;
