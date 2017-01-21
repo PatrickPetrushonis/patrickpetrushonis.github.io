@@ -3,38 +3,31 @@
    bottom: 0;
    left: 0;
    width: 100%;
-   min-height: 4rem;
+   min-height: 55px;
+   background-color: $gray-jet;
    
    .footer-controls {
       margin: 0 auto;
       max-width: $large-screen;
+      height: auto;
    }
    
-   .footer-logo {      
-      line-height: 4rem;
-      margin-left: 1rem;
-      
-      @include breakpoint($small-screen) { float: left; }
-      
-      a { @include button($gray-jet, $gray-light); }
-   }
-   
-   ul {      
-      line-height: 4rem;
-      list-style: none;
-      padding-left: 1rem;
-      padding-right: 1rem;
+   ul {
+      padding: 0 11px;
       width: auto;
       height: auto;
+      line-height: 55px;
+      list-style: none;
       
       @include breakpoint($small-screen) { float: right; }
       
       li {
-         padding-right: 24px;
+         padding: 0 8px;
+         float: left;
          
-         @include breakpoint($small-screen) { float: left; }
-         
-         a { @include button($gray-jet, $gray-light); }
+         .social-twitt { @include social-icon('twitter'); }
+         .social-insta { @include social-icon('instagram'); }
+         .social-linkn { @include social-icon('linkedin'); }
       }
    }   
 }

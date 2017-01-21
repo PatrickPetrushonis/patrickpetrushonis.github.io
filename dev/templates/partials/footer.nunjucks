@@ -1,13 +1,10 @@
 
 {% macro footer() %}
   <div class="footer-container">
-    <div class="footer-controls">
-      <div class="footer-logo">
-        <a href="#">Top</a>
-      </div>
+    <div class="footer-controls">      
       <ul>
-        <li><a href="javascript:void(0)" class="social-twitt"></a></li>
         <li><a href="javascript:void(0)" class="social-insta"></a></li>
+        <li><a href="javascript:void(0)" class="social-twitt"></a></li>
         <li><a href="javascript:void(0)" class="social-linkn"></a></li>
       </ul>
     </div>

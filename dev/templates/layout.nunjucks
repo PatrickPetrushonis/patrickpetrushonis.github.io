@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Portfolio</title>
+  <title>{{ pagename }}</title>
   <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css"/>
   <link href="app/css/main.css" rel="stylesheet" type="text/css"/>
 </head>

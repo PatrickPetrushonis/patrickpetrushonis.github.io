@@ -1,20 +1,60 @@
 .main-container {
-  height: 100%;
   position: relative;
-  background-color: $gray-jet;
-  color: $gray-light;
+  height: auto;
+  min-height: 100%;
+
+  background-color: $gray-light;
+  color: $gray-jet;
   font-family: $default-font;
 }
 
 .main-content {
   margin: 0 auto;
-  max-width: $large-screen;
+  height: auto;
+  overflow: hidden;
 }
 
 .content {
-   padding: 8rem 1rem;
-   
-   p {
-      text-align: center;
-   }
+  margin: 0 auto;
+  padding: 22px 11px 44px;
+  max-width: $large-screen;
+  text-align: center;
+}
+
+.hero {
+  margin: 0 auto 44px;
+  padding: 44px;
+  height: auto;
+  min-height: 440px;
+  background-color: $gray-jet;
+  color: $gray-light;
+}
+
+hr {
+  margin: 0;
+  padding: 0; 
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $gray-mild;
+}
+
+h1 {
+  margin: 22px auto 33px;
+  font-size: 44px;
+  text-align: center;
+}
+
+h2 {
+  margin: 22px auto 33px;
+  font-size: 33px;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 22px;
+}
+
+.button {
+  @include button($gray-jet, $gray-light);
 }

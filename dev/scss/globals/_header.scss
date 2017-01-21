@@ -1,35 +1,33 @@
 .header-container {
-  height: 4rem;
+  //display: none;
   width: 100%;
 }
 
 .header-controls {
   margin: 0 auto;
-  max-width: $large-screen;   
+  max-width: $large-screen;
+  height: auto;
+  overflow: hidden; 
 
   .header-logo {
-    margin-left: 1rem;
+    margin-left: 11px;
     float: left;
-    line-height: 4rem;      
-
-    a { @include button($gray-jet, $gray-light); }
+    line-height: 33px;
   }
 }
 
 .header-controls ul {
   margin: 0;
   float: right;
-  line-height: 4rem;
+  line-height: 33px;
   list-style: none;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 11px;
+  padding-right: 11px;
   width: auto;
   height: auto;
 
   li {
     float: left;
     padding-right: 24px;
-
-    a { @include button($gray-jet, $gray-light); }
   }
 }

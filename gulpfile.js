@@ -2,12 +2,13 @@
 var gulp      = require('gulp');
 var prefix    = require('gulp-autoprefixer');
 var gulpIf    = require('gulp-if');
+var imagemin  = require('gulp-imagemin');
+var include   = require('gulp-include');
 var notify    = require('gulp-notify');
 var render    = require('gulp-nunjucks-render');
 var plumber   = require('gulp-plumber');
 var sass      = require('gulp-sass');
 var maps      = require('gulp-sourcemaps');
-var sprite    = require('gulp.spritesmith');
 
 // Other plugins
 var sync      = require('browser-sync');
@@ -15,6 +16,7 @@ var sync      = require('browser-sync');
 /** 
  * Commands:
  * gulp
+ * gulp images
  * gulp nunjucks
  * gulp sass
  * gulp scripts
@@ -25,6 +27,14 @@ var sync      = require('browser-sync');
 var config = {
   src: 'dev/',
   dest: 'app/'
+}
+
+// Plug-in settings
+var includeSettings = {
+  includePaths: [
+    __dirname + "/bower_components",
+    __dirname + "/dev/js"
+  ]
 }
 
 // Prompt any error then end current task
@@ -56,6 +66,7 @@ gulp.task('scripts', function(){
     .pipe(customPlumber('Error Running Scripts'))
     // Initialize sourcemaps
     .pipe(maps.init())
+    .pipe(include(includeSettings))
     // Write sourcemaps
     .pipe(maps.write())
     .pipe(gulp.dest(config.dest + 'js'))
@@ -99,8 +110,19 @@ gulp.task('nunjucks', function() {
     .pipe(sync.reload({ stream: true }))  
 });
 
+// Minify all images
+gulp.task('images', function() {
+  return gulp.src(config.src + 'img/**/*')
+    .pipe(imagemin({
+        progressive: true
+    }))
+    .pipe(gulp.dest(config.dest + 'img'))
+    .pipe(notify({ message: 'Images Complete!', onLast: true }))
+});
+
 // Watch specified folders and files for any changes
 gulp.task('watch', function(){
+  gulp.watch(config.src + 'img/**/*', ['images']);
   gulp.watch(config.src + 'js/**/*.js', ['scripts']);
   gulp.watch(config.src + 'scss/**/*.scss', ['sass']);
   gulp.watch([
@@ -111,4 +133,4 @@ gulp.task('watch', function(){
 });
 
 // Executes a sequence of tasks
-gulp.task('default', ['scripts', 'sass', 'nunjucks', 'sync', 'watch']);
+gulp.task('default', ['images', 'scripts', 'sass', 'nunjucks', 'sync', 'watch']);
