@@ -8,18 +8,24 @@
    
    .footer-controls {
       margin: 0 auto;
+      position: relative;
       max-width: $large-screen;
       height: auto;
+      text-align: left;
+      
+      @include breakpoint($small-screen) { text-align: center; }
    }
    
    ul {
+      position: absolute;
+      top: 0;
+      right: 0;
       padding: 0 11px;
       width: auto;
       height: auto;
+      float: right;
       line-height: 55px;
       list-style: none;
-      
-      @include breakpoint($small-screen) { float: right; }
       
       li {
          padding: 0 8px;
@@ -29,5 +35,19 @@
          .social-insta { @include social-icon('instagram'); }
          .social-linkn { @include social-icon('linkedin'); }
       }
-   }   
+   }
+
+   span {
+      margin: 11px;
+      display: inline-block;
+      color: $gray-light;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+
+      @include breakpoint($small-screen) { 
+         margin: 0;
+         line-height: 55px; 
+      }
+   }  
 }

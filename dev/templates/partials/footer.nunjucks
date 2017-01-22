@@ -1,7 +1,12 @@
 
 {% macro footer() %}
   <div class="footer-container">
-    <div class="footer-controls">      
+    <div class="footer-controls">    
+    	<span>
+        Developed (with love)
+        <br class="mobile-only">
+        by Patrick Petrushonis 
+      </span>  
       <ul>
         <li><a href="javascript:void(0)" class="social-insta"></a></li>
         <li><a href="javascript:void(0)" class="social-twitt"></a></li>

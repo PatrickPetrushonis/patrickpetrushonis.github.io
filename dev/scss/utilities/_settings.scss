@@ -4,3 +4,7 @@ body {
 	padding: 0;
 	height: 100%;
 }
+
+.mobile-only {
+	@include breakpoint($small-screen) { display: none; }
+}
