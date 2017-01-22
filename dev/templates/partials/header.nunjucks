@@ -3,7 +3,7 @@
   <div class="header-container">
     <div class="header-controls">
       <div class="header-logo">
-        <a class="button" href="/">Home</a>
+        <a class="button" href="#page-top">Home</a>
       </div>
       <div class="header-controls__nav-toggle">
         <input type="checkbox" name="nav-toggle">
