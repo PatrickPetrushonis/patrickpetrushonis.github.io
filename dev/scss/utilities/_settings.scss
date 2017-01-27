@@ -8,3 +8,10 @@ body {
 .mobile-only {
 	@include breakpoint($small-screen) { display: none; }
 }
+
+.center {
+	margin-right: auto !important;
+	margin-left: auto !important;
+	display: block !important;
+	text-align: center !important;
+}

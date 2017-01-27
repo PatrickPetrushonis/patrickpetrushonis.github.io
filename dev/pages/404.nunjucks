@@ -5,7 +5,7 @@
 {% block content %}
   <div class="content">
   	<h1>404</h1>
-  	<p>Uh oh, looks like you took a wrong turn.</p>
-    <a class="button" href="/">Try going here</a>
+  	<p class="center">Uh oh, looks like you took a wrong turn.</p>
+    <a class="button center" href="/">Try going here</a>
   </div>
 {% endblock %}

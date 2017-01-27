@@ -130,4 +130,6 @@ p {
 
 .button {
   @include button($gray-jet, $gray-light);
+
+  &.center { max-width: 120px; }
 }
