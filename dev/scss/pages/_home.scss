@@ -88,29 +88,10 @@
   overflow: hidden;
 }
 
-hr {
-  margin: 0 0 22px;
-  padding: 0;
-  display: block;
-  position: relative;
-  height: 1px;
-
-  border: 0;
-  border-top: 1px solid $gray-mid;
-
-  &:after {
-    position: absolute;
-    top: -8px;
-    right: calc(50% - 11px);
-    width: 22px;
-    height: auto;
-
-    content: "⚜";
-    color: $gray-dark;
-    line-height: 16px;
-    font-size: 16px;
-  }
-}
+.section__rule--about { @include rule-icon('about'); }
+.section__rule--projects { @include rule-icon('projects'); }
+.section__rule--resume { @include rule-icon('resume'); }
+.section__rule--contact { @include rule-icon('contact'); }
 
 h1 {
   margin: 44px auto 22px;
