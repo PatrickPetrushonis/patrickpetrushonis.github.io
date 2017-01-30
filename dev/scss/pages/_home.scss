@@ -14,16 +14,19 @@
   overflow: hidden;
 }
 
-.hero-container {
+.hero__container {
   margin: 0 auto;
+  position: relative;
   height: auto;
   min-height: 100vh;
   background-color: $gray-jet;
   color: $gray-light;
 
-  .hero-image {
-    padding: 44px;
-    height: 100%;
+  .hero__content {
+    position: absolute;
+    top: 44px;
+    left: 50%;
+    transform: translate(-50%);
   }
 }
 

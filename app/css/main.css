@@ -197,15 +197,19 @@ body {
   height: auto;
   overflow: hidden; }
 
-.hero-container {
+.hero__container {
   margin: 0 auto;
+  position: relative;
   height: auto;
   min-height: 100vh;
   background-color: #212121;
   color: #F5F5F5; }
-  .hero-container .hero-image {
-    padding: 44px;
-    height: 100%; }
+  .hero__container .hero__content {
+    position: absolute;
+    top: 44px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%); }
 
 [class^="section__container"] {
   margin: 0 auto;
