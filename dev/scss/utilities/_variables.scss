@@ -6,8 +6,8 @@ $blue-dark: #a8c7e1;
 $green-light: #defbbb;
 $green-dark: #c7e1a8;
 
-$gray-light: #F5F5F5;
-$gray-mild: #BDBDBD;
+$gray-light: #f5f5f5;
+$gray-mild: #bdbdbd;
 $gray-mid: #616161;
 $gray-dark: #424242;
 $gray-jet: #212121;
@@ -22,3 +22,9 @@ $large-screen: 1366px;
 
 // Fonts
 $default-font: 'Oxygen', sans-serif;
+
+// Vertical indices
+$hero-container: 1000;
+$hero-canvas: -1;
+$hero-particle: 1002;
+$header-container: 1010;

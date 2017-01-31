@@ -19,14 +19,27 @@
   position: relative;
   height: auto;
   min-height: 100vh;
-  background-color: $gray-jet;
+  background-color: transparent;
   color: $gray-light;
+  overflow: hidden;
+  z-index: $hero-container;
 
   .hero__content {
     position: absolute;
     top: 44px;
     left: 50%;
     transform: translate(-50%);
+  }
+
+  .hero__layer--1 { @include particles(1px, 900, 150s); }
+  .hero__layer--2 { @include particles(2px, 300, 100s); }
+  .hero__layer--3 { @include particles(3px, 100, 100s); }
+
+  .hero__trianglify-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: $hero-canvas;
   }
 }
 

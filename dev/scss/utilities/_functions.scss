@@ -1,0 +1,14 @@
+@function generate-box-shadows($count) {  
+  $value: random(2560) + px random(2560) + px #fff;
+
+  @for $x from 2 through $count {
+    $value: $value, random(2560) + px random(2560) + px #fff;
+  }
+
+  @return $value;
+}
+
+@keyframes vertical-scroll {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-2560px); }
+}

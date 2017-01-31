@@ -62,3 +62,24 @@
 		background-size: cover;
 	}
 }
+
+@mixin particles($size, $count, $duration) {
+	width: $size;
+	height: $size;
+	background: transparent;
+	box-shadow: generate-box-shadows($count);
+	z-index: $hero-particle;
+	animation: vertical-scroll $duration linear infinite;
+
+	&:after {
+		content: "";
+	    position: absolute;
+	    top: 2000px;
+	    width: $size;
+	    height: $size;
+		z-index: $hero-particle;
+	    background: transparent;
+	    box-shadow: generate-box-shadows($count);
+	}
+    
+}

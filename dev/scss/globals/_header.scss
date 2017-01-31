@@ -4,7 +4,7 @@
   width: 100%;
 
   overflow: hidden;
-  z-index: 999;
+  z-index: $header-container;
   opacity: 0;
   
   background-color: rgba($gray-light, 0.925);
