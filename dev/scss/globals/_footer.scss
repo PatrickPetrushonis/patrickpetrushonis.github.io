@@ -4,7 +4,7 @@
    left: 0;
    width: 100%;
    min-height: 55px;
-   background-color: $gray-jet;
+   background-color: color(gray, jet);
    
    .footer-controls {
       margin: 0 auto;
@@ -40,7 +40,7 @@
    span {
       margin: 11px;
       display: inline-block;
-      color: $gray-light;
+      color: color(gray, light);
       font-size: 12px;
       line-height: 16px;
       text-align: center;

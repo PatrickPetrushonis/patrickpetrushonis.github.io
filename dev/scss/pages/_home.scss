@@ -2,8 +2,8 @@
   position: relative;
   height: auto;
   min-height: 100%;
-  background-color: $gray-light;
-  color: $gray-jet;
+  background-color: color(gray, light);
+  color: color(gray, jet);
 }
 
 .main-content {
@@ -29,8 +29,8 @@
   }
 
   .hero__header {
-    color: $gray-light;
-    text-shadow: rgba($gray-light, 0.1) 0 0 1px;
+    color: color(gray, light);
+    text-shadow: rgba(color(gray, light), 0.1) 0 0 1px;
   }
 
   .hero__layer--1 { @include particles(1px, 900, 150s); }
@@ -66,9 +66,9 @@
   }
 }
 
-.section__container { @include section-container(-4deg, $blue-light); }
-.section__container--alt1 { @include section-container(4deg, $primary-color); }
-.section__container--alt2 { @include section-container(4deg, $secondary-color); }
+.section__container { @include section-container(-4deg, color(primary, light)); }
+.section__container--alt1 { @include section-container(4deg, color(primary, mid)); }
+.section__container--alt2 { @include section-container(4deg, color(secondary, light)); }
 
 .section__content {
   margin: 0 auto;
@@ -100,7 +100,7 @@ p {
 }
 
 .button {
-  @include button($gray-jet, $gray-light);
+  @include button(color(gray, jet), color(gray, light));
 
   &.center { max-width: 120px; }
 }
