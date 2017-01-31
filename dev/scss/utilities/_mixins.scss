@@ -28,6 +28,17 @@
 	}
 }
 
+@mixin section-container($degree, $color) {
+	background-color: $color;
+
+	&:before {    
+		background-color: $color;
+		transform: skewY($degree);
+	}
+
+	hr:after { background-color: $color; }
+}
+
 @mixin social-icon($name) {
 	height: 22px;
 	width: 22px;
