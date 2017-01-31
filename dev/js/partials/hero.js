@@ -13,11 +13,15 @@ function generatePattern() {
 }
 
 function handlePattern() {
+  // Remove existing canvas (if any)
+  $(document).find('.hero__trianglify-canvas').remove();
+
+  // Create a new canvas for hero container
   var patternCanvas = generatePattern().canvas();
   $(document).find('.hero__container').append(patternCanvas);
   $(patternCanvas).addClass('hero__trianglify-canvas');
 }
 
-$(document).on('resize', function() { handlePattern(); });
+$(window).on('resize', function() { handlePattern(); });
 
 $(document).ready(function() { handlePattern(); });
