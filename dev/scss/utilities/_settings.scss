@@ -15,3 +15,21 @@ body {
 	display: block !important;
 	text-align: center !important;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $header-font;
+	text-shadow: rgba($gray-jet, 0.1) 0 0 1px;
+}
+
+p,
+a,
+span,
+small {
+	font-family: $default-font;
+	text-shadow: rgba($gray-jet, 0.1) 0 0 1px;
+}

@@ -5,7 +5,7 @@
 {% block content %}
 	<div class="hero__container">
     <div class="hero__content">
-    	<h1>Welcome</h1>      
+    	<h1 class="hero__header">Welcome</h1>      
     </div>
     <div class="hero__layer--1"></div>
     <div class="hero__layer--2"></div>

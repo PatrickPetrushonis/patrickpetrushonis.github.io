@@ -2,10 +2,8 @@
   position: relative;
   height: auto;
   min-height: 100%;
-
   background-color: $gray-light;
   color: $gray-jet;
-  font-family: $default-font;
 }
 
 .main-content {
@@ -20,7 +18,6 @@
   height: auto;
   min-height: 100vh;
   background-color: transparent;
-  color: $gray-light;
   overflow: hidden;
   z-index: $hero-container;
 
@@ -29,6 +26,11 @@
     top: 44px;
     left: 50%;
     transform: translate(-50%);
+  }
+
+  .hero__header {
+    color: $gray-light;
+    text-shadow: rgba($gray-light, 0.1) 0 0 1px;
   }
 
   .hero__layer--1 { @include particles(1px, 900, 150s); }
