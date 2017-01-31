@@ -6,6 +6,7 @@
 // =require ../components/trianglify.min.js
 
 // Custom JavaScript partials
+// =require partials/analytics.js
 // =require partials/footer.js
 // =require partials/header.js
 // =require partials/scroll.js
