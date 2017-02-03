@@ -8,6 +8,9 @@ $('.header-controls a').click(function(event) {
         scrollTop: scrollTarget
     }, 500);
 
+    // Force clicked anchor to lose focus
+    $(this).parent().blur();
+
     event.preventDefault();
 
 	// Ensure mobile nav collapses on navigation scroll

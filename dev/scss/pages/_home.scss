@@ -83,6 +83,38 @@
 .section__rule--resume { @include rule-icon('resume'); }
 .section__rule--contact { @include rule-icon('contact'); }
 
+.section__tabs-container { margin: 0 0 22px; }
+
+.section__tabs-list {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  text-align: left;
+
+  li {
+    padding: 22px 0;
+    display: block;
+    float: left;
+    width: 33%;
+    text-align: center;
+    background: color(primary, light);
+
+    &.selected { background: darken(color(primary, mid), 10); }
+  }
+}
+
+.section__tabs-content {
+  padding: 22px;
+  display: none;
+  font-size: 16px;
+  line-height: 22px;
+  background: color(primary, mid);
+
+  &.visible { display: block; }
+}
+
 h1 {
   margin: 44px auto 22px;
   font-size: 44px;
