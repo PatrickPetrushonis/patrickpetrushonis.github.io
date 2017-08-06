@@ -1,6 +1,7 @@
 // Gulp plugins
 var gulp      = require('gulp');
 var prefix    = require('gulp-autoprefixer');
+var data      = require('gulp-data');
 var gulpIf    = require('gulp-if');
 var imagemin  = require('gulp-imagemin');
 var include   = require('gulp-include');
@@ -12,6 +13,7 @@ var maps      = require('gulp-sourcemaps');
 
 // Other plugins
 var sync      = require('browser-sync');
+var fs        = require('fs');
 
 /** 
  * Commands:
@@ -97,9 +99,6 @@ gulp.task('styles', function() {
 
 // Compile all nunjucks logic into html
 gulp.task('nunjucks', function() {
-  // Identify location of nunjucks partials
-  //render.nunjucks.configure([config.src + '']);
-
   var defaults = {
     path: config.src + 'templates/',
     ext: '.html',
@@ -113,6 +112,7 @@ gulp.task('nunjucks', function() {
   // Get all html and nunjucks files in pages
   return gulp.src(config.src + 'pages/**/*.+(html|nunjucks)')
     .pipe(customPlumber('Error Running Nunjucks'))
+    .pipe(data(fs.readFileSync(config.src + 'data/data.json')))
     .pipe(render(defaults))
     .pipe(gulp.dest(''))
     .pipe(notify({ message: 'Nunjucks Complete!', onLast: true }))

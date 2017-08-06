@@ -26,9 +26,11 @@
   "false": {},
   "dependencies": {
     "browser-sync": "^2.18.12",
+    "fs": "0.0.1-security",
     "graceful-fs": "^4.1.11",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
+    "gulp-data": "^1.2.1",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^3.3.0",
     "gulp-include": "^2.3.1",
