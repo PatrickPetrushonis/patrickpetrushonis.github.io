@@ -1,5 +1,5 @@
 {
-  "name": "devster",
+  "name": "default",
   "version": "1.0.0",
   "description": "Web page development using gulp, scss, and nunjucks",
   "main": "index.html",
@@ -22,7 +22,9 @@
     "url": "https://github.com/PatrickPetrushonis/patrickpetrushonis.github.io/issues"
   },
   "homepage": "https://github.com/PatrickPetrushonis/patrickpetrushonis.github.io#readme",
-  "devDependencies": {
+  "devDependencies": {},
+  "false": {},
+  "dependencies": {
     "browser-sync": "^2.18.12",
     "graceful-fs": "^4.1.11",
     "gulp": "^3.9.1",
@@ -31,13 +33,11 @@
     "gulp-imagemin": "^3.3.0",
     "gulp-include": "^2.3.1",
     "gulp-notify": "^3.0.0",
-    "gulp-nunjucks-render": "^1.0.0",
+    "gulp-nunjucks-render": "^2.2.1",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "minimatch": "^3.0.4",
     "node-pre-gyp": "^0.6.36"
-  },
-  "false": {},
-  "dependencies": {}
+  }
 }

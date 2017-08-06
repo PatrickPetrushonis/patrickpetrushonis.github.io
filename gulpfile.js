@@ -76,7 +76,7 @@ gulp.task('scripts', function(){
 });
 
 // Compile all sass into css
-gulp.task('sass', function() {
+gulp.task('styles', function() {
   return gulp.src(config.src + 'scss/**/*.scss')
     .pipe(customPlumber('Error Running Sass'))
     // Initialize sourcemaps
@@ -90,7 +90,7 @@ gulp.task('sass', function() {
     // Write sourcemaps
     .pipe(maps.write())
     .pipe(gulp.dest(config.dest + 'css'))
-    .pipe(notify({ message: 'Sass Complete!', onLast: true }))
+    .pipe(notify({ message: 'Styles Complete!', onLast: true }))
     // Tells browser sync to reload files when task is done
     .pipe(sync.reload({ stream: true }))
 });
@@ -98,12 +98,22 @@ gulp.task('sass', function() {
 // Compile all nunjucks logic into html
 gulp.task('nunjucks', function() {
   // Identify location of nunjucks partials
-  render.nunjucks.configure([config.src + 'templates/']);
+  //render.nunjucks.configure([config.src + '']);
+
+  var defaults = {
+    path: config.src + 'templates/',
+    ext: '.html',
+    data: {},
+    inheritExtension: false,
+    envOptions: { watch: false },
+    manageEnv: null,
+    loaders: null
+  };
 
   // Get all html and nunjucks files in pages
   return gulp.src(config.src + 'pages/**/*.+(html|nunjucks)')
     .pipe(customPlumber('Error Running Nunjucks'))
-    .pipe(render({data: {masterlayout: 'layout.nunjucks'}}))
+    .pipe(render(defaults))
     .pipe(gulp.dest(''))
     .pipe(notify({ message: 'Nunjucks Complete!', onLast: true }))
     // Tells browser sync to reload files when task is done
@@ -124,7 +134,7 @@ gulp.task('images', function() {
 gulp.task('watch', function(){
   gulp.watch(config.src + 'img/**/*', ['images']);
   gulp.watch(config.src + 'js/**/*.js', ['scripts']);
-  gulp.watch(config.src + 'scss/**/*.scss', ['sass']);
+  gulp.watch(config.src + 'scss/**/*.scss', ['styles']);
   gulp.watch([
     config.src + 'templates/**/*.+(html|nunjucks)', 
     config.src + 'pages/**/*.+(html|nunjucks)'], 
@@ -133,4 +143,4 @@ gulp.task('watch', function(){
 });
 
 // Executes a sequence of tasks
-gulp.task('default', ['images', 'scripts', 'sass', 'nunjucks', 'sync', 'watch']);
+gulp.task('default', ['images', 'scripts', 'styles', 'nunjucks', 'sync', 'watch']);
