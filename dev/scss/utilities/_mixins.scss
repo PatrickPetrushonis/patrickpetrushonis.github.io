@@ -32,8 +32,8 @@
 	background-color: $color;
 
 	&:before {    
-		background-color: $color;
-		transform: skewY($degree);
+		//background-color: $color;
+		//transform: skewY($degree);
 	}
 
 	hr:after { background-color: $color; }

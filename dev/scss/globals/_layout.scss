@@ -1,0 +1,39 @@
+
+.flex-content {
+  display: flex;
+}
+
+[class^="flex-content--"] {  
+  padding: 0 11px;
+}
+
+.flex-content--1 {
+  flex: 1 1 10%;
+}
+.flex-content--2 {
+  flex: 1 1 20%;
+}
+.flex-content--3 {
+  flex: 1 1 30%;
+}
+.flex-content--4 {
+  flex: 1 1 40%;
+}
+.flex-content--5 {
+  flex: 1 1 50%;
+}
+.flex-content--6 {
+  flex: 1 1 60%;
+}
+.flex-content--7 {
+  flex: 1 1 70%;
+}
+.flex-content--8 {
+  flex: 1 1 80%;
+}
+.flex-content--9 {
+  flex: 1 1 90%;
+}
+.flex-content--10 {
+  flex: 1 1 100%;
+}

@@ -1,0 +1,17 @@
+
+.project-item {
+  background-position: center;
+  height: 250px;
+  position: relative;
+}
+
+.project-item__title {
+  background-color: rgba(color(gray, jet), 0.4);
+  color: color(gray, light);
+  bottom: 0;
+  height: 44px;
+  left: 0;
+  line-height: 44px;
+  position: absolute;
+  width: 100%;
+}
