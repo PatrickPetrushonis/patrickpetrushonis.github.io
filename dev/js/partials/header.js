@@ -1,12 +1,12 @@
 // Sticky header that appears after scrolling past hero
-$(window).scroll(function() {
+/*$(window).scroll(function() {
     if($(window).scrollTop() > $(window).height() - 100) {
       $('.header-container').addClass('fixed');
     } 
     else {
       $('.header-container').removeClass('fixed');
     }
-});
+});*/
 
 // Expand header navigation mobile variant
 $('.header-controls__nav-toggle').click(function() {

@@ -15,27 +15,6 @@
       
       @include breakpoint($small-screen) { text-align: center; }
    }
-   
-   ul {
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding: 0 11px;
-      width: auto;
-      height: auto;
-      float: right;
-      line-height: 55px;
-      list-style: none;
-      
-      li {
-         padding: 0 8px;
-         float: left;
-         
-         .social-twitt { @include social-icon('twitter'); }
-         .social-insta { @include social-icon('instagram'); }
-         .social-linkn { @include social-icon('linkedin'); }
-      }
-   }
 
    span {
       margin: 11px;
@@ -50,4 +29,25 @@
          line-height: 55px; 
       }
    }  
+}
+
+.social-icon__container {
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 0 11px;
+   width: auto;
+   height: auto;
+   float: right;
+   line-height: 55px;
+   list-style: none;
+   
+   .social-icon {
+      padding: 0 8px;
+      float: left;
+      
+      .social-twitt { @include social-icon('twitter'); }
+      .social-insta { @include social-icon('instagram'); }
+      .social-linkn { @include social-icon('linkedin'); }
+   }
 }

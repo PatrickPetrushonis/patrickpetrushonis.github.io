@@ -1,3 +1,4 @@
+
 .main-container {
   position: relative;
   height: auto;
@@ -26,10 +27,4 @@ h2 {
 
 p {
   margin: 0 0 22px;
-}
-
-.button {
-  @include button(color(gray, jet), color(gray, light));
-
-  &.center { max-width: 120px; }
 }

@@ -20,9 +20,11 @@
   }
 }
 
-.section__container { @include section-container(-4deg, color(primary, light)); }
-//.section__container--alt1 { @include section-container(4deg, color(primary, mid)); }
-//.section__container--alt2 { @include section-container(4deg, color(secondary, light)); }
+.section__container { 
+  background-color: white;//color(primary, light);
+
+  hr:after { background-color: white;/*color(primary, light);*/ }
+}
 
 .section__content {
   margin: 0 auto;

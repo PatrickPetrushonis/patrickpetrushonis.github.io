@@ -7,10 +7,10 @@
         <br class="mobile-only">
         Patrick Petrushonis 
       </span>  
-      <ul>
-        <li><a href="javascript:void(0)" class="social-insta"></a></li>
-        <li><a href="javascript:void(0)" class="social-twitt"></a></li>
-        <li><a href="javascript:void(0)" class="social-linkn"></a></li>
+      <ul class="social-icon__container">
+        <li class="social-icon"><a href="javascript:void(0)" class="social-insta"></a></li>
+        <li class="social-icon"><a href="javascript:void(0)" class="social-twitt"></a></li>
+        <li class="social-icon"><a href="javascript:void(0)" class="social-linkn"></a></li>
       </ul>
     </div>
   </div>

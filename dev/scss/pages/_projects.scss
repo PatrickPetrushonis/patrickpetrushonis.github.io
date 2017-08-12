@@ -1,17 +1,14 @@
 
-.project-item {
+.project__item {
   background-position: center;
   height: 250px;
   position: relative;
 }
 
-.project-item__title {
-  background-color: rgba(color(gray, jet), 0.4);
-  color: color(gray, light);
-  bottom: 0;
-  height: 44px;
-  left: 0;
-  line-height: 44px;
-  position: absolute;
+.project__image {
+  background-color: color(gray, jet);
+  height: 100%;
+  max-height: 250px;
+  max-width: 250px;
   width: 100%;
 }
