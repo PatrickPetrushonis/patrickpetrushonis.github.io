@@ -1,18 +1,15 @@
 {
 	"projects": [{
-		"title": "Coming Soon",
+		"title": "First Project Coming Soon",
 		"order": "1",
 		"content": "<p>Check back later for more information on this project.</p>",
-		"image": ""
+		"image": "",
+		"link": "javascript:void(0)"
 	}, {
-		"title": "Coming Soon",
+		"title": "More Projects Coming Soon",
 		"order": "2",
 		"content": "<p>Check back later for more information on this project.</p>",
-		"image": ""
-	}, {
-		"title": "Coming Soon",
-		"order": "3",
-		"content": "<p>Check back later for more information on this project.</p>",
-		"image": ""
+		"image": "",
+		"link": "javascript:void(0)"
 	}]
 }

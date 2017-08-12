@@ -1,20 +1,6 @@
-@function generate-box-shadows($count) {  
-  $value: random(2560) + px random(2560) + px rgba(color(gray, light), 0.25);
-
-  @for $x from 2 through $count {
-    $value: $value, random(2560) + px random(2560) + px rgba(color(gray, light), 0.25);
-  }
-
-  @return $value;
-}
 
 @function color($color, $tone: 'light') {
 	@if map-has-key($color-map, $color) {
 		@return map-get(map-get($color-map, $color), $tone);
 	}
-}
-
-@keyframes vertical-scroll {
-  from { transform: translateY(0px); }
-  to { transform: translateY(-2560px); }
 }

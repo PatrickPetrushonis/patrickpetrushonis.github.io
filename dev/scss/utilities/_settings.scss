@@ -16,6 +16,22 @@ body {
 	text-align: center !important;
 }
 
+h1 {
+  margin: 44px auto 22px;
+  font-size: 44px;
+  text-align: center;
+}
+
+h2 {
+  margin: 44px auto 22px;
+  font-size: 33px;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 22px;
+}
+
 h1,
 h2,
 h3,
@@ -35,3 +51,4 @@ li {
 	font-family: $default-font;
 	text-shadow: rgba(color(gray, jet), 0.1) 0 0 1px;
 }
+

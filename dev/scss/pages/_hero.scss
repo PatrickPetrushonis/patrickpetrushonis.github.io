@@ -3,31 +3,25 @@
   margin: 0 auto;
   position: relative;
   height: auto;
-  min-height: 100vh;
+  min-height: 50vh;
   background-color: transparent;
   overflow: hidden;
-  z-index: $hero-container;
+  z-index: $hero-container;    
+}
 
-  .hero__content {
-    position: absolute;
-    top: 44px;
-    left: 50%;
-    transform: translate(-50%);
-  }
+.hero__trianglify-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: $hero-canvas;
+}
 
-  .hero__header {
-    color: color(gray, light);
-    text-shadow: rgba(color(gray, light), 0.1) 0 0 1px;
-  }
-
-  .hero__layer--1 { @include particles(1px, 900, 150s); }
-  .hero__layer--2 { @include particles(2px, 300, 100s); }
-  .hero__layer--3 { @include particles(3px, 100, 100s); }
-
-  .hero__trianglify-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: $hero-canvas;
-  }
+.hero__portrait {
+  background-color: color(gray, jet);
+  border: 3px solid color(gray, jet);
+  border-radius: 50%;
+  height: 300px;
+  max-height: 300px;
+  max-width: 300px;
+  width: 100%;
 }

@@ -8,10 +8,8 @@
   }
 }
 
-.section__container { 
-  background-color: white;
-
-  hr:after { background-color: white; }
+.section__container {
+  hr:after { background-color: color(gray, light); }
 }
 
 .section__content {
@@ -24,7 +22,6 @@
   text-align: center;
 }
 
-.section__rule--about { @include rule-icon('about'); }
 .section__rule--resume { @include rule-icon('resume'); }
 .section__rule--projects { @include rule-icon('projects'); }
 .section__rule--projects-sub { 

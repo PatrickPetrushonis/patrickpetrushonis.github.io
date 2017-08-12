@@ -1,20 +1,9 @@
 var patternColors = ['#2b275a', '#5d2659', '#1e314a', '#265479', '#387cb3'];
-var heroTitles = [
-  'Developer', 
-  'Systems Programmer', 
-  'Gameplay Programmer', 
-  'Software Engineer',
-  'Web Developer',
-  'Front-End Programmer',
-  'Interactive Developer',
-  'Living Spreadsheet',
-  'Gamer'
-];
 
 function generatePattern() {
   var pattern = Trianglify({ 
     width: $(window).outerWidth(), 
-    height: $(window).outerHeight(),
+    height: $(window).outerHeight() * 0.5,
     cell_size: 45,
     variance: 0.9,
     x_colors: patternColors
@@ -31,15 +20,6 @@ function handlePattern() {
   var patternCanvas = generatePattern().canvas();
   $(document).find('.hero__container').append(patternCanvas);
   $(patternCanvas).addClass('hero__trianglify-canvas');
-}
-
-function handleHeroTitle() {
-  setTimeout(function() {
-    var heroTitle = $(document).find('[data="title"]');
-    heroTitle.text(heroTitles[Math.floor(Math.random() * heroTitles.length)]);
-
-    handleHeroTitle();
-  }, 2000);
 }
 
 $(window).on('resize', function() { handlePattern(); });

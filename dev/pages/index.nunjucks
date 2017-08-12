@@ -4,37 +4,29 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-	{#<div class="hero__container">
-    <div class="hero__content">
-    	<h1 class="hero__header" data="title">Developer</h1>      
-    </div>
-    <div class="hero__layer--1"></div>
-    <div class="hero__layer--2"></div>
-    <div class="hero__layer--3"></div>
-  </div>#}
-  <div class="content" style="padding-top:55px">
-
-    <div class="section__container">
+	<div class="hero__container">
+   
+   <div class="section__container" style="color:white;margin-top:99px;padding:0;">
       <div class="section__content">
-      	<h2 class="section__title" id="section-about">About</h2>
-        <hr class="section__rule--about">
         <div class="flex-content">
           <div class="flex-content--6">
             <p>
-              I am a solution-driven programmer seeking a collaborative development role between designers and other programmers where I can contribute my multiple years of gameplay, systems, and front-end experience.
+              I am a solution-driven programmer seeking a collaborative development role between designers and other programmers where I can contribute my multiple years of experience in gameplay, systems, and front-end web development.
             </p>
 
-          	<p>
-          		Additionally, I have a passion for project management, emerging technologies and development strategies. Eagerly pushing the boundaries of my experiences in web, game, and mobile application development, I'm always up for the next challenge.
-          	</p>
+            <p>
+              Additionally, I have a passion for project management, emerging technologies and development strategies. Eagerly pushing the boundaries of my experiences, I'm always up for the next challenge.
+            </p>
           </div>
           <div class="flex-content--4 center">
-            <img class="portrait-image" src="app/img/">
+            <img class="hero__portrait" src="app/img/profile-image.jpg">
           </div>
         </div>
       </div>
     </div>
 
+  </div>
+  <div class="content">
     <div class="section__container">
       <div class="section__content">
       	<h2 class="section__title" id="section-projects">Projects</h2>
@@ -53,11 +45,14 @@
 
         <div class="flex-content">
           <div class="flex-content--4 center">
-            <img class="project__image" src="app/img/{{ project.image }}">
+            <a href="{{ project.link }}">
+              <img class="project__image" src="app/img/{{ project.image }}">
+            </a>
           </div>
           <div class="flex-content--6">
             <h4>{{ project.title }}</h4>
             {{ project.content | safe }}
+            <a class="button" href="{{ project.link }}">Read More</a>
           </div>
         </div>
 
