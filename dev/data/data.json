@@ -3,13 +3,13 @@
 		"title": "First Project Coming Soon",
 		"order": "1",
 		"content": "<p>Check back later for more information on this project.</p>",
-		"image": "",
+		"image": "project-coming-soon.png",
 		"link": "javascript:void(0)"
 	}, {
 		"title": "More Projects Coming Soon",
 		"order": "2",
 		"content": "<p>Check back later for more information on this project.</p>",
-		"image": "",
+		"image": "project-coming-soon.png",
 		"link": "javascript:void(0)"
 	}]
 }

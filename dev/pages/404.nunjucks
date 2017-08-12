@@ -3,7 +3,7 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-  <div class="content">
+  <div class="content" style="margin-top:99px;">
   	<h1>404</h1>
   	<p class="center">Uh oh, looks like you took a wrong turn.</p>
     <a class="button center" href="/">Try going here</a>

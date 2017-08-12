@@ -26,5 +26,4 @@ $(window).on('resize', function() { handlePattern(); });
 
 $(document).ready(function() { 
   handlePattern();
-  handleHeroTitle();
 });
