@@ -29,7 +29,9 @@ h6 {
 p,
 a,
 span,
-small {
+small,
+ul,
+li {
 	font-family: $default-font;
 	text-shadow: rgba(color(gray, jet), 0.1) 0 0 1px;
 }

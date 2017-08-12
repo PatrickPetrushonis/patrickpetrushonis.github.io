@@ -1,39 +1,66 @@
 
 .flex-content {
+  align-items: center;
   display: flex;
+  flex-wrap: wrap;
 }
 
-[class^="flex-content--"] {  
+.flex-content--alt {
+  align-items: start;
+}
+
+[class^="flex-content--"] {
   padding: 0 11px;
+  flex: 1 1 100%;
 }
 
 .flex-content--1 {
-  flex: 1 1 10%;
+  @include breakpoint($small-screen) {
+    flex: 1 1 calc(10% - 22px);
+  }
 }
 .flex-content--2 {
-  flex: 1 1 20%;
+  @include breakpoint($small-screen) {
+    flex: 1 1 calc(20% - 22px);
+  }
 }
 .flex-content--3 {
-  flex: 1 1 30%;
+  @include breakpoint($small-screen) {
+    flex: 1 1 calc(30% - 22px);
+  }
 }
 .flex-content--4 {
-  flex: 1 1 40%;
+  @include breakpoint($small-screen) {
+    flex: 1 1 calc(40% - 22px);
+  }
 }
 .flex-content--5 {
-  flex: 1 1 50%;
+  @include breakpoint($small-screen) {
+    flex: 1 1 calc(50% - 22px);
+  }
 }
 .flex-content--6 {
-  flex: 1 1 60%;
+  @include breakpoint($small-screen) {
+    flex: 1 1 calc(60% - 22px);
+  }
 }
 .flex-content--7 {
-  flex: 1 1 70%;
+  @include breakpoint($small-screen) {
+    flex: 1 1 calc(70% - 22px);
+  }
 }
 .flex-content--8 {
-  flex: 1 1 80%;
+  @include breakpoint($small-screen) {
+    flex: 1 1 calc(80% - 22px);
+  }
 }
 .flex-content--9 {
-  flex: 1 1 90%;
+  @include breakpoint($small-screen) {
+    flex: 1 1 calc(90% - 22px);
+  }
 }
 .flex-content--10 {
-  flex: 1 1 100%;
+  @include breakpoint($small-screen) {
+    flex: 1 1 calc(100% - 22px);
+  }
 }

@@ -130,6 +130,13 @@ gulp.task('images', function() {
     .pipe(notify({ message: 'Images Complete!', onLast: true }))
 });
 
+// Move pdf files
+gulp.task('pdfs', function() {
+  return gulp.src(config.src + 'pdfs/*')    
+    .pipe(gulp.dest(config.dest + 'pdfs'))
+    .pipe(notify({ message: 'PDFs Complete!', onLast: true }))
+});
+
 // Watch specified folders and files for any changes
 gulp.task('watch', function(){
   gulp.watch(config.src + 'img/**/*', ['images']);
@@ -143,4 +150,4 @@ gulp.task('watch', function(){
 });
 
 // Executes a sequence of tasks
-gulp.task('default', ['images', 'scripts', 'styles', 'nunjucks', 'sync', 'watch']);
+gulp.task('default', ['images', 'scripts', 'styles', 'nunjucks', 'pdfs', 'sync', 'watch']);
