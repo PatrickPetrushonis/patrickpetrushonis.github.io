@@ -5,7 +5,7 @@ function generatePattern() {
   var windowHeight = $(window).outerHeight();
   var windowWidth = $(window).outerWidth();
 
-  if(windowHeight < containerHeight) {
+  if(windowHeight < containerHeight || windowWidth > 768) {
     windowHeight = windowWidth <= 768 ? containerHeight : windowHeight * 0.5;
   }
 
