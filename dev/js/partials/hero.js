@@ -1,12 +1,17 @@
 var patternColors = ['#2b275a', '#5d2659', '#1e314a', '#265479', '#387cb3'];
 
 function generatePattern() {
-  var container = $(document).find('[container="hero"]');
-  var height = $(window).outerWidth() <= 768 ? container.outerHeight() : $(window).outerHeight() * 0.5;
+  var containerHeight = $(document).find('[container="hero"]').outerHeight();
+  var windowHeight = $(window).outerHeight();
+  var windowWidth = $(window).outerWidth();
+
+  if(windowHeight < containerHeight) {
+    windowHeight = windowWidth <= 768 ? containerHeight : windowHeight * 0.5;
+  }
 
   var pattern = Trianglify({ 
-      width: $(window).outerWidth(), 
-      height: height,
+      width: windowWidth, 
+      height: windowHeight,
       cell_size: 45,
       variance: 0.9,
       x_colors: patternColors

@@ -3,10 +3,14 @@
   margin: 0 auto;
   position: relative;
   height: auto;
-  min-height: 50vh;
+  min-height: 100vh;
   background-color: transparent;
   overflow: hidden;
-  z-index: $hero-container;    
+  z-index: $hero-container;
+
+  @include breakpoint($small-screen) {
+    min-height: 50vh;
+  }
 }
 
 .hero__trianglify-canvas {
