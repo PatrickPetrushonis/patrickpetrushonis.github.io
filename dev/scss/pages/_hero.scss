@@ -9,7 +9,7 @@
   z-index: $hero-container;
 
   @include breakpoint($small-screen) {
-    min-height: 50vh;
+    min-height: auto;
   }
 }
 
