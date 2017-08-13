@@ -12,6 +12,16 @@
   hr:after { background-color: color(gray, light); }
 }
 
+.section__container--alt {
+  color: white;
+  margin: 55px 0 0;
+  padding: 0;
+
+  @include breakpoint($small-screen) {
+    margin: 99px 0 0;
+  }
+}
+
 .section__content {
   margin: 0 auto;
   padding: 22px 22px 44px;
