@@ -46,8 +46,8 @@
       padding: 0 8px;
       float: left;
       
-      .social-twitt { @include social-icon('twitter'); }
-      .social-insta { @include social-icon('instagram'); }
-      .social-linkn { @include social-icon('linkedin'); }
+      .social-github { @include social-icon('github'); }
+      .social-codepen { @include social-icon('codepen'); }
+      .social-linkin { @include social-icon('linkedin'); }
    }
 }
