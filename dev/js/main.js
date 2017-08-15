@@ -10,4 +10,3 @@
 // =require partials/header.js
 // =require partials/scroll.js
 // =require partials/hero.js
-// =require partials/tabs.js
