@@ -1,4 +1,5 @@
 {% set pagename = "Home" %}
+{% set pageRef = "" %}
 {% set all_projects = projects %}
 
 {% extends "layout.nunjucks" %}
@@ -41,18 +42,18 @@
 
         {% for project in all_projects %}
 
-        {% if loop.index != 1 %}<hr class="section__rule--projects-sub">{% endif %}
+        <hr class="section__rule--projects-sub">
 
         <div class="flex-content">
           <div class="flex-content--4 center">
-            <a href="{{ project.link }}">
+            <a href="/projects/{{ project.title | replace(' ', '-') | lower }}.html">
               <img class="project__image" src="app/img/{{ project.image }}">
             </a>
           </div>
           <div class="flex-content--6">
-            <h4>{{ project.title }}</h4>
+            <h4 class="marg-top-0">{{ project.title }}</h4>
             {{ project.content | safe }}
-            <a class="button" href="{{ project.link }}">Read More</a>
+            <a class="button" href="/projects/{{ project.title | replace(' ', '-') | lower }}.html">Read More</a>
           </div>
         </div>
 
@@ -66,7 +67,7 @@
       	<h2 class="section__title" id="section-resume">Résumé</h2>
         <hr class="section__rule--resume">
 
-        <div class="flex-content flex-content--alt">
+        <div class="flex-content">
           <div class="flex-content--5">
 
             <h3>PROFESSIONAL EXPERIENCE</h3>

@@ -1,15 +1,8 @@
 {
 	"projects": [{
-		"title": "First Project Coming Soon",
+		"title": "Gulp with Nunjucks Framework",
 		"order": "1",
 		"content": "<p>Check back later for more information on this project.</p>",
-		"image": "project-coming-soon.png",
-		"link": "javascript:void(0)"
-	}, {
-		"title": "More Projects Coming Soon",
-		"order": "2",
-		"content": "<p>Check back later for more information on this project.</p>",
-		"image": "project-coming-soon.png",
-		"link": "javascript:void(0)"
+		"image": "project-gulp.jpg"
 	}]
 }

@@ -1,14 +1,8 @@
 
-[class^="section__container"] {
+.section__container {
   margin: 0 auto;
   padding: 0 0 44px;
 
-  @include breakpoint($large-screen) {
-    &:before { display: none; }
-  }
-}
-
-.section__container {
   hr:after { background-color: color(gray, light); }
 }
 

@@ -1,12 +1,12 @@
 
 .flex-content {
-  align-items: center;
+  align-items: start;
   display: flex;
   flex-wrap: wrap;
 }
 
 .flex-content--alt {
-  align-items: start;
+  align-items: center;
 }
 
 [class^="flex-content--"] {
