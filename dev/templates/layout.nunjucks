@@ -24,7 +24,7 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <div id="page-top" class="main-container">
+  <div id="section-top" class="main-container">
     <div class="main-content">
       {{ header.header() }}
       {% block content %} {% endblock %}
