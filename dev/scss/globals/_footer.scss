@@ -22,11 +22,11 @@
       color: color(gray, light);
       font-size: 12px;
       line-height: 16px;
-      text-align: center;
 
       @include breakpoint($small-screen) { 
          margin: 0;
          line-height: 55px; 
+         text-align: center;
       }
    }  
 }
