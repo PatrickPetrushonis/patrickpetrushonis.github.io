@@ -16,8 +16,7 @@
 
     transition: all 0.3s ease-out;
 
-    &:hover,
-    &:focus { 
+    &:hover { 
         background-color: color(gray, jet);
         color: color(gray, light);
     }

@@ -1,21 +1,18 @@
+
 // Scroll to section from main navigation
 $('.header-controls a').click(function(event) {
     var scrollOffset = 77;
     var scrollTargetId = $(this).attr("href");
     var scrollTarget = $(scrollTargetId).offset().top - scrollOffset;
 
+    // Scroll page down to target element
     $('html, body').animate({
         scrollTop: scrollTarget
     }, 500);
 
-    // Force clicked anchor to lose focus
-    $(this).parent().blur();
-
+    // Prevent scroll element from jumping to target element
     event.preventDefault();
 
-	// Ensure mobile nav collapses on navigation scroll
-	if($('.header-controls__nav-toggle input[type="checkbox"]').is(':checked')) {
-		$('.header-controls__nav-toggle input[type="checkbox"]').prop('checked', false);
-    $('.header-controls ul').removeClass('show-nav');
-	}
+    // Force clicked anchor to lose focus
+    $(this).parent().blur();
 });
