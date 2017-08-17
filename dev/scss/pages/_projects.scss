@@ -1,4 +1,19 @@
 
+.content__project {
+  p {
+    text-align: justify;
+  }
+
+  a {
+    color: color(primary, light);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .project__title {
 	color: white;
 	padding: 66px 0 44px;

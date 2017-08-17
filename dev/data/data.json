@@ -2,7 +2,17 @@
 	"projects": [{
 		"title": "Gulp with Nunjucks Framework",
 		"order": "1",
-		"content": "<p>Check back later for more information on this project.</p>",
-		"image": "project-gulp.jpg"
+		"intro": "<p>Check back later for more information on this project.</p>",
+		"image": "project-gulp.jpg",
+		"links": [{
+			"text": "Link 1",
+			"link": "javascript:void(0)"
+		}, {
+			"text": "Link 2",
+			"link": "javascript:void(0)"
+		}, {
+			"text": "Link 3",
+			"link": "javascript:void(0)"
+		}]
 	}]
 }

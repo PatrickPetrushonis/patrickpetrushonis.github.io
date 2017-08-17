@@ -52,7 +52,7 @@
           </div>
           <div class="flex-content--6">
             <h4 class="marg-top-0">{{ project.title }}</h4>
-            {{ project.content | safe }}
+            {{ project.intro | safe }}
             <a class="button" href="/projects/{{ project.title | replace(' ', '-') | lower }}.html">Read More</a>
           </div>
         </div>
