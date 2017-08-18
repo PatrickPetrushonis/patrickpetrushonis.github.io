@@ -28,6 +28,11 @@
     <div class="main-content">
       {{ header.header(pageRef) }}
       {% block content %} {% endblock %}
+
+      <a class="button__return-top hide" data="scroll" href="#section-top">
+        <img src="{{ pageRef }}app/img/icon-arrow-up.svg">
+      </a>
+
       {{ footer.footer() }}
     </div>
   </div>

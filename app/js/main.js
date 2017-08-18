@@ -37,7 +37,7 @@ $('.header-controls__nav-toggle').click(function() {
 
 
 // Scroll to section from main navigation
-$('.header-controls a').click(function(event) {
+$(document).on('click', '[data="scroll"]', function(event) {
     var scrollOffset = 77;
     var scrollTargetId = $(this).attr("href");
     var scrollTarget = $(scrollTargetId).offset().top - scrollOffset;
@@ -60,7 +60,21 @@ $('.header-controls a').click(function(event) {
     }
 });
 
-// Scroll to url section with header offset
+// Hide 'return to top' button while ScrollTop is near top of page
+$(document).on('scroll', function() {
+    var scrollTopButton = $(document).find('.button__return-top');
+
+    if($(window).scrollTop() > 100) {
+        scrollTopButton.css('opacity', '1');
+        scrollTopButton.css('visibility', 'visible');
+    }
+    else {
+        scrollTopButton.css('opacity', '0');
+        scrollTopButton.css('visibility', 'hidden');
+    }
+});
+
+// Scroll to url section with header offset on page load
 $(document).ready(function() {
     var path = window.location.href;
     var pathSub = path.split('#')[1];

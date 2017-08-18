@@ -1,19 +1,16 @@
 
 .button {
-    margin: 22px 0;
-    padding: 11px;
-    display: inline-block;
-    min-width: 80px;
-
-    line-height: 16px;
-    font-size: 16px;
-    text-decoration: none;
-    text-align: center;
-
     border: 2px solid color(gray, jet);
     border-radius: 5px;
     color: color(gray, jet);
-
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 22px 0;
+    min-width: 80px;
+    padding: 11px;
+    text-decoration: none;
+    text-align: center;
     transition: all 0.3s ease-out;
 
     &:hover { 
@@ -21,5 +18,31 @@
         color: color(gray, light);
     }
 
-    &.center { max-width: 120px; }
+    &.center { 
+        max-width: 120px; 
+    }
+}
+
+.button__return-top {
+    background-color: color(gray, jet);
+    border-radius: 50%;
+    bottom: 77px;
+    color: white;
+    height: 44px;
+    line-height: 44px;
+    position: fixed;
+    right: 44px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    width: 44px;
+
+    &:hover { transform: translateY(-0.25rem); }
+
+    img {        
+        height: auto;
+        padding: 0 0 5.5px;
+        width: calc(100% - 22px);
+        vertical-align: middle;
+    }
 }
