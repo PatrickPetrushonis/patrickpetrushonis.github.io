@@ -11,6 +11,7 @@
 
 [class^="flex-content--"] {
   flex: 1 1 100%;
+  max-width: 100%;
 
   @include breakpoint($mobile-screen) {
     padding: 0 11px;
