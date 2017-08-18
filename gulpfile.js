@@ -12,7 +12,9 @@ var sass      = require('gulp-sass');
 var maps      = require('gulp-sourcemaps');
 
 // Other plugins
+var sequence  = require('run-sequence');
 var sync      = require('browser-sync');
+var del       = require('del');
 var fs        = require('fs');
 
 /** 
@@ -58,13 +60,18 @@ gulp.task('sync', function() {
     // Prevents browsers from opening automatically
     open: false,
     // Disable pop-over notification
-    notify: true,
+    notify: true
   })
-})
+});
+
+// Clean out files prior to build
+gulp.task('delete', function(callback) {
+    return del(config.dest, callback);
+});
 
 // Concatenates and minifies all js files
-gulp.task('scripts', function(){
-    gulp.src(config.src + 'js/main.js')
+gulp.task('scripts', function() {
+  return gulp.src(config.src + 'js/main.js')
     .pipe(customPlumber('Error Running Scripts'))
     // Initialize sourcemaps
     .pipe(maps.init())
@@ -74,7 +81,7 @@ gulp.task('scripts', function(){
     .pipe(gulp.dest(config.dest + 'js'))
     .pipe(notify({ message: 'Scripts Complete!', onLast: true }))
     // Tells browser sync to reload files when task is done
-  .pipe(sync.reload({ stream: true }))
+    .pipe(sync.reload({ stream: true }))
 });
 
 // Compile all sass into css
@@ -138,7 +145,7 @@ gulp.task('pdfs', function() {
 });
 
 // Watch specified folders and files for any changes
-gulp.task('watch', function(){
+gulp.task('watch', function() {
   gulp.watch(config.src + 'img/**/*', ['images']);
   gulp.watch(config.src + 'js/**/*.js', ['scripts']);
   gulp.watch(config.src + 'scss/**/*.scss', ['styles']);
@@ -150,4 +157,11 @@ gulp.task('watch', function(){
 });
 
 // Executes a sequence of tasks
-gulp.task('default', ['images', 'scripts', 'styles', 'nunjucks', 'pdfs', 'sync', 'watch']);
+gulp.task('default', function(callback) {
+  sequence(
+    ['delete'],
+    ['images', 'scripts', 'styles', 'nunjucks', 'pdfs'],
+    ['sync', 'watch'],
+    callback
+  )
+});

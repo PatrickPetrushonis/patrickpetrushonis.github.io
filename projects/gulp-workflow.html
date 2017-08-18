@@ -198,7 +198,7 @@
                 }
 
                 gulp.task('styles', function() {
-                  return gulp.src(config.src + 'scss/main.scss')
+                  return gulp.src(config.src + 'scss/**/*.scss')
                     .pipe(maps.init())
                     .pipe(sass())
                     .pipe(prefix({ browsers: ['> 1%', 'last 2 versions'] }))
