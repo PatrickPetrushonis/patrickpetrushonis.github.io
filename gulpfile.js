@@ -151,7 +151,8 @@ gulp.task('watch', function() {
   gulp.watch(config.src + 'scss/**/*.scss', ['styles']);
   gulp.watch([
     config.src + 'templates/**/*.+(html|nunjucks)', 
-    config.src + 'pages/**/*.+(html|nunjucks)'], 
+    config.src + 'pages/**/*.+(html|nunjucks)',
+    config.src + 'data/data.json'], 
     ['nunjucks']
   );
 });
