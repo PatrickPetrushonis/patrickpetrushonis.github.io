@@ -1,18 +1,18 @@
 {
 	"projects": [{
-		"title": "Gulp with Nunjucks Framework",
+		"title": "Gulp Workflow",
 		"order": "1",
-		"intro": "<p>Check back later for more information on this project.</p>",
+		"intro": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>",
 		"image": "project-gulp.jpg",
 		"links": [{
-			"text": "Link 1",
-			"link": "javascript:void(0)"
+			"text": "Node JS",
+			"link": "https://nodejs.org/en/"
 		}, {
-			"text": "Link 2",
-			"link": "javascript:void(0)"
+			"text": "NPM JS",
+			"link": "https://www.npmjs.com/"
 		}, {
-			"text": "Link 3",
-			"link": "javascript:void(0)"
+			"text": "Gulp JS",
+			"link": "https://gulpjs.com/"
 		}]
 	}]
 }
