@@ -26,18 +26,20 @@
 .button__return-top {
     background-color: color(gray, jet);
     border-radius: 50%;
-    bottom: 77px;
+    bottom: 66px;
     color: white;
     height: 44px;
     line-height: 44px;
     position: fixed;
-    right: 44px;
+    right: 11px;
     text-align: center;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     width: 44px;
 
-    &:hover { transform: translateY(-0.25rem); }
+    &:hover { 
+        transform: translateY(-0.25rem); 
+    }
 
     img {        
         height: auto;
