@@ -2,7 +2,7 @@
 	"projects": [{
 		"title": "Gulp Workflow",
 		"order": "1",
-		"intro": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>",
+		"intro": "<p>Automation is the backbone of web development, optimizing the workflow to save countless time that would have been spent on meaningless tasks and hair pulling inefficiencies.</p>",
 		"image": "project-gulp.jpg",
 		"links": [{
 			"text": "Node JS",
