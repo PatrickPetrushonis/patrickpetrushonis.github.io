@@ -2,17 +2,7 @@
 	"projects": [{
 		"title": "Gulp Workflow",
 		"order": "1",
-		"intro": "<p>Automation is the backbone of web development, optimizing the workflow to save countless time that would have been spent on meaningless tasks and hair pulling inefficiencies.</p>",
-		"image": "project-gulp.jpg",
-		"links": [{
-			"text": "Node JS",
-			"link": "https://nodejs.org/en/"
-		}, {
-			"text": "NPM JS",
-			"link": "https://www.npmjs.com/"
-		}, {
-			"text": "Gulp JS",
-			"link": "https://gulpjs.com/"
-		}]
+		"intro": "<p><a href='https://gulpjs.com/'>Gulp.js</a> is a streaming build system that can optimize a web development workflow. This will save countless time that would have been spent on meaningless tasks and hair pulling inefficiencies.</p>",
+		"image": "project-gulp.svg"
 	}]
 }

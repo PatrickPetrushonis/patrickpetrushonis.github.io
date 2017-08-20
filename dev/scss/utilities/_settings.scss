@@ -53,6 +53,16 @@ p {
   margin: 0 0 22px;
 }
 
+a {
+  color: color(primary, light);
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 h1,
 h2,
 h3,

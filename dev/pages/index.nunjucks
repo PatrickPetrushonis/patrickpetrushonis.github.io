@@ -44,7 +44,7 @@
 
         <hr class="section__rule--projects-sub">
 
-        <div class="flex-content">
+        <div class="flex-content flex-content--alt">
           <div class="flex-content--4 center">
             <a href="/projects/{{ project.title | replace(' ', '-') | lower }}.html">
               <img class="project__image" src="app/img/{{ project.image }}">

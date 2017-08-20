@@ -55,304 +55,292 @@
   <div class="content content__project">
     <div class="section__container">
       <div class="section__content">
-        <div class="flex-content">
+        <img class="project__image center" src="../../app/img/project-gulp.svg">
 
-          <div class="flex-content--6">
-            <p>Automation is the backbone of web development, optimizing the workflow to save countless time that would have been spent on meaningless tasks and hair pulling inefficiencies.</p>
+        <p><a href='https://gulpjs.com/'>Gulp.js</a> is a streaming build system that can optimize a web development workflow. This will save countless time that would have been spent on meaningless tasks and hair pulling inefficiencies.</p>
 
-            <h3>Goals</h3>
+        <h3>Node and NPM Installation</h3>
 
-            <ul>
-              <li>Set up the gulp workflow from scratch</li>
-              <li>Create environment that concatenates multiple SCSS files into a single CSS file</li>
-            </ul>
+        <p>Before starting, we'll need to install <a href="https://nodejs.org/en/" target="_blank">Node JS</a> which includes the Node Package Manager (NPM). This manager allows the easy installation of packages which grant a modular workflow for any number of needs.</p>
 
-            <h3>Node and NPM Installation</h3>
+        <p>After installing node and npm, ensure that the environmental variables have been set up with the following version commands in the command prompt.</p>
 
-            <p>After installing node and npm, ensure that the environmental variables have been set up with the following version commands in the command prompt.</p>
+        <pre>
+          <code>
+            node -v
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                node -v
-              </code>
-            </pre>
+        <pre>
+          <code>
+            npm -v
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                npm -v
-              </code>
-            </pre>
+        <p>Initialize npm which will take you through a series of prompts when creating a package.json file. This file will make subsequent installs easier as we'll be storing node module data for quick access.</p>
 
-            <p>Initialize npm which will take you through a series of prompts when creating a package.json file. This file will make subsequent installs easier as we'll be storing node module data for quick access.</p>
+        <pre>
+          <code>
+            npm init
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                npm init
-              </code>
-            </pre>
+        <p>Below is the sample package.json:</p>
 
-            <p>Below is the sample package.json:</p>
+        <pre>
+          <code>
+          {
+            "name": "example",
+            "version": "1.0.0",
+            "description": "example project",
+            "main": "index.js",
+            "scripts": {
+              "test": "gulp"
+            },
+            "keywords": [
+              "web",
+              "gulp",
+              "scss"
+            ],
+            "author": "Patrick Petrushonis",
+            "license": "MIT"
+          }
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-              {
-                "name": "default",
-                "version": "1.0.0",
-                "description": "Example package",
-                "main": "",
-                "scripts": {
-                  "test": "gulp"
-                },
-                "keywords": [
-                  "web",
-                  "gulp",
-                  "scss"
-                ],
-                "author": "Patrick Petrushonis",
-                "license": "MIT"
-              }
-              </code>
-            </pre>
+        <h3>Gulp Environmental Variable</h3>
 
-            <h3>Gulp Environmental Variable</h3>
+        <p>
+        Similar to the npm setup, we will need to be able to run gulp tasks straight from the command prompt. To utilize the 'gulp' keyword, a global installation is required. This only has to be installed once per machine.
+        </p>
 
-            <p>
-            Similar to the npm setup, we will need to be able to run gulp tasks straight from the command prompt. To utilize the 'gulp' keyword, a global installation is required. This only has to be installed once per machine.
-            </p>
+        <pre>
+          <code>
+            npm install -g gulp
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                npm install -g gulp
-              </code>
-            </pre>
+        <p>Now check that gulp has successfully been globally installed.</p>
 
-            <p>Now check that gulp has successfully been globally installed.</p>
+        <pre>
+          <code>
+            gulp -v
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                gulp -v
-              </code>
-            </pre>
+        <h3>Installing Node Modules</h3>
 
-            <h3>Installing Node Modules</h3>
+        <p>With the environmental variables out of the way, the development packages that'll speed up our workflow can now be installed. This first of which is the local version of gulp. Note the '--save-dev' command. This will add the latest version of gulp to the package.json as a dev dependency.</p>
 
-            <p>With the environmental variables out of the way, the development packages that'll speed up our workflow can now be installed. This first of which is the local version of gulp. Note the '--save-dev' command. This will add the latest version of gulp to the package.json as a dev dependency.</p>
+        <pre>
+          <code>
+            npm install --save-dev gulp
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                npm install --save-dev gulp
-              </code>
-            </pre>
+        <p>The next node module is to handle SCSS files in the gulp pipeline.</p>
 
-            <p>The next node module is to handle SCSS files in the gulp pipeline.</p>
+        <pre>
+          <code>
+            npm install --save-dev gulp-sass
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                npm install --save-dev gulp-sass
-              </code>
-            </pre>
+        <p>As we'll be concatenating a number of SCSS files into a single main SCSS file before compiling into a minified CSS file, we'll need a way to debug lines of css from the inspector. For that, sourcemaps is a perfect solution.</p>
 
-            <p>As we'll be concatenating a number of SCSS files into a single main SCSS file before compiling into a minified CSS file, we'll need a way to debug lines of css from the inspector. For that, sourcemaps is a perfect solution.</p>
+        <pre>
+          <code>
+            npm install --save-dev gulp-sourcemaps
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                npm install --save-dev gulp-sourcemaps
-              </code>
-            </pre>
+        <p>The most time consuming part of CSS optimization is cross-browser compatibility. Each browser has it's own limitations, some more than others (looking at your IE). With autoprefixer, browser prefixes are automatically generated for less universally accepted styling methods. This also includes simplified solution fallbacks, ensuring each web page displays properly with most functionality intact.</p>
 
-            <p>The most time consuming part of CSS optimization is cross-browser compatibility. Each browser has it's own limitations, some more than others (looking at your IE). With autoprefixer, browser prefixes are automatically generated for less universally accepted styling methods. This also includes simplified solution fallbacks, ensuring each web page displays properly with most functionality intact.</p>
+        <pre>
+          <code>
+            npm install --save-dev gulp-autoprefixer
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                npm install --save-dev gulp-autoprefixer
-              </code>
-            </pre>
+        <p>The next module is a method of reducing the css file size. Removing white-space, line breaks, and redundant styles can increase page load times as less needs to be loaded.</p>
 
-            <p>The next module is a method of reducing the css file size. Removing white-space, line breaks, and redundant styles can increase page load times as less needs to be loaded.</p>
+        <pre>
+          <code>
+            npm install --save-dev gulp-clean-css
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                npm install --save-dev gulp-clean-css
-              </code>
-            </pre>
+        <h3>Creating the Gulpfile.js</h3>
 
-            <h3>Creating the Gulpfile.js</h3>
+        <p>With these node modules installed, the gulpfile can be created. Create this file at the root directory of the project. Afterwards, start with storing references to each installed module.</p>
 
-            <p>With these node modules installed, the gulpfile can be created. Create this file at the root directory of the project. Afterwards, start with storing references to each installed module.</p>
+        <pre>
+          <code>
+            var gulp   = require('gulp');
+            var sass   = require('gulp-sass');
+            var maps   = require('gulp-sourcemaps');
+            var prefix = require('gulp-autoprefixer');
+            var clean  = require('gulp-clean-css');
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                var gulp   = require('gulp');
-                var sass   = require('gulp-sass');
-                var maps   = require('gulp-sourcemaps');
-                var prefix = require('gulp-autoprefixer');
-                var clean  = require('gulp-clean-css');
-              </code>
-            </pre>
+        <p>Next, a simple data object is used to store the locations for our source and destination files.</p>
 
-            <p>Next, a simple data object is used to store the locations for our source and destination files.</p>
+        <pre>
+          <code>
+            var config = {
+              src: 'dev/',
+              dest: 'app/'
+            }
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                var config = {
-                  src: 'dev/',
-                  dest: 'app/'
-                }
-              </code>
-            </pre>
+        <p>Our first gulp task will be for compiling SCSS files from our source directory. Upon reading in all files with the 'scss' file extension, sourcemaps are initialized. The read-in files are compiled into css before being minified with prefixes and fallbacks for the last two versions of all browsers that encompass more than one percent of the market. The sourcemaps are then finalized and written to the destination directory.</p>
 
-            <p>Our first gulp task will be for compiling SCSS files from our source directory. Upon reading in all files with the 'scss' file extension, sourcemaps are initialized. The read-in files are compiled into css before being minified with prefixes and fallbacks for the last two versions of all browsers that encompass more than one percent of the market. The sourcemaps are then finalized and written to the destination directory.</p>
+        <pre>
+          <code>
+            gulp.task('styles', function() {
+              return gulp.src(config.src + 'scss/**/*.scss')
+                .pipe(maps.init())
+                .pipe(sass())
+                .pipe(clean({ compatibility: 'ie8' })))
+                .pipe(prefix({ browsers: ['> 1%', 'last 2 versions'] }))
+                .pipe(maps.write())
+                .pipe(gulp.dest(config.dest + 'css'))
+            });
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                gulp.task('styles', function() {
-                  return gulp.src(config.src + 'scss/**/*.scss')
-                    .pipe(maps.init())
-                    .pipe(sass())
-                    .pipe(clean({ compatibility: 'ie8' })))
-                    .pipe(prefix({ browsers: ['> 1%', 'last 2 versions'] }))
-                    .pipe(maps.write())
-                    .pipe(gulp.dest(config.dest + 'css'))
-                });
-              </code>
-            </pre>
+        <p>The watch task provides a continuous check for all SCSS files in the specified SCSS folder. Upon detecting a change to any of these files, the associated 'styles' task is executed. This allows a fire-and-forget workflow where any number of edits will be automatically recompiled.</p>
 
-            <p>The watch task provides a continuous check for all SCSS files in the specified SCSS folder. Upon detecting a change to any of these files, the associated 'styles' task is executed. This allows a fire-and-forget workflow where any number of edits will be automatically recompiled.</p>
+        <pre>
+          <code>
+            gulp.task('watch', function() {
+              gulp.watch(config.src + 'scss/**/*.scss', ['styles']);
+            });
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                gulp.task('watch', function() {
-                  gulp.watch(config.src + 'scss/**/*.scss', ['styles']);
-                });
-              </code>
-            </pre>
+        <p>
+        The last task (for now) is the most important one. This is the 'default' task, which is called via a single 'gulp' command. This task will execute multiple other specified tasks simultaneously, granting quick access to the entire workflow.
+        </p>
 
-            <p>
-            The last task (for now) is the most important one. This is the 'default' task, which is called via a single 'gulp' command. This task will execute multiple other specified tasks simultaneously, granting quick access to the entire workflow.
-            </p>
+        <pre>
+          <code>
+            gulp.task('default', ['styles', 'watch']);
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                gulp.task('default', ['styles', 'watch']);
-              </code>
-            </pre>
+        <p>The complete gulpfile.js is below:</p>
 
-            <p>The complete gulpfile.js is below:</p>
+        <pre>
+          <code>
+            var gulp   = require('gulp');
+            var sass   = require('gulp-sass');
+            var maps   = require('gulp-sourcemaps');
+            var prefix = require('gulp-autoprefixer');
+            var clean  = require('gulp-clean-css');
 
-            <pre>
-              <code>
-                var gulp   = require('gulp');
-                var sass   = require('gulp-sass');
-                var maps   = require('gulp-sourcemaps');
-                var prefix = require('gulp-autoprefixer');
-                var clean  = require('gulp-clean-css');
+            var config = {
+              src: 'dev/',
+              dest: 'app/'
+            }
 
-                var config = {
-                  src: 'dev/',
-                  dest: 'app/'
-                }
+            gulp.task('styles', function() {
+              return gulp.src(config.src + 'scss/**/*.scss')
+                .pipe(maps.init())
+                .pipe(sass())
+                .pipe(clean({ compatibility: 'ie8' })))
+                .pipe(prefix({ browsers: ['> 1%', 'last 2 versions'] }))
+                .pipe(maps.write())
+                .pipe(gulp.dest(config.dest + 'css'))
+            });
 
-                gulp.task('styles', function() {
-                  return gulp.src(config.src + 'scss/**/*.scss')
-                    .pipe(maps.init())
-                    .pipe(sass())
-                    .pipe(clean({ compatibility: 'ie8' })))
-                    .pipe(prefix({ browsers: ['> 1%', 'last 2 versions'] }))
-                    .pipe(maps.write())
-                    .pipe(gulp.dest(config.dest + 'css'))
-                });
+            gulp.task('watch', function() {
+              gulp.watch(config.src + 'scss/**/*.scss', ['styles']);
+            });
 
-                gulp.task('watch', function() {
-                  gulp.watch(config.src + 'scss/**/*.scss', ['styles']);
-                });
+            gulp.task('default', ['styles', 'watch']);
+          </code>
+        </pre>
 
-                gulp.task('default', ['styles', 'watch']);
-              </code>
-            </pre>
+        <h3>Directory Setup</h3>
 
-            <h3>Directory Setup</h3>
+        <p>With the gulpfile ready to process files, the project directory needs an update. Currently the directory should contain the following folders and files:</p>
 
-            <p>With the gulpfile ready to process files, the project directory needs an update. Currently the directory should contain the following folders and files:</p>
+        <pre>
+          <code>
+            - root
+              - node_modules
+              - gulpfile.js
+              - package.json
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                - root
-                  - node_modules
-                  - gulpfile.js
-                  - package.json
-              </code>
-            </pre>
+        <p>As the gulp workflow is processing SCSS files, a few of those will be required. The new directory structure is below:</p>
 
-            <p>As the gulp workflow is processing SCSS files, a few of those will be required. The new directory structure is below:</p>
+        <pre>
+          <code>
+            - root
+              - dev
+                - scss
+                  - partials
+                    - _variables.scss
+                    - _settings.scss
+                  - main.scss
+              - node_modules
+              - gulpfile.js
+              - package.json
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                - root
-                  - dev
-                    - scss
-                      - partials
-                        - _variables.scss
-                        - _settings.scss
-                      - main.scss
-                  - node_modules
-                  - gulpfile.js
-                  - package.json
-              </code>
-            </pre>
+        <p>main.scss</p>
 
-            <p>main.scss</p>
+        <pre>
+          <code>
+          @import
+          'partials/variables',
+          'partials/settings';
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-              @import
-              'partials/variables',
-              'partials/settings';
-              </code>
-            </pre>
+        <p>_variable.scss</p>
 
-            <p>_variable.scss</p>
+        <pre>
+          <code>
+            $color-map: (
+              gray: (
+                light : #f5f5f5,
+                dark  : #212121
+              )
+            );
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                $color-map: (
-                  gray: (
-                    light : #f5f5f5,
-                    dark  : #212121
-                  )
-                );
-              </code>
-            </pre>
+        <p>_settings.scss</p>
 
-            <p>_settings.scss</p>
+        <pre>
+          <code>
+            body {
+              background-color: color(gray, light);
+              color: color(gray, dark);
+            }
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                body {
-                  background-color: color(gray, light);
-                  color: color(gray, dark);
-                }
-              </code>
-            </pre>
+        <h3>Workflow Test</h3>
 
-            <h3>Workflow Test</h3>
+        <p>With these SCSS files, the gulpfile can be sent through a test run. As mentioned earlier, the default task is executable from the command prompt when in the root directory of the project. Simply run the following command and watch the magic happen.</p>
 
-            <p>With these SCSS files, the gulpfile can be sent through a test run. As mentioned earlier, the default task is executable from the command prompt when in the root directory of the project. Simply run the following command and watch the magic happen.</p>
+        <pre>
+          <code>
+            gulp
+          </code>
+        </pre>
 
-            <pre>
-              <code>
-                gulp
-              </code>
-            </pre>
+        <h3>Takeaways</h3>
 
-            <h3>Takeaways</h3>
-
-            <p>Gulp is tremendously helpful with expediting web project development. While this example only handles SCSS files, additional modules and tasks can be created to handle JavaScript and HTML templating.</p>
-
-          </div>
-          <div class="flex-content--4 center">
-            <img class="project__image" src="../../app/img/project-gulp.jpg">
-          </div>
-        </div>
+        <p>Gulp is tremendously helpful with expediting web project development. While this example only handles SCSS files, additional modules and tasks can be easily created to handle JavaScript and HTML templating.</p>
 
       </div>
     </div>

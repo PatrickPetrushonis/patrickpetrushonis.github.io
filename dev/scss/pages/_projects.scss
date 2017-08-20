@@ -3,15 +3,6 @@
   p { 
     text-align: justify; 
   }
-
-  a {
-    color: color(primary, light);
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 
 .project__title {
@@ -26,14 +17,9 @@
 }
 
 .project__image {
-  background-color: transparent;
-  height: auto;
+  height: 250px;
   margin: 0 0 22px;
-  width: 100%;
-
-  @include breakpoint($small-screen) {
-    margin: 0;
-    max-height: 300px;
-    max-width: 300px;
-  }
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
 }
