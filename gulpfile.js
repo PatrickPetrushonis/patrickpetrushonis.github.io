@@ -1,15 +1,16 @@
 // Gulp plugins
 var gulp      = require('gulp');
 var prefix    = require('gulp-autoprefixer');
+var clean     = require('gulp-clean-css');
 var data      = require('gulp-data');
 var gulpIf    = require('gulp-if');
 var imagemin  = require('gulp-imagemin');
 var include   = require('gulp-include');
-var notify    = require('gulp-notify');
-var render    = require('gulp-nunjucks-render');
-var plumber   = require('gulp-plumber');
-var sass      = require('gulp-sass');
 var maps      = require('gulp-sourcemaps');
+var notify    = require('gulp-notify');
+var plumber   = require('gulp-plumber');
+var render    = require('gulp-nunjucks-render');
+var sass      = require('gulp-sass');
 
 // Other plugins
 var sequence  = require('run-sequence');
@@ -91,6 +92,8 @@ gulp.task('styles', function() {
     // Initialize sourcemaps
     .pipe(maps.init())
     .pipe(sass())
+    // Minify css with minimized compatibility
+    .pipe(clean({ compatibility: 'ie8' }))
     // Runs produced css through autoprefixer
     .pipe(prefix({
       // Add prefixes for IE8, IE9 and last 2 versions of all other browsers
