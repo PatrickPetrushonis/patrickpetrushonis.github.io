@@ -1,0 +1,31 @@
+{% set pagename = "Nunjucks Templating" %}
+{% set pageRef = "../../" %}
+{% set all_projects = projects %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% for project in all_projects %}
+  {% if project.title == pagename %}
+
+  <div class="hero__container" container="hero">
+    <h1 class="project__title">{{ project.title }}</h1>
+  </div>
+
+  <div class="content content__project">
+    <div class="section__container">
+      <div class="section__content">
+        <img class="project__image center" src="{{ pageRef }}app/img/{{ project.image }}">
+
+        {{ project.intro | safe }}
+
+        
+    </div>
+  </div>
+
+  {% endif %}
+
+{% endfor %}
+
+{% endblock %}

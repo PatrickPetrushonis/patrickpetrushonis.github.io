@@ -1,5 +1,10 @@
 {
 	"projects": [{
+		"title": "Nunjucks Templating",
+		"order": "2",
+		"intro": "<p><a href='https://mozilla.github.io/nunjucks/'>Nunjucks</a> is a rich and powerful templating language. Drawing inspiration from jinja2, Nunjucks utilizes JavaScript to provide flexibility for a standard development environment of HTML.</p>",
+		"image": "project-nunjucks.png"
+	}, {
 		"title": "Gulp Workflow",
 		"order": "1",
 		"intro": "<p><a href='https://gulpjs.com/'>Gulp.js</a> is a streaming build system that can optimize a web development workflow. This will save countless time that would have been spent on meaningless tasks and hair pulling inefficiencies.</p>",

@@ -21,8 +21,10 @@ var fs        = require('fs');
 /** 
  * Commands:
  * gulp
+ * gulp delete
  * gulp images
  * gulp nunjucks
+ * gulp pdfs
  * gulp sass
  * gulp scripts
  * gulp watch
