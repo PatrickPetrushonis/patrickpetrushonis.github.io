@@ -20,7 +20,236 @@
 
         {{ project.intro | safe }}
 
+        <small>Prerequisite: Node, NPM, and Gulp should already be installed. See <a href="gulp-workflow.html">previous project</a> for additional information:</small>
+
+        <h3>Nunjucks Installation</h3>
+
+        <p>Our first step will be an integration of nunjucks into the gulp workflow. This requires the 'gulp-nunjucks-render' node module.</p>
+
+        <pre>
+          <code>
+            npm install --save-dev gulp-nunjucks-render
+          </code>
+        </pre>
+
+        <h3>Gulp Task</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+
+        <pre>
+          <code>
+            var render = require('gulp-nunjucks-render');
+          </code>
+        </pre>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
         
+        <pre>
+          <code>
+            gulp.task('nunjucks', function() {
+              var defaults = {
+                path: config.src + 'templates/',
+                ext: '.html',
+                data: {},
+                inheritExtension: false,
+                envOptions: { watch: false },
+                manageEnv: null,
+                loaders: null
+              };
+
+              return gulp.src(config.src + 'pages/**/*.+(html|nunjucks)')
+                .pipe(render(defaults))
+                .pipe(gulp.dest(''))
+            });
+          </code>
+        </pre>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+
+        <pre>
+          <code>
+            gulp.task('watch', function() {
+              gulp.watch(config.src + 'scss/**/*.scss', ['styles']);
+              gulp.watch([
+                config.src + 'templates/**/*.+(html|nunjucks)', 
+                config.src + 'pages/**/*.+(html|nunjucks)',
+                ['nunjucks']
+              );
+            });
+          </code>
+        </pre>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+
+        <pre>
+          <code>
+            gulp.task('default', ['styles', nunjucks, 'watch']);
+          </code>
+        </pre>
+
+        <p>The complete gulpfile.js is below:</p>
+
+        <pre>
+          <code>
+            var gulp   = require('gulp');
+            var sass   = require('gulp-sass');
+            var maps   = require('gulp-sourcemaps');
+            var prefix = require('gulp-autoprefixer');
+            var clean  = require('gulp-clean-css');
+            var render = require('gulp-nunjucks-render');
+
+            var config = {
+              src: 'dev/',
+              dest: 'app/'
+            }
+
+            gulp.task('styles', function() {
+              return gulp.src(config.src + 'scss/**/*.scss')
+                .pipe(maps.init())
+                .pipe(sass())
+                .pipe(clean({ compatibility: 'ie8' }))
+                .pipe(prefix({ browsers: ['> 1%', 'last 2 versions'] }))
+                .pipe(maps.write())
+                .pipe(gulp.dest(config.dest + 'css'))
+            });
+
+            gulp.task('nunjucks', function() {
+              var defaults = {
+                path: config.src + 'templates/',
+                ext: '.html',
+                data: {},
+                inheritExtension: false,
+                envOptions: { watch: false },
+                manageEnv: null,
+                loaders: null
+              };
+
+              return gulp.src(config.src + 'pages/**/*.+(html|nunjucks)')
+                .pipe(render(defaults))
+                .pipe(gulp.dest('')) 
+            });
+
+            gulp.task('watch', function() {
+              gulp.watch(config.src + 'scss/**/*.scss', ['styles']);
+              gulp.watch([
+                config.src + 'templates/**/*.+(html|nunjucks)', 
+                config.src + 'pages/**/*.+(html|nunjucks)'],
+                ['nunjucks']
+              );
+            });
+
+            gulp.task('default', ['styles', nunjucks, 'watch']);
+          </code>
+        </pre>
+
+        <h3>Directory Setup</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+
+        <pre>
+          <code>
+            - root
+              - dev
+                - pages
+                  - index.html
+                - scss
+                - templates
+                  - partials
+                    - global.nunjucks
+                  - layout.nunjucks
+              - node_modules
+              - gulpfile.js
+              - package.json
+          </code>
+        </pre>
+
+        <h4>layout.nunjucks</h4>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+
+        <pre>
+          <code>
+            {% raw %}
+            {% import '../templates/partials/global.nunjucks' as global %} 
+
+            <!DOCTYPE html>
+            &lt;html lang="en">
+            &lt;head>
+
+              &lt;title>{{ pagename }}&lt;/title>
+              &lt;link href="app/css/main.css" rel="stylesheet" type="text/css">
+
+            &lt;/head>
+            &lt;body>
+
+              {{ global.header() }}
+              {% block content %}{% endblock %}
+              {{ global.footer() }}
+
+            &lt;/body>
+            &lt;/html> 
+            {% endraw %}
+          </code>
+        </pre>
+
+        <h4>global.nunjucks</h4>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+
+        <pre>
+          <code>
+            {% raw %}
+            {% macro header() %}
+            &lt;div>
+              &lt;span>Header&lt;/span>
+            &lt;/div>
+            {% endmacro %}
+
+            {% macro footer() %}
+            &lt;div>
+              &lt;span>Footer&lt;/span>
+            &lt;/div>
+            {% endmacro %}
+            {% endraw %}
+          </code>
+        </pre>
+
+        <h4>index.nunjucks</h4>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+
+        <pre>
+          <code>
+            {% raw %}
+            {% set pagename = "Home" %}
+            {% extends "layout.nunjucks" %}
+
+            {% block content %}
+
+            &lt;h1>Home Page&lt;/h1>
+
+            &lt;p>Intro paragraph&lt;/p>
+
+            {% endblock %}
+            {% endraw %}
+          </code>
+        </pre>
+
+        <h3>Workflow Test</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+
+        <pre>
+          <code>
+            gulp
+          </code>
+        </pre>
+
+        <h3>Takeaways</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+
+      </div>
     </div>
   </div>
 
