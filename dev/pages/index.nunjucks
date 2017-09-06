@@ -97,16 +97,16 @@
 
             <h3>SKILLS</h3>
             <ul>
-              <li>Systems Design</li>
-              <li>Software Development</li>
               <li>Object Oriented Programming</li>
+              <li>Systems Design &amp; Software Development</li>
               <li>Unit Testing &amp; Documentation</li>
               <li>Debugging &amp; Troubleshooting</li>
             </ul>
 
             <h3>TECHNOLOGY OVERVIEW</h3>
-            <p>Languages: C++, C#, JavaScript, CSS, SCSS, HTML, Nunjucks, XML, JSON, SQL</p>
-            <p>Software: Visual Studio, SourceTree, Unreal Engine, Unity, Adobe CC</p>
+            <p>Languages: C++, JavaScript, Typescript, CSS, SCSS, HTML, Nunjucks, XML, JSON</p>
+            <p>Workflows: Gulp</p>
+            <p>Frameworks: Angular</p>
 
             <h3>EDUCATION</h3>
             <p>WESTERN CONNECTICUT STATE UNIVERSITY -- Danbury, CT</p>
