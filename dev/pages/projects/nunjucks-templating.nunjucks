@@ -34,7 +34,7 @@
 
         <h3>Gulp Task</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+        <p>As we did before, the nunjucks node module can be added to the gulp pipeline for quick compilation into HTML. To access the node module, a variable must be created for reference.</p>
 
         <pre>
           <code>
@@ -42,7 +42,7 @@
           </code>
         </pre>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+        <p>Next up is the nunjucks gulp task. We'll define the default settings for rendering nunjucks as HTML. While most of these are kept as their default values, note the path field which will reference the main nunjucks template file.</p>
         
         <pre>
           <code>
@@ -64,7 +64,7 @@
           </code>
         </pre>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+        <p>To monitor any changes to our nunjucks files, we'll add a separate handler to the watch task. This will rerun the nunjucks task upon detecting a change to any html or nunjucks file in either the templates or pages directory that we'll create shortly.</p>
 
         <pre>
           <code>
@@ -79,7 +79,7 @@
           </code>
         </pre>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+        <p>Finally, the nunjucks task can be included in the default gulp task for ease of building.</p>
 
         <pre>
           <code>
@@ -144,14 +144,14 @@
 
         <h3>Directory Setup</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+        <p>With the gulpfile ready to handle nunjucks compilation into HTML the only missing part are the actual nunjucks files. For these, three nunjucks files will get us started. See the below updated directory that now includes a pages and templates folder along with the partials subfolder within templates.</p>
 
         <pre>
           <code>
             - root
               - dev
                 - pages
-                  - index.html
+                  - index.nunjucks
                 - scss
                 - templates
                   - partials
@@ -165,7 +165,7 @@
 
         <h4>layout.nunjucks</h4>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+        <p>The layout nunjucks file is the foundation for all pages of the website. In this file, a head element can be defined for all other pages in addition to a global header and footer section. Beyond those, content can be dynamically fed into the central block.</p>
 
         <pre>
           <code>
@@ -194,7 +194,7 @@
 
         <h4>global.nunjucks</h4>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+        <p>Within the partials folder, a partial nunjucks solutions can be prepared for quick access on any page. The globals below are a header and footer that will be visible on any page. These are macros, the equivalent of functions in most programming languages. Both of these are called from the layout to insert their containing HTML. As more dynamism is required, these can even handle passing parameters with conditional logical to generate unique HTML depending on the page.</p>
 
         <pre>
           <code>
@@ -216,7 +216,7 @@
 
         <h4>index.nunjucks</h4>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+        <p>The last nunjucks file, for now, is the index. As this will be our homepage, we'll set the pagename variable to 'Home'. By extending from the layout, any HTML within the content block will be inserted in the layout template.</p>
 
         <pre>
           <code>
@@ -237,7 +237,7 @@
 
         <h3>Workflow Test</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+        <p>With the nunjucks files prepped for compilation, a test run is called for. Let's execute the default gulp task to see the merits of our work.</p>
 
         <pre>
           <code>
@@ -247,7 +247,7 @@
 
         <h3>Takeaways</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+        <p>Nunjucks provides some much needed functionality to HTML. Adding templating and macros to the gulp workflow has some immediate and apparent increases to productivity. In addition, there is a significant reduction in missing an update to content on one page when instead the content can be replaced with a simple macro call. An update would then only require changing the content of the macro and the effect is visible on all references.</p>
 
       </div>
     </div>
