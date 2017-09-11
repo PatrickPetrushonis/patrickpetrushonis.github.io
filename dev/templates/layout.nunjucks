@@ -38,6 +38,6 @@
       {{ footer.footer() }}
     </div>
   </div>
-  <footer><script src="{{ pageRef }}app/js/main.js"></script></footer>
+  <footer><script async src="{{ pageRef }}app/js/main.js"></script></footer>
 </body>
 </html>
