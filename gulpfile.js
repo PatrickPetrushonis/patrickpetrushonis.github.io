@@ -136,10 +136,20 @@ gulp.task('nunjucks', function() {
 
 // Minify all images
 gulp.task('images', function() {
+  var imageSettings = [
+      imagemin.gifsicle({ interlaced: true }),
+      imagemin.jpegtran({ progressive: true }),
+      imagemin.optipng({ optimizationLevel: 5 }),
+      imagemin.svgo({
+        plugins: [
+          { removeViewBox: true },
+          { cleanupIDs: false }
+        ]
+      })
+    ]
+
   return gulp.src(config.src + 'img/**/*')
-    .pipe(imagemin({
-        progressive: true
-    }))
+    .pipe(imagemin(imageSettings))
     .pipe(gulp.dest(config.dest + 'img'))
     .pipe(notify({ message: 'Images Complete!', onLast: true }))
 });
