@@ -29,4 +29,9 @@ $(window).on('resize', function() { handlePattern(); });
 
 $(document).ready(function() { 
   handlePattern();
+
+  // Animate fade-in for hero canvas
+  var heroCanvas = $(document).find('.hero__trianglify-canvas');
+  heroCanvas.css('opacity', 0);
+  heroCanvas.animate({ opacity: 1 }, 250);
 });
