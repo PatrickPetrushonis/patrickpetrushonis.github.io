@@ -6,6 +6,7 @@ var data      = require('gulp-data');
 var gulpIf    = require('gulp-if');
 var imagemin  = require('gulp-imagemin');
 var include   = require('gulp-include');
+var uglify    = require('gulp-uglify');
 var maps      = require('gulp-sourcemaps');
 var notify    = require('gulp-notify');
 var plumber   = require('gulp-plumber');
@@ -36,13 +37,8 @@ var config = {
   dest: 'app/'
 }
 
-// Plug-in settings
-var includeSettings = {
-  includePaths: [
-    __dirname + "/bower_components",
-    __dirname + "/dev/js"
-  ]
-}
+// Whether build is for testing or production
+var isProd = false;
 
 // Prompt any error then end current task
 function customPlumber(errTitle) {
@@ -74,13 +70,21 @@ gulp.task('delete', function(callback) {
 
 // Concatenates and minifies all js files
 gulp.task('scripts', function() {
+  var includeSettings = {
+    includePaths: [
+      __dirname + "/bower_components",
+      __dirname + "/dev/js"
+    ]
+  }
+
   return gulp.src(config.src + 'js/main.js')
     .pipe(customPlumber('Error Running Scripts'))
     // Initialize sourcemaps
-    .pipe(maps.init())
+    .pipe(gulpIf(isProd == false, maps.init()))
     .pipe(include(includeSettings))
+    .pipe(gulpIf(isProd == true, uglify()))
     // Write sourcemaps
-    .pipe(maps.write())
+    .pipe(gulpIf(isProd == false, maps.write()))
     .pipe(gulp.dest(config.dest + 'js'))
     .pipe(notify({ message: 'Scripts Complete!', onLast: true }))
     // Tells browser sync to reload files when task is done
@@ -89,20 +93,18 @@ gulp.task('scripts', function() {
 
 // Compile all sass into css
 gulp.task('styles', function() {
+  var sassOptions = { outputStyle: 'compressed' };
+  var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
+
   return gulp.src(config.src + 'scss/**/*.scss')
     .pipe(customPlumber('Error Running Sass'))
     // Initialize sourcemaps
-    .pipe(maps.init())
-    .pipe(sass())
-    // Minify css with minimized compatibility
-    .pipe(clean({ compatibility: 'ie8' }))
-    // Runs produced css through autoprefixer
-    .pipe(prefix({
-      // Add prefixes for IE8, IE9 and last 2 versions of all other browsers
-      browsers: ['> 1%', 'last 2 versions']
-    }))
+    .pipe(gulpIf(isProd == false, maps.init()))
+    .pipe(gulpIf(isProd == false, sass(), sass(sassOptions)))
+    // Add prefixes for IE8, IE9 and last 2 versions of all other browsers
+    .pipe(prefix(autoprefixerOptions))
     // Write sourcemaps
-    .pipe(maps.write())
+    .pipe(gulpIf(isProd == false, maps.write()))
     .pipe(gulp.dest(config.dest + 'css'))
     .pipe(notify({ message: 'Styles Complete!', onLast: true }))
     // Tells browser sync to reload files when task is done
@@ -160,6 +162,15 @@ gulp.task('watch', function() {
     config.src + 'data/data.json'], 
     ['nunjucks']
   );
+});
+
+gulp.task('prod', function(callback) {
+  isProd = true;
+
+  sequence(
+    ['default'],
+    callback
+  )
 });
 
 // Executes a sequence of tasks
