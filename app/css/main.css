@@ -88,6 +88,9 @@ li {
     border-radius: 0;
     font-weight: 700; }
 
+.header-container--slim .button {
+  margin: 0; }
+
 .header-controls {
   margin: 0 auto;
   max-width: 1366px;

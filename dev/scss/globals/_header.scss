@@ -24,6 +24,10 @@
   }
 }
 
+.header-container--slim {
+  .button { margin: 0; }
+}
+
 .header-controls {
   margin: 0 auto;
   max-width: $large-screen;

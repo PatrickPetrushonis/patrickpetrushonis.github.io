@@ -1,3 +1,28 @@
+// Hide 'return to top' button while ScrollTop is near top of page
+function HandleScrollTopButtonVisibility() {
+    var scrollTopButton = $(document).find('.button__return-top');
+
+    if($(window).scrollTop() > 100) {
+        scrollTopButton.css('opacity', '1');
+        scrollTopButton.css('visibility', 'visible');
+    }
+    else {
+        scrollTopButton.css('opacity', '0');
+        scrollTopButton.css('visibility', 'hidden');
+    }    
+}
+
+// Reduce header to slim variant when beneath 100 pixels
+function HandleSlimHeader() {
+    var headerContainer = $(document).find('.header-container');
+
+    if($(window).scrollTop() > 100) {
+        headerContainer.addClass('header-container--slim');
+    }
+    else {
+        headerContainer.removeClass('header-container--slim');
+    }
+}
 
 // Scroll to section from main navigation
 $(document).on('click', '[data="scroll"]', function(event) {
@@ -23,18 +48,10 @@ $(document).on('click', '[data="scroll"]', function(event) {
     }
 });
 
-// Hide 'return to top' button while ScrollTop is near top of page
-$(document).on('scroll', function() {
-    var scrollTopButton = $(document).find('.button__return-top');
 
-    if($(window).scrollTop() > 100) {
-        scrollTopButton.css('opacity', '1');
-        scrollTopButton.css('visibility', 'visible');
-    }
-    else {
-        scrollTopButton.css('opacity', '0');
-        scrollTopButton.css('visibility', 'hidden');
-    }
+$(document).on('scroll', function() {
+    HandleScrollTopButtonVisibility();
+    HandleSlimHeader();    
 });
 
 // Scroll to url section with header offset on page load
