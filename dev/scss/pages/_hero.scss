@@ -3,10 +3,14 @@
   margin: 0 auto;
   position: relative;
   height: auto;
-  min-height: auto;
+  min-height: 512px;
   background-color: color(gray, jet);
   overflow: hidden;
   z-index: $hero-container;
+}
+
+.hero__container--slim {
+  min-height: 256px;
 }
 
 .hero__trianglify-canvas {

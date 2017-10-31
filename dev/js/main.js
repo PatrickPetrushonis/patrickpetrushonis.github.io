@@ -11,3 +11,4 @@
 // =require partials/scroll.js
 // =require partials/hero.js
 // =require partials/pre.js
+// =require partials/reveal.js

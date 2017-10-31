@@ -1,25 +1,55 @@
 
-.content__project {
+.content__skill {
   p { 
     text-align: justify; 
   }
 }
 
-.project__title {
+.skill__title {
 	color: white;
 	padding: 66px 0 44px;
 }
 
-.project__item {
-  background-position: center;
-  height: 250px;
-  position: relative;
+.skill__item {
+  height: 100%;
+  margin: 22px 0;
 }
 
-.project__image {
-  height: 250px;
-  margin: 0 0 22px;
-  max-height: 100%;
-  max-width: 100%;
-  width: auto;
+.skill__link {
+  border: 1px solid transparent;
+  display: block;
+  padding: 22px;
+  transition: all 0.3s ease-out;
+
+  &.selected {
+    border-color: color(gray, mid);
+  }
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+.skill__image {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100px;
+  width: 100%;
+}
+
+.skill__details {
+  border: 1px solid color(gray, mid);
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  padding: 0 22px;
+  transition: margin 0.5s, padding 0.5s;
+
+  &.selected {
+    height: auto;
+    margin: 22px 0;
+    opacity: 1;
+    padding: 22px;
+  }
 }

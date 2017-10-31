@@ -12,59 +12,42 @@
 [class^="flex-content--"] {
   flex: 1 1 100%;
   max-width: 100%;
-
-  @include breakpoint($mobile-screen) {
-    padding: 0 11px;
-  }
+  padding: 0 11px;
 }
 
-.flex-content--1 {
-  @include breakpoint($mobile-screen) {
-    flex: 1 1 calc(10% - 22px);
-  }
+.flex-content--1 {  
+  flex: 1 1 calc(8.333% - 22px);
 }
-.flex-content--2 {
-  @include breakpoint($mobile-screen) {
-    flex: 1 1 calc(20% - 22px);
-  }
+.flex-content--2 {  
+  flex: 1 1 calc(16.667% - 22px);
 }
-.flex-content--3 {
-  @include breakpoint($mobile-screen) {
-    flex: 1 1 calc(30% - 22px);
-  }
+.flex-content--3 {  
+  flex: 1 1 calc(25% - 22px);
 }
-.flex-content--4 {
-  @include breakpoint($mobile-screen) {
-    flex: 1 1 calc(40% - 22px);
-  }
+.flex-content--4 {  
+  flex: 1 1 calc(33.333% - 22px);
 }
-.flex-content--5 {
-  @include breakpoint($mobile-screen) {
-    flex: 1 1 calc(50% - 22px);
-  }
+.flex-content--5 {  
+  flex: 1 1 calc(41.667% - 22px);
 }
-.flex-content--6 {
-  @include breakpoint($mobile-screen) {
-    flex: 1 1 calc(60% - 22px);
-  }
+.flex-content--6 {  
+  flex: 1 1 calc(50% - 22px);
 }
-.flex-content--7 {
-  @include breakpoint($mobile-screen) {
-    flex: 1 1 calc(70% - 22px);
-  }
+.flex-content--7 {  
+  flex: 1 1 calc(58.333% - 22px);
 }
-.flex-content--8 {
-  @include breakpoint($mobile-screen) {
-    flex: 1 1 calc(80% - 22px);
-  }
+.flex-content--8 {  
+  flex: 1 1 calc(66.667% - 22px);
 }
-.flex-content--9 {
-  @include breakpoint($mobile-screen) {
-    flex: 1 1 calc(90% - 22px);
-  }
+.flex-content--9 {  
+  flex: 1 1 calc(75% - 22px);
 }
-.flex-content--10 {
-  @include breakpoint($mobile-screen) {
-    flex: 1 1 calc(100% - 22px);
-  }
+.flex-content--10 {  
+  flex: 1 1 calc(83.333% - 22px);
 }
+.flex-content--11 {  
+  flex: 1 1 calc(91.667% - 22px);
+}
+.flex-content--12 {  
+  flex: 1 1 calc(100% - 22px);
+  }

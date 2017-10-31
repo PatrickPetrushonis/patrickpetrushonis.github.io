@@ -26,9 +26,10 @@
   text-align: center;
 }
 
+.section__rule--about { @include rule-icon('about'); }
 .section__rule--resume { @include rule-icon('resume'); }
-.section__rule--projects { @include rule-icon('projects'); }
-.section__rule--projects-sub { 
+.section__rule--skills { @include rule-icon('skills'); }
+.section__rule--skills-sub { 
   margin: 22px 0;
   padding: 0;
   display: block;
