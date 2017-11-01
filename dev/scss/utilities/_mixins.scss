@@ -39,10 +39,14 @@
 	}
 }
 
-@mixin banner($name) {
+@mixin banner($name, $mobile-pos) {
 	background: url('../img/banner-' + $name + '.jpg');
-	background-position: center left;
+	background-position: $mobile-pos;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
+
+	@include breakpoint($small-screen) {
+		background-position: center left;
+	}
 }

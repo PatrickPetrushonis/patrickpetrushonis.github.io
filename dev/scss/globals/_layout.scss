@@ -5,49 +5,92 @@
   flex-wrap: wrap;
 }
 
-.flex-content--alt {
+.flex__small--alt {
   align-items: center;
 }
 
-[class^="flex-content--"] {
+[class^="flex__small--"] {
+  flex: 1 1 100%;
+  max-width: 100%;
+  padding: 0 5.5px;
+}
+
+[class^="flex__large--"] {
   flex: 1 1 100%;
   max-width: 100%;
   padding: 0 11px;
 }
 
-.flex-content--1 {  
+.flex__small--1 {  
   flex: 1 1 calc(8.333% - 22px);
 }
-.flex-content--2 {  
+.flex__small--2 {  
   flex: 1 1 calc(16.667% - 22px);
 }
-.flex-content--3 {  
+.flex__small--3 {  
   flex: 1 1 calc(25% - 22px);
 }
-.flex-content--4 {  
+.flex__small--4 {  
   flex: 1 1 calc(33.333% - 22px);
 }
-.flex-content--5 {  
+.flex__small--5 {  
   flex: 1 1 calc(41.667% - 22px);
 }
-.flex-content--6 {  
+.flex__small--6 {  
   flex: 1 1 calc(50% - 22px);
 }
-.flex-content--7 {  
+.flex__small--7 {  
   flex: 1 1 calc(58.333% - 22px);
 }
-.flex-content--8 {  
+.flex__small--8 {  
   flex: 1 1 calc(66.667% - 22px);
 }
-.flex-content--9 {  
+.flex__small--9 {  
   flex: 1 1 calc(75% - 22px);
 }
-.flex-content--10 {  
+.flex__small--10 {  
   flex: 1 1 calc(83.333% - 22px);
 }
-.flex-content--11 {  
+.flex__small--11 {  
   flex: 1 1 calc(91.667% - 22px);
 }
-.flex-content--12 {  
+.flex__small--12 {  
   flex: 1 1 calc(100% - 22px);
-  }
+}
+
+.flex__large--1 {  
+  @include breakpoint($small-screen) { flex: 1 1 calc(8.333% - 22px); }
+}
+.flex__large--2 {  
+  @include breakpoint($small-screen) { flex: 1 1 calc(16.667% - 22px); }
+}
+.flex__large--3 {  
+  @include breakpoint($small-screen) { flex: 1 1 calc(25% - 22px); }
+}
+.flex__large--4 {  
+  @include breakpoint($small-screen) { flex: 1 1 calc(33.333% - 22px); }
+}
+.flex__large--5 {  
+  @include breakpoint($small-screen) { flex: 1 1 calc(41.667% - 22px); }
+}
+.flex__large--6 {  
+  @include breakpoint($small-screen) { flex: 1 1 calc(50% - 22px); }
+}
+.flex__large--7 {  
+  @include breakpoint($small-screen) { flex: 1 1 calc(58.333% - 22px); }
+}
+.flex__large--8 {  
+  @include breakpoint($small-screen) { flex: 1 1 calc(66.667% - 22px); }
+}
+.flex__large--9 {  
+  @include breakpoint($small-screen) { flex: 1 1 calc(75% - 22px); }
+}
+.flex__large--10 {  
+  @include breakpoint($small-screen) { flex: 1 1 calc(83.333% - 22px); }
+}
+.flex__large--11 {  
+  @include breakpoint($small-screen) { flex: 1 1 calc(91.667% - 22px); }
+}
+.flex__large--12 {  
+  @include breakpoint($small-screen) { flex: 1 1 calc(100% - 22px); }
+}

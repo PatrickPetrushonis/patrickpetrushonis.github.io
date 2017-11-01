@@ -2,19 +2,23 @@
 .banner__container {
   margin: 0 auto;
   position: relative;
-  height: 512px;
+  height: 256px;
   background-color: color(gray, jet);
   overflow: hidden;
   z-index: $banner-container;
+
+  @include breakpoint($small-screen) {
+    height: 512px;
+  }
 }
 
 .banner__container--slim {
   height: 256px;
 }
 
-.banner__image--code { @include banner('code'); }
-.banner__image--coffee { @include banner('coffee'); }
-.banner__image--nature { @include banner('nature'); }
+.banner__image--code { @include banner('code', center left); }
+.banner__image--coffee { @include banner('coffee', center); }
+.banner__image--nature { @include banner('nature', center); }
 
 .banner__trianglify-canvas {
   position: absolute;

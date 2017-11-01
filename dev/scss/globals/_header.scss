@@ -25,7 +25,11 @@
 }
 
 .header-container--slim {
-  .button { margin: 0; }
+  @include breakpoint($small-screen) { 
+    .button {
+      margin: 0;
+    }
+  }
 }
 
 .header-controls {

@@ -18,8 +18,12 @@
 .skill__link {
   border: 1px solid transparent;
   display: block;
-  padding: 22px;
+  padding: 5.5px;
   transition: all 0.3s ease-out;
+
+  @include breakpoint($small-screen) { 
+    padding: 22px;
+  }
 
   &.selected {
     border-color: color(gray, mid);
@@ -48,7 +52,7 @@
 
   &.selected {
     height: auto;
-    margin: 22px 0;
+    margin: 0 0 22px;
     opacity: 1;
     padding: 22px;
   }
