@@ -38,3 +38,11 @@
 		background-size: cover;
 	}
 }
+
+@mixin banner($name) {
+	background: url('../img/banner-' + $name + '.jpg');
+	background-position: center left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}

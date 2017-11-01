@@ -1,0 +1,34 @@
+
+.banner__container {
+  margin: 0 auto;
+  position: relative;
+  height: 512px;
+  background-color: color(gray, jet);
+  overflow: hidden;
+  z-index: $banner-container;
+}
+
+.banner__container--slim {
+  height: 256px;
+}
+
+.banner__image--code { @include banner('code'); }
+.banner__image--coffee { @include banner('coffee'); }
+.banner__image--nature { @include banner('nature'); }
+
+.banner__trianglify-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: $banner-canvas;
+}
+
+.banner__portrait {
+  background-color: color(gray, jet);
+  border: 3px solid color(gray, jet);
+  border-radius: 50%;
+  height: auto;
+  max-height: 256px;
+  max-width: 256px;
+  width: 100%;
+}
