@@ -81,11 +81,11 @@
             <h4>EXPLETIVE STUDIOS -- Shelton, CT</h4>
             <p><b>System Engineer</b>, 2015 to Present</p>
 
-            <ul>              
+            <ul>
               <li>Led development of a peer-to-peer multiplayer game using Unreal Engine 4 and Steamworks.</li>
-              <li>Organized task distribution in Asana to coordinate development between rapid prototypes.</li>
-              <li>Collaborated with designers on parameter-based particle systems and materials.</li>
-              <li>Developed an asset selection and instantiation system using C++ with network replication</li>
+              <li>Organized task distribution in Asana to coordinate development between rapid prototype builds.</li>
+              <li>Created an asset selection and instantiation system using C++ with network replication.</li>
+              <li>Developed peer-to-peer gameplay interactions with primary and secondary objectives.</li>
             </ul>
 
             <h4>ALDEN IMAGE -- Shelton, CT</h4>
@@ -93,7 +93,7 @@
 
             <ul>
               <li>Improved development workflows using custom frameworks built with NPM and Gulp.</li>
-              <li>Developed pattern library using Gulp workflow and Angular framework.</li>
+              <li>Developed an in-house pattern library using Nunjucks, SCSS, JSON, JavaScript, and Angular.</li>
               <li>Maintained awareness of web traffic using Google Analytics, Tag Manager, and Data Studio.</li>
               <li>Updated network security and provided recommendations for systems and machines.</li>
             </ul>
