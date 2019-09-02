@@ -44,5 +44,8 @@
     "node-pre-gyp": "^0.6.36",
     "run-sequence": "^2.1.0"
   },
-  "false": {}
+  "false": {},
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }
