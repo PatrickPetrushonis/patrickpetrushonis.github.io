@@ -22,6 +22,10 @@
     &.center { 
         max-width: 120px; 
     }
+
+    &.wide {
+        max-width: 240px;
+    }
 }
 
 .button__return-top {

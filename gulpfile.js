@@ -12,6 +12,7 @@ var notify    = require('gulp-notify');
 var plumber   = require('gulp-plumber');
 var render    = require('gulp-nunjucks-render');
 var sass      = require('gulp-sass');
+var csvToJson = require('gulp-advanced-csv-to-json');
 
 // Other plugins
 var sequence  = require('run-sequence');
@@ -161,6 +162,21 @@ gulp.task('pdfs', function() {
     .pipe(notify({ message: 'PDFs Complete!', onLast: true }))
 });
 
+// Move json files
+gulp.task('data', function() {
+  return gulp.src(config.src + 'data/*')    
+    .pipe(gulp.dest(config.dest + 'data'))
+    .pipe(notify({ message: 'Data Complete!', onLast: true }))
+});
+
+// Convert CSV files to JSON
+gulp.task('csv', function() {
+  return gulp.src(config.src + 'csv/*.conf')
+    .pipe(csvToJson({
+      tabSize : 4
+    }))
+});
+
 // Watch specified folders and files for any changes
 gulp.task('watch', function() {
   gulp.watch(config.src + 'img/**/*', ['images']);
@@ -187,7 +203,7 @@ gulp.task('prod', function(callback) {
 gulp.task('default', function(callback) {
   sequence(
     ['delete'],
-    ['images', 'scripts', 'styles', 'nunjucks', 'pdfs'],
+    ['csv', 'images', 'scripts', 'styles', 'nunjucks', 'pdfs', 'data'],
     ['sync', 'watch'],
     callback
   )

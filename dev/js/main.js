@@ -8,3 +8,4 @@
 // =require partials/scroll.js
 // =require partials/pre.js
 // =require partials/reveal.js
+// =require partials/language.js

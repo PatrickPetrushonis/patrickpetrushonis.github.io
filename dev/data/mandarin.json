@@ -1,0 +1,3098 @@
+{
+    "Animals": [
+        {
+            "English": "Bird",
+            "Label": "Bird",
+            "Mandarin": "鸟",
+            "Pinyin": "Niǎo",
+            "Category": "Animals",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Cat",
+            "Label": "Cat",
+            "Mandarin": "猫",
+            "Pinyin": "Māo",
+            "Category": "Animals",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Chameleon",
+            "Label": "Chameleon",
+            "Mandarin": "变色龙",
+            "Pinyin": "Biàn sè lóng",
+            "Category": "Animals",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Chicken",
+            "Label": "Chicken",
+            "Mandarin": "鸡",
+            "Pinyin": "Jī",
+            "Category": "Animals",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Cow",
+            "Label": "Cow",
+            "Mandarin": "牛",
+            "Pinyin": "Niú",
+            "Category": "Animals",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Dog",
+            "Label": "Dog",
+            "Mandarin": "狗",
+            "Pinyin": "Gǒu",
+            "Category": "Animals",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Goat",
+            "Label": "Goat",
+            "Mandarin": "山羊",
+            "Pinyin": "Shān yáng",
+            "Category": "Animals",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Horse",
+            "Label": "Horse",
+            "Mandarin": "马",
+            "Pinyin": "Mǎ",
+            "Category": "Animals",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Household Pet",
+            "Label": "Household Pet",
+            "Mandarin": "宠物",
+            "Pinyin": "Chǒng wù",
+            "Category": "Animals",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Pig",
+            "Label": "Pig",
+            "Mandarin": "猪",
+            "Pinyin": "Zhū",
+            "Category": "Animals",
+            "Subcategory": "General"
+        }
+    ],
+    "Body Parts": [
+        {
+            "English": "Arms",
+            "Label": "Arms",
+            "Mandarin": "武器",
+            "Pinyin": "Wǔ qì",
+            "Category": "Body Parts",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Butt",
+            "Label": "Butt",
+            "Mandarin": "屁股",
+            "Pinyin": "Pì gu",
+            "Category": "Body Parts",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Chest",
+            "Label": "Chest",
+            "Mandarin": "胸部",
+            "Pinyin": "Xiōng bù",
+            "Category": "Body Parts",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Ears",
+            "Label": "Ears",
+            "Mandarin": "耳朵",
+            "Pinyin": "Ěr duǒ",
+            "Category": "Body Parts",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Eyes",
+            "Label": "Eyes",
+            "Mandarin": "眼睛",
+            "Pinyin": "Yăn jīng",
+            "Category": "Body Parts",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Feet",
+            "Label": "Feet",
+            "Mandarin": "脚",
+            "Pinyin": "Jiăo",
+            "Category": "Body Parts",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Hair",
+            "Label": "Hair",
+            "Mandarin": "头发",
+            "Pinyin": "Tóu fă",
+            "Category": "Body Parts",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Hands",
+            "Label": "Hands",
+            "Mandarin": "手",
+            "Pinyin": "Shǒu",
+            "Category": "Body Parts",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Head",
+            "Label": "Head",
+            "Mandarin": "头",
+            "Pinyin": "Tóu",
+            "Category": "Body Parts",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Legs",
+            "Label": "Legs",
+            "Mandarin": "腿",
+            "Pinyin": "Tuǐ",
+            "Category": "Body Parts",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Lips",
+            "Label": "Lips",
+            "Mandarin": "嘴唇",
+            "Pinyin": "Zuǐ chún",
+            "Category": "Body Parts",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Mouth",
+            "Label": "Mouth",
+            "Mandarin": "嘴",
+            "Pinyin": "Zuǐ",
+            "Category": "Body Parts",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Nails",
+            "Label": "Nails",
+            "Mandarin": "指甲",
+            "Pinyin": "Zhǐ jiă",
+            "Category": "Body Parts",
+            "Subcategory": "General"
+        }
+    ],
+    "Colors": [
+        {
+            "English": "Black",
+            "Label": "Black",
+            "Mandarin": "黑色",
+            "Pinyin": "Hēi sè",
+            "Category": "Colors",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Blue",
+            "Label": "Blue",
+            "Mandarin": "蓝色",
+            "Pinyin": "Lán sè",
+            "Category": "Colors",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Bronze",
+            "Label": "Bronze",
+            "Mandarin": "古铜色",
+            "Pinyin": "Gǔ tóng sè",
+            "Category": "Colors",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Brown",
+            "Label": "Brown",
+            "Mandarin": "棕色",
+            "Pinyin": "Zōng sè",
+            "Category": "Colors",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Gold",
+            "Label": "Gold",
+            "Mandarin": "金子",
+            "Pinyin": "Jīn sè",
+            "Category": "Colors",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Green",
+            "Label": "Green",
+            "Mandarin": "绿色",
+            "Pinyin": "Lù sè",
+            "Category": "Colors",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Grey",
+            "Label": "Grey",
+            "Mandarin": "灰色",
+            "Pinyin": "Huī sè",
+            "Category": "Colors",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Orange",
+            "Label": "Orange",
+            "Mandarin": "橙色",
+            "Pinyin": "Chéng sè",
+            "Category": "Colors",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Pink",
+            "Label": "Pink",
+            "Mandarin": "粉色",
+            "Pinyin": "Fěn sè",
+            "Category": "Colors",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Red",
+            "Label": "Red",
+            "Mandarin": "红色",
+            "Pinyin": "Hóng sè",
+            "Category": "Colors",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Silver",
+            "Label": "Silver",
+            "Mandarin": "银色",
+            "Pinyin": "Yín sè",
+            "Category": "Colors",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Violet",
+            "Label": "Violet",
+            "Mandarin": "紫色",
+            "Pinyin": "Zì sè",
+            "Category": "Colors",
+            "Subcategory": "General"
+        },
+        {
+            "English": "White",
+            "Label": "White",
+            "Mandarin": "白色",
+            "Pinyin": "Bái sè",
+            "Category": "Colors",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Yellow",
+            "Label": "Yellow",
+            "Mandarin": "黄色",
+            "Pinyin": "Huáng sè",
+            "Category": "Colors",
+            "Subcategory": "General"
+        }
+    ],
+    "Conjunction": [
+        {
+            "English": "Also",
+            "Label": "Also",
+            "Mandarin": "也",
+            "Pinyin": "Yě",
+            "Category": "Conjunction",
+            "Subcategory": "General"
+        },
+        {
+            "English": "And",
+            "Label": "And",
+            "Mandarin": "和",
+            "Pinyin": "Hé",
+            "Category": "Conjunction",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Is",
+            "Label": "Is",
+            "Mandarin": "是",
+            "Pinyin": "Shì",
+            "Category": "Conjunction",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Is there",
+            "Label": "Is there",
+            "Mandarin": "在",
+            "Pinyin": "Zài",
+            "Category": "Conjunction",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Or",
+            "Label": "Or",
+            "Mandarin": "还是",
+            "Pinyin": "Hái shì",
+            "Category": "Conjunction",
+            "Subcategory": "General"
+        }
+    ],
+    "Culture": [
+        {
+            "English": "America",
+            "Label": "America",
+            "Mandarin": "美国",
+            "Pinyin": "Měi guó",
+            "Category": "Culture",
+            "Subcategory": "Country"
+        },
+        {
+            "English": "Britain",
+            "Label": "Britain",
+            "Mandarin": "英国",
+            "Pinyin": "Yīng guó",
+            "Category": "Culture",
+            "Subcategory": "Country"
+        },
+        {
+            "English": "Canada",
+            "Label": "Canada",
+            "Mandarin": "加拿大",
+            "Pinyin": "Jiā ná dà",
+            "Category": "Culture",
+            "Subcategory": "Country"
+        },
+        {
+            "English": "China",
+            "Label": "China",
+            "Mandarin": "中国",
+            "Pinyin": "Zhōng guó",
+            "Category": "Culture",
+            "Subcategory": "Country"
+        },
+        {
+            "English": "Czech Republic",
+            "Label": "Czech Republic",
+            "Mandarin": "捷克",
+            "Pinyin": "Jié kè",
+            "Category": "Culture",
+            "Subcategory": "Country"
+        },
+        {
+            "English": "France",
+            "Label": "France",
+            "Mandarin": "法国",
+            "Pinyin": "Fà guó",
+            "Category": "Culture",
+            "Subcategory": "Country"
+        },
+        {
+            "English": "Japan",
+            "Label": "Japan",
+            "Mandarin": "日本",
+            "Pinyin": "Rì běn",
+            "Category": "Culture",
+            "Subcategory": "Country"
+        },
+        {
+            "English": "Korea (North)",
+            "Label": "North Korea",
+            "Mandarin": "朝鲜",
+            "Pinyin": "Cháo xiǎn",
+            "Category": "Culture",
+            "Subcategory": "Country"
+        },
+        {
+            "English": "Korea (South)",
+            "Label": "South Korea",
+            "Mandarin": "韩国",
+            "Pinyin": "Hán guó",
+            "Category": "Culture",
+            "Subcategory": "Country"
+        },
+        {
+            "English": "Spain",
+            "Label": "Spain",
+            "Mandarin": "西班牙",
+            "Pinyin": "Xī bān yá",
+            "Category": "Culture",
+            "Subcategory": "Country"
+        },
+        {
+            "English": "Chinese",
+            "Label": "Chinese",
+            "Mandarin": "中文",
+            "Pinyin": "Zhōng wén",
+            "Category": "Culture",
+            "Subcategory": "Language"
+        },
+        {
+            "English": "Czech",
+            "Label": "Czech",
+            "Mandarin": "捷克语",
+            "Pinyin": "Jié kè yǔ",
+            "Category": "Culture",
+            "Subcategory": "Language"
+        },
+        {
+            "English": "English",
+            "Label": "English",
+            "Mandarin": "英语",
+            "Pinyin": "Yīng yǔ",
+            "Category": "Culture",
+            "Subcategory": "Language"
+        },
+        {
+            "English": "French",
+            "Label": "French",
+            "Mandarin": "法语",
+            "Pinyin": "Fǎ yǔ",
+            "Category": "Culture",
+            "Subcategory": "Language"
+        },
+        {
+            "English": "Japanese",
+            "Label": "Japanese",
+            "Mandarin": "日语",
+            "Pinyin": "Rì yǔ",
+            "Category": "Culture",
+            "Subcategory": "Language"
+        },
+        {
+            "English": "Korean",
+            "Label": "Korean",
+            "Mandarin": "朝鲜语",
+            "Pinyin": "Cháo xiǎn yǔ",
+            "Category": "Culture",
+            "Subcategory": "Language"
+        },
+        {
+            "English": "Spanish",
+            "Label": "Spanish",
+            "Mandarin": "西班牙语",
+            "Pinyin": "Xī bān yá yǔ",
+            "Category": "Culture",
+            "Subcategory": "Language"
+        }
+    ],
+    "Date": [
+        {
+            "English": "Day",
+            "Label": "Day",
+            "Mandarin": "号",
+            "Pinyin": "Hào",
+            "Category": "Date",
+            "Subcategory": "Day"
+        },
+        {
+            "English": "Today",
+            "Label": "Today",
+            "Mandarin": "今天",
+            "Pinyin": "Jīn tiān",
+            "Category": "Date",
+            "Subcategory": "Day"
+        },
+        {
+            "English": "Tomorrow",
+            "Label": "Tomorrow",
+            "Mandarin": "明天",
+            "Pinyin": "Míng tiān",
+            "Category": "Date",
+            "Subcategory": "Day"
+        },
+        {
+            "English": "Yesterday",
+            "Label": "Yesterday",
+            "Mandarin": "昨天",
+            "Pinyin": "Zuó tiān",
+            "Category": "Date",
+            "Subcategory": "Day"
+        },
+        {
+            "English": "Month",
+            "Label": "Month",
+            "Mandarin": "月",
+            "Pinyin": "Yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "English": "Month (Last)",
+            "Label": "Last Month",
+            "Mandarin": "上个月",
+            "Pinyin": "Shàng gè yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "English": "Month (Next)",
+            "Label": "Next Month",
+            "Mandarin": "下个月",
+            "Pinyin": "Xià gè yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "English": "Month Date 01 (January)",
+            "Label": "January",
+            "Mandarin": "一 月",
+            "Pinyin": "Yī yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "English": "Month Date 02 (February)",
+            "Label": "February",
+            "Mandarin": "二 月",
+            "Pinyin": "Èr yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "English": "Month Date 03 (March)",
+            "Label": "March",
+            "Mandarin": "三 月",
+            "Pinyin": "Sān yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "English": "Month Date 04 (April)",
+            "Label": "April",
+            "Mandarin": "四 月",
+            "Pinyin": "Sì yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "English": "Month Date 05 (May)",
+            "Label": "May",
+            "Mandarin": "五 月",
+            "Pinyin": "Wǔ yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "English": "Month Date 06 (June)",
+            "Label": "June",
+            "Mandarin": "六 月",
+            "Pinyin": "Liù yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "English": "Month Date 07 (July)",
+            "Label": "July",
+            "Mandarin": "七 月",
+            "Pinyin": "Qī yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "English": "Month Date 08 (August)",
+            "Label": "August",
+            "Mandarin": "八 月",
+            "Pinyin": "Bā yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "English": "Month Date 09 (September)",
+            "Label": "September",
+            "Mandarin": "九 月",
+            "Pinyin": "Jiǔ yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "English": "Month Date 10 (October)",
+            "Label": "October",
+            "Mandarin": "十 月",
+            "Pinyin": "Shí yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "English": "Month Date 11 (November)",
+            "Label": "November",
+            "Mandarin": "十一 月",
+            "Pinyin": "Shí yī yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "English": "Month Date 12 (December)",
+            "Label": "December",
+            "Mandarin": "十二 月",
+            "Pinyin": "Shí'èr yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "English": "Week",
+            "Label": "Week",
+            "Mandarin": "星期",
+            "Pinyin": "Xīng qí",
+            "Category": "Date",
+            "Subcategory": "Week"
+        },
+        {
+            "English": "Weekday 1 (Monday)",
+            "Label": "Monday",
+            "Mandarin": "星期一",
+            "Pinyin": "Xīng qí yī",
+            "Category": "Date",
+            "Subcategory": "Week"
+        },
+        {
+            "English": "Weekday 2 (Tuesday)",
+            "Label": "Tuesday",
+            "Mandarin": "星期二",
+            "Pinyin": "Xīng qí'èr",
+            "Category": "Date",
+            "Subcategory": "Week"
+        },
+        {
+            "English": "Weekday 3 (Wednesday)",
+            "Label": "Wednesday",
+            "Mandarin": "星期三",
+            "Pinyin": "Xīng qí sān",
+            "Category": "Date",
+            "Subcategory": "Week"
+        },
+        {
+            "English": "Weekday 4 (Thursday)",
+            "Label": "Thursday",
+            "Mandarin": "星期四",
+            "Pinyin": "Xīng qí sì",
+            "Category": "Date",
+            "Subcategory": "Week"
+        },
+        {
+            "English": "Weekday 5 (Friday)",
+            "Label": "Friday",
+            "Mandarin": "星期五",
+            "Pinyin": "Xīng qí wǔ",
+            "Category": "Date",
+            "Subcategory": "Week"
+        },
+        {
+            "English": "Weekday 6 (Saturday)",
+            "Label": "Saturday",
+            "Mandarin": "星期六",
+            "Pinyin": "Xīng qí liù",
+            "Category": "Date",
+            "Subcategory": "Week"
+        },
+        {
+            "English": "Weekday 7 (Sunday)",
+            "Label": "Sunday",
+            "Mandarin": "星期天",
+            "Pinyin": "Xīng qí tiān",
+            "Category": "Date",
+            "Subcategory": "Week"
+        },
+        {
+            "English": "Year",
+            "Label": "Year",
+            "Mandarin": "年",
+            "Pinyin": "Nián",
+            "Category": "Date",
+            "Subcategory": "Year"
+        },
+        {
+            "English": "Year (Last)",
+            "Label": "Last Year",
+            "Mandarin": "去年",
+            "Pinyin": "Qù nián",
+            "Category": "Date",
+            "Subcategory": "Year"
+        },
+        {
+            "English": "Year (Next)",
+            "Label": "Next Year",
+            "Mandarin": "明年",
+            "Pinyin": "Míng nián",
+            "Category": "Date",
+            "Subcategory": "Year"
+        }
+    ],
+    "Descriptions": [
+        {
+            "English": "Acidic",
+            "Label": "Acidic",
+            "Mandarin": "酸性",
+            "Pinyin": "Suān xìng",
+            "Category": "Descriptions",
+            "Subcategory": "Food"
+        },
+        {
+            "English": "Baked",
+            "Label": "Baked",
+            "Mandarin": "烤",
+            "Pinyin": "Kăo",
+            "Category": "Descriptions",
+            "Subcategory": "Food"
+        },
+        {
+            "English": "Bitter",
+            "Label": "Bitter",
+            "Mandarin": "苦",
+            "Pinyin": "Kǔ",
+            "Category": "Descriptions",
+            "Subcategory": "Food"
+        },
+        {
+            "English": "Bland",
+            "Label": "Bland",
+            "Mandarin": "没味道",
+            "Pinyin": "Méi wèi dào",
+            "Category": "Descriptions",
+            "Subcategory": "Food"
+        },
+        {
+            "English": "Cold",
+            "Label": "Cold",
+            "Mandarin": "冰",
+            "Pinyin": "Bīng",
+            "Category": "Descriptions",
+            "Subcategory": "Food"
+        },
+        {
+            "English": "Fried",
+            "Label": "Fried",
+            "Mandarin": "油炸",
+            "Pinyin": "Yóu zhá",
+            "Category": "Descriptions",
+            "Subcategory": "Food"
+        },
+        {
+            "English": "Hot",
+            "Label": "Hot",
+            "Mandarin": "热",
+            "Pinyin": "Rè",
+            "Category": "Descriptions",
+            "Subcategory": "Food"
+        },
+        {
+            "English": "Numbing",
+            "Label": "Numbing",
+            "Mandarin": "麻木",
+            "Pinyin": "Má mù",
+            "Category": "Descriptions",
+            "Subcategory": "Food"
+        },
+        {
+            "English": "Sour",
+            "Label": "Sour",
+            "Mandarin": "酸",
+            "Pinyin": "Suān",
+            "Category": "Descriptions",
+            "Subcategory": "Food"
+        },
+        {
+            "English": "Spicy",
+            "Label": "Spicy",
+            "Mandarin": "辛辣",
+            "Pinyin": "Xīn là",
+            "Category": "Descriptions",
+            "Subcategory": "Food"
+        },
+        {
+            "English": "Steamed",
+            "Label": "Steamed",
+            "Mandarin": "蒸",
+            "Pinyin": "Zhēng",
+            "Category": "Descriptions",
+            "Subcategory": "Food"
+        },
+        {
+            "English": "Sweet",
+            "Label": "Sweet",
+            "Mandarin": "甜",
+            "Pinyin": "Tián",
+            "Category": "Descriptions",
+            "Subcategory": "Food"
+        },
+        {
+            "English": "Afraid",
+            "Label": "Afraid",
+            "Mandarin": "怕",
+            "Pinyin": "Pà",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Angry",
+            "Label": "Angry",
+            "Mandarin": "生气",
+            "Pinyin": "Shēng qì",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Big",
+            "Label": "Big",
+            "Mandarin": "大",
+            "Pinyin": "Dà",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Busy",
+            "Label": "Busy",
+            "Mandarin": "忙",
+            "Pinyin": "Mang",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Cheap",
+            "Label": "Cheap",
+            "Mandarin": "便宜",
+            "Pinyin": "Pián yí",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Cute",
+            "Label": "Cute",
+            "Mandarin": "可爱",
+            "Pinyin": "Kě'ài",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Dead",
+            "Label": "Dead",
+            "Mandarin": "死",
+            "Pinyin": "Sǐ",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Dying",
+            "Label": "Dying",
+            "Mandarin": "垂死",
+            "Pinyin": "Chuí sǐ",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Expensive",
+            "Label": "Expensive",
+            "Mandarin": "贵",
+            "Pinyin": "Guì",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Fast",
+            "Label": "Fast",
+            "Mandarin": "快速",
+            "Pinyin": "Kuài sù",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Favorite",
+            "Label": "Favorite",
+            "Mandarin": "最喜欢",
+            "Pinyin": "Zuì xǐ huān",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Full",
+            "Label": "Full",
+            "Mandarin": "饱了",
+            "Pinyin": "Băo le",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Good",
+            "Label": "Good",
+            "Mandarin": "好",
+            "Pinyin": "Hao",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Happy",
+            "Label": "Happy",
+            "Mandarin": "高兴",
+            "Pinyin": "Gāo xìng",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Happy (Formal)",
+            "Label": "Happy (Formal)",
+            "Mandarin": "快乐",
+            "Pinyin": "Kuài lè",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Hungry",
+            "Label": "Hungry",
+            "Mandarin": "饥饿",
+            "Pinyin": "Ji'e",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Not bad",
+            "Label": "Not bad",
+            "Mandarin": "不错",
+            "Pinyin": "Bù cuò",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Pretty",
+            "Label": "Pretty",
+            "Mandarin": "漂亮",
+            "Pinyin": "Piào liang",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Sad",
+            "Label": "Sad",
+            "Mandarin": "伤心",
+            "Pinyin": "Shāng xīn",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Scary",
+            "Label": "Scary",
+            "Mandarin": "可怕",
+            "Pinyin": "Kě pà",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Short",
+            "Label": "Short",
+            "Mandarin": "短",
+            "Pinyin": "Duăn",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Slow",
+            "Label": "Slow",
+            "Mandarin": "慢",
+            "Pinyin": "Màn",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Small",
+            "Label": "Small",
+            "Mandarin": "小",
+            "Pinyin": "Xiăo",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Starving",
+            "Label": "Starving",
+            "Mandarin": "饿死",
+            "Pinyin": "E'si",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Tall",
+            "Label": "Tall",
+            "Mandarin": "高",
+            "Pinyin": "Gāo",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Tired",
+            "Label": "Tired",
+            "Mandarin": "疲劳",
+            "Pinyin": "Pí láo",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Very",
+            "Label": "Very",
+            "Mandarin": "很",
+            "Pinyin": "Hěn",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Very much",
+            "Label": "Very much",
+            "Mandarin": "非常",
+            "Pinyin": "Fēi cháng",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Worried",
+            "Label": "Worried",
+            "Mandarin": "担心",
+            "Pinyin": "Dān xīn",
+            "Category": "Descriptions",
+            "Subcategory": "General"
+        }
+    ],
+    "Directions": [
+        {
+            "English": "Cardinal East",
+            "Label": "East",
+            "Mandarin": "东方",
+            "Pinyin": "Dōng fāng",
+            "Category": "Directions",
+            "Subcategory": "Cardinal"
+        },
+        {
+            "English": "Cardinal North",
+            "Label": "North",
+            "Mandarin": "北方",
+            "Pinyin": "Běi fāng",
+            "Category": "Directions",
+            "Subcategory": "Cardinal"
+        },
+        {
+            "English": "Cardinal South",
+            "Label": "South",
+            "Mandarin": "南方",
+            "Pinyin": "Nán fāng",
+            "Category": "Directions",
+            "Subcategory": "Cardinal"
+        },
+        {
+            "English": "Cardinal West",
+            "Label": "West",
+            "Mandarin": "西方",
+            "Pinyin": "Xī fāng",
+            "Category": "Directions",
+            "Subcategory": "Cardinal"
+        },
+        {
+            "English": "Behind",
+            "Label": "Behind",
+            "Mandarin": "后边",
+            "Pinyin": "Hòu bian",
+            "Category": "Directions",
+            "Subcategory": "Positional"
+        },
+        {
+            "English": "Front",
+            "Label": "Front",
+            "Mandarin": "前面",
+            "Pinyin": "Qián miàn",
+            "Category": "Directions",
+            "Subcategory": "Positional"
+        },
+        {
+            "English": "Left",
+            "Label": "Left",
+            "Mandarin": "向左",
+            "Pinyin": "Xiàng zuǒ",
+            "Category": "Directions",
+            "Subcategory": "Positional"
+        },
+        {
+            "English": "Near",
+            "Label": "Near",
+            "Mandarin": "旁边",
+            "Pinyin": "Páng biān",
+            "Category": "Directions",
+            "Subcategory": "Positional"
+        },
+        {
+            "English": "Right",
+            "Label": "Right",
+            "Mandarin": "向右",
+            "Pinyin": "Xiàng yòu",
+            "Category": "Directions",
+            "Subcategory": "Positional"
+        }
+    ],
+    "Disciplines": [
+        {
+            "English": "Chef",
+            "Label": "Chef",
+            "Mandarin": "厨师",
+            "Pinyin": "Chú shī",
+            "Category": "Disciplines",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Doctor",
+            "Label": "Doctor",
+            "Mandarin": "医生",
+            "Pinyin": "Yī shēng",
+            "Category": "Disciplines",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Engineer",
+            "Label": "Engineer",
+            "Mandarin": "工程师",
+            "Pinyin": "Gōng chéng shī",
+            "Category": "Disciplines",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Handyman",
+            "Label": "Handyman",
+            "Mandarin": "勤杂工",
+            "Pinyin": "Qín zá gōng",
+            "Category": "Disciplines",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Nurse",
+            "Label": "Nurse",
+            "Mandarin": "护士",
+            "Pinyin": "Hù shì",
+            "Category": "Disciplines",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Student",
+            "Label": "Student",
+            "Mandarin": "学生",
+            "Pinyin": "Xué shēng",
+            "Category": "Disciplines",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Teacher",
+            "Label": "Teacher",
+            "Mandarin": "老师",
+            "Pinyin": "Lăo shī",
+            "Category": "Disciplines",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Waiter",
+            "Label": "Waiter",
+            "Mandarin": "服务员",
+            "Pinyin": "Fú wù yuán",
+            "Category": "Disciplines",
+            "Subcategory": "General"
+        }
+    ],
+    "Drinks": [
+        {
+            "English": "Alcohol",
+            "Label": "Alcohol",
+            "Mandarin": "酒精",
+            "Pinyin": "Jiǔ jīng",
+            "Category": "Drinks",
+            "Subcategory": "Alcohol"
+        },
+        {
+            "English": "Beer",
+            "Label": "Beer",
+            "Mandarin": "啤酒",
+            "Pinyin": "Pí jiǔ",
+            "Category": "Drinks",
+            "Subcategory": "Alcohol"
+        },
+        {
+            "English": "Rum",
+            "Label": "Rum",
+            "Mandarin": "朗姆酒",
+            "Pinyin": "Lǎng mǔ jiǔ",
+            "Category": "Drinks",
+            "Subcategory": "Alcohol"
+        },
+        {
+            "English": "Whiskey",
+            "Label": "Whiskey",
+            "Mandarin": "威士忌酒",
+            "Pinyin": "Wēi shì jì jiǔ",
+            "Category": "Drinks",
+            "Subcategory": "Alcohol"
+        },
+        {
+            "English": "Wine",
+            "Label": "Wine",
+            "Mandarin": "葡萄酒",
+            "Pinyin": "Pú táo jiǔ",
+            "Category": "Drinks",
+            "Subcategory": "Alcohol"
+        },
+        {
+            "English": "Drink",
+            "Label": "Drink",
+            "Mandarin": "饮料",
+            "Pinyin": "Yǐn liào",
+            "Category": "Drinks",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Milk (Cow)",
+            "Label": "Cow Milk",
+            "Mandarin": "牛奶",
+            "Pinyin": "Niú nǎi",
+            "Category": "Drinks",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Milk (Oat)",
+            "Label": "Oat Milk",
+            "Mandarin": "燕麦奶",
+            "Pinyin": "Yàn mài nǎi",
+            "Category": "Drinks",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Soda",
+            "Label": "Soda",
+            "Mandarin": "苏打",
+            "Pinyin": "Sū dă",
+            "Category": "Drinks",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Tea",
+            "Label": "Tea",
+            "Mandarin": "茶",
+            "Pinyin": "Chá",
+            "Category": "Drinks",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Water",
+            "Label": "Water",
+            "Mandarin": "水",
+            "Pinyin": "Shuǐ",
+            "Category": "Drinks",
+            "Subcategory": "General"
+        }
+    ],
+    "Expressions": [
+        {
+            "English": "A little bit",
+            "Label": "A little bit",
+            "Mandarin": "一点点",
+            "Pinyin": "Yī diǎn diǎn",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Always",
+            "Label": "Always",
+            "Mandarin": "总是",
+            "Pinyin": "Zǒng shì",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Ask the question again",
+            "Label": "Ask the question again",
+            "Mandarin": "再问一次",
+            "Pinyin": "Zài wèn yí cì",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Be careful",
+            "Label": "Be careful",
+            "Mandarin": "小心",
+            "Pinyin": "Xiǎo xīn",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Be right back",
+            "Label": "Be right back",
+            "Mandarin": "马上回来",
+            "Pinyin": "Mǎ shàng huí lái",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Cheers",
+            "Label": "Cheers",
+            "Mandarin": "干杯",
+            "Pinyin": "Gān bēi",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Correct",
+            "Label": "Correct",
+            "Mandarin": "对",
+            "Pinyin": "Duì",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Do you know the way?",
+            "Label": "Do you know the way?",
+            "Mandarin": "你认识路吗",
+            "Pinyin": "Nǐ rèn shí lù ma",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Excuse me (apology)",
+            "Label": "Excuse me (apology)",
+            "Mandarin": "不好意思",
+            "Pinyin": "Bù hǎo yì si",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Excuse me (pardon)",
+            "Label": "Excuse me (pardon)",
+            "Mandarin": "打扰一下",
+            "Pinyin": "Dǎ rǎo yī xià",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Excuse me (question)",
+            "Label": "Excuse me (question)",
+            "Mandarin": "请问",
+            "Pinyin": "Qǐng wèn",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Goodbye",
+            "Label": "Goodbye",
+            "Mandarin": "再见",
+            "Pinyin": "Zài jiàn",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Hello",
+            "Label": "Hello",
+            "Mandarin": "你好",
+            "Pinyin": "Nǐ hǎo",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Help",
+            "Label": "Help",
+            "Mandarin": "帮助",
+            "Pinyin": "Bāng zhù",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "How are you?",
+            "Label": "How are you?",
+            "Mandarin": "你好吗",
+            "Pinyin": "Nǐ hǎo ma",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "How was it?",
+            "Label": "How was it?",
+            "Mandarin": "你怎么样",
+            "Pinyin": "Nǐ zěn me yàng",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "I'm back",
+            "Label": "I'm back",
+            "Mandarin": "我回来了",
+            "Pinyin": "Wǒ huì lái le",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Incorrect",
+            "Label": "Incorrect",
+            "Mandarin": "不对",
+            "Pinyin": "Bù duì",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Know",
+            "Label": "Know",
+            "Mandarin": "知道",
+            "Pinyin": "Zhī dào",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Less",
+            "Label": "Less",
+            "Mandarin": "较少",
+            "Pinyin": "Jiào shǎo",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Let's go",
+            "Label": "Let's go",
+            "Mandarin": "走起",
+            "Pinyin": "Zǒu qǐ",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Maybe",
+            "Label": "Maybe",
+            "Mandarin": "也许",
+            "Pinyin": "Yě xǔ",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "More",
+            "Label": "More",
+            "Mandarin": "更多",
+            "Pinyin": "Gèng duō",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "My name is...",
+            "Label": "My name is...",
+            "Mandarin": "我的名字是",
+            "Pinyin": "Wǒ de míng zì shì",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "My treat",
+            "Label": "My treat",
+            "Mandarin": "我请客",
+            "Pinyin": "Wǒ qǐng kè",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Nice to meet you",
+            "Label": "Nice to meet you",
+            "Mandarin": "很高认识你",
+            "Pinyin": "Hěn gāo rènshí nǐ",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "No",
+            "Label": "No",
+            "Mandarin": "不是",
+            "Pinyin": "Bù shì",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "No problem",
+            "Label": "No problem",
+            "Mandarin": "没事",
+            "Pinyin": "Méi shì",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "No worries",
+            "Label": "No worries",
+            "Mandarin": "没关系",
+            "Pinyin": "Méi guān xì",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Of course",
+            "Label": "Of course",
+            "Mandarin": "当然",
+            "Pinyin": "Dān grán",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Please",
+            "Label": "Please",
+            "Mandarin": "请",
+            "Pinyin": "Qǐng",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "See you soon",
+            "Label": "See you soon",
+            "Mandarin": "很快再见",
+            "Pinyin": "Hěn kuài zài jiàn",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Sorry",
+            "Label": "Sorry",
+            "Mandarin": "对不起",
+            "Pinyin": "Duì bù qǐ",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Thank you",
+            "Label": "Thank you",
+            "Mandarin": "谢谢",
+            "Pinyin": "Xiè xiè",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Wait a moment",
+            "Label": "Wait a moment",
+            "Mandarin": "等一会",
+            "Pinyin": "Děng yī huǐ",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "What is your name?",
+            "Label": "What is your name?",
+            "Mandarin": "你叫什么名字",
+            "Pinyin": "Nǐ jiào shén me míng zì",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Yes (Generic)",
+            "Label": "Yes (Generic)",
+            "Mandarin": "是",
+            "Pinyin": "Shì",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Yes (Have)",
+            "Label": "Yes (Have)",
+            "Mandarin": "有",
+            "Pinyin": "Yǒu",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "You're welcome",
+            "Label": "You're welcome",
+            "Mandarin": "不客气",
+            "Pinyin": "Bù kè qì",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        }
+    ],
+    "Food": [
+        {
+            "English": "Beef",
+            "Label": "Beef",
+            "Mandarin": "牛肉",
+            "Pinyin": "Niú ròu",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Bread",
+            "Label": "Bread",
+            "Mandarin": "面包",
+            "Pinyin": "Miàn bāo",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Breakfast",
+            "Label": "Breakfast",
+            "Mandarin": "早饭",
+            "Pinyin": "Zǎo fàn",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Cake",
+            "Label": "Cake",
+            "Mandarin": "蛋糕",
+            "Pinyin": "Dàn gāo",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Chicken",
+            "Label": "Chicken",
+            "Mandarin": "鸡肉",
+            "Pinyin": "Jī ròu",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Chocolate",
+            "Label": "Chocolate",
+            "Mandarin": "巧克力",
+            "Pinyin": "Qiǎo kè lì",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Crab",
+            "Label": "Crab",
+            "Mandarin": "螃蟹",
+            "Pinyin": "Páng xiè",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Dinner",
+            "Label": "Dinner",
+            "Mandarin": "晚饭",
+            "Pinyin": "Wǎn fàn",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Eggs",
+            "Label": "Eggs",
+            "Mandarin": "蛋",
+            "Pinyin": "Dàn gāo",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Fish",
+            "Label": "Fish",
+            "Mandarin": "鱼",
+            "Pinyin": "Yú",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Kimchi",
+            "Label": "Kimchi",
+            "Mandarin": "泡菜",
+            "Pinyin": "Pào cài",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Lamb",
+            "Label": "Lamb",
+            "Mandarin": "羊肉",
+            "Pinyin": "Yáng ròu",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Lunch",
+            "Label": "Lunch",
+            "Mandarin": "午饭",
+            "Pinyin": "Wǔ fàn",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Meal",
+            "Label": "Meal",
+            "Mandarin": "饭",
+            "Pinyin": "Fàn",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Meat",
+            "Label": "Meat",
+            "Mandarin": "肉",
+            "Pinyin": "Ròu",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Mushroom",
+            "Label": "Mushroom",
+            "Mandarin": "蘑菇",
+            "Pinyin": "Mó gū",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Mushroom (Enoki)",
+            "Label": "Enoki Mushrooms",
+            "Mandarin": "金针菇",
+            "Pinyin": "Jīn zhēn gū",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Noodles",
+            "Label": "Noodles",
+            "Mandarin": "面条",
+            "Pinyin": "Miàn tiáo",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Oatmeal (Cereal)",
+            "Label": "Oatmeal",
+            "Mandarin": "麦片",
+            "Pinyin": "Mài piàn",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Pepper",
+            "Label": "Pepper",
+            "Mandarin": "胡椒",
+            "Pinyin": "Hú jiāo",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Pork",
+            "Label": "Pork",
+            "Mandarin": "猪肉",
+            "Pinyin": "Zhū ròu",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Rice",
+            "Label": "Rice",
+            "Mandarin": "米饭",
+            "Pinyin": "Mǐ fàn",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Salt",
+            "Label": "Salt",
+            "Mandarin": "盐",
+            "Pinyin": "Yán",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Sausage",
+            "Label": "Sausage",
+            "Mandarin": "香肠",
+            "Pinyin": "Xiāng cháng",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Seaweed",
+            "Label": "Seaweed",
+            "Mandarin": "海藻",
+            "Pinyin": "Hǎi zǎo",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Shrimp",
+            "Label": "Shrimp",
+            "Mandarin": "虾",
+            "Pinyin": "Xiā",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Spring Rolls",
+            "Label": "Spring Rolls",
+            "Mandarin": "春卷",
+            "Pinyin": "Chūn juăn",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Squid",
+            "Label": "Squid",
+            "Mandarin": "乌贼",
+            "Pinyin": "Wū zéi",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Sugar",
+            "Label": "Sugar",
+            "Mandarin": "糖",
+            "Pinyin": "Táng",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Tofu",
+            "Label": "Tofu",
+            "Mandarin": "豆腐",
+            "Pinyin": "Dòu fu",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Tripe",
+            "Label": "Tripe",
+            "Mandarin": "肚",
+            "Pinyin": "Dù",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Vegetables",
+            "Label": "Vegetables",
+            "Mandarin": "蔬菜",
+            "Pinyin": "Shū cài",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Yogurt",
+            "Label": "Yogurt",
+            "Mandarin": "酸奶",
+            "Pinyin": "Suān nǎi",
+            "Category": "Food",
+            "Subcategory": "General"
+        }
+    ],
+    "Ideas": [
+        {
+            "English": "Dream",
+            "Label": "Dream",
+            "Mandarin": "梦",
+            "Pinyin": "Mèng",
+            "Category": "Ideas",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Everything",
+            "Label": "Everything",
+            "Mandarin": "一切",
+            "Pinyin": "Yī qiè",
+            "Category": "Ideas",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Hope",
+            "Label": "Hope",
+            "Mandarin": "希望",
+            "Pinyin": "Xī wàng",
+            "Category": "Ideas",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Hospitality",
+            "Label": "Hospitality",
+            "Mandarin": "款待",
+            "Pinyin": "Kuăn dài",
+            "Category": "Ideas",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Love",
+            "Label": "Love",
+            "Mandarin": "爱",
+            "Pinyin": "Ài",
+            "Category": "Ideas",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Marriage",
+            "Label": "Marriage",
+            "Mandarin": "婚姻",
+            "Pinyin": "Hūn yīn",
+            "Category": "Ideas",
+            "Subcategory": "General"
+        }
+    ],
+    "Locations": [
+        {
+            "English": "Bathroom (Water Closet)",
+            "Label": "Bathroom (Water Closet)",
+            "Mandarin": "厕所",
+            "Pinyin": "Cè suǒ",
+            "Category": "Locations",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Beach",
+            "Label": "Beach",
+            "Mandarin": "海滩",
+            "Pinyin": "Hǎi tān",
+            "Category": "Locations",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Forest",
+            "Label": "Forest",
+            "Mandarin": "森林",
+            "Pinyin": "Sēn lín",
+            "Category": "Locations",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Home",
+            "Label": "Home",
+            "Mandarin": "家",
+            "Pinyin": "Jiā",
+            "Category": "Locations",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Hospital",
+            "Label": "Hospital",
+            "Mandarin": "医院",
+            "Pinyin": "Yīyuàn",
+            "Category": "Locations",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Ocean",
+            "Label": "Ocean",
+            "Mandarin": "海洋",
+            "Pinyin": "Hǎiyáng",
+            "Category": "Locations",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Restaurant",
+            "Label": "Restaurant",
+            "Mandarin": "饭馆",
+            "Pinyin": "Fànguǎn",
+            "Category": "Locations",
+            "Subcategory": "General"
+        },
+        {
+            "English": "School",
+            "Label": "School",
+            "Mandarin": "学校",
+            "Pinyin": "Xuéxiào",
+            "Category": "Locations",
+            "Subcategory": "General"
+        }
+    ],
+    "Numbers": [
+        {
+            "English": "2",
+            "Label": "2",
+            "Mandarin": "两",
+            "Pinyin": "Liǎng",
+            "Category": "Numbers",
+            "Subcategory": "Counting"
+        },
+        {
+            "English": "0",
+            "Label": "0",
+            "Mandarin": "〇",
+            "Pinyin": "Líng",
+            "Category": "Numbers",
+            "Subcategory": "Date"
+        },
+        {
+            "English": "-1",
+            "Label": "-1",
+            "Mandarin": "负一",
+            "Pinyin": "Fù yī",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "0",
+            "Label": "0",
+            "Mandarin": "零",
+            "Pinyin": "Líng",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "1",
+            "Label": "1",
+            "Mandarin": "一",
+            "Pinyin": "Yī",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "2",
+            "Label": "2",
+            "Mandarin": "二",
+            "Pinyin": "Èr",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "3",
+            "Label": "3",
+            "Mandarin": "三",
+            "Pinyin": "Sān",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "4",
+            "Label": "4",
+            "Mandarin": "四",
+            "Pinyin": "Sì",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "5",
+            "Label": "5",
+            "Mandarin": "五",
+            "Pinyin": "Wǔ",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "6",
+            "Label": "6",
+            "Mandarin": "六",
+            "Pinyin": "Liù",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "7",
+            "Label": "7",
+            "Mandarin": "七",
+            "Pinyin": "Qī",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "8",
+            "Label": "8",
+            "Mandarin": "八",
+            "Pinyin": "Bā",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "9",
+            "Label": "9",
+            "Mandarin": "九",
+            "Pinyin": "Jiǔ",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "10",
+            "Label": "10",
+            "Mandarin": "十",
+            "Pinyin": "Shí",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "11",
+            "Label": "11",
+            "Mandarin": "十一",
+            "Pinyin": "Shí yī",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "20",
+            "Label": "20",
+            "Mandarin": "二十",
+            "Pinyin": "Èr shí",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "100",
+            "Label": "100",
+            "Mandarin": "一百",
+            "Pinyin": "Yī băi",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "1,000",
+            "Label": "1,000",
+            "Mandarin": "一千",
+            "Pinyin": "Yī qiān",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        },
+        {
+            "English": "10,000",
+            "Label": "10,000",
+            "Mandarin": "万",
+            "Pinyin": "Wàn",
+            "Category": "Numbers",
+            "Subcategory": "General"
+        }
+    ],
+    "Objects": [
+        {
+            "English": "Bowls",
+            "Label": "Bowls",
+            "Mandarin": "碗",
+            "Pinyin": "Wăn",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Bra",
+            "Label": "Bra",
+            "Mandarin": "胸罩",
+            "Pinyin": "Xiōng zhào",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Chopsticks",
+            "Label": "Chopsticks",
+            "Mandarin": "筷子",
+            "Pinyin": "Kuài zi",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Contact Lenses",
+            "Label": "Contact Lenses",
+            "Mandarin": "隐形眼镜",
+            "Pinyin": "Yǐn xíng yăn jìng",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Cups",
+            "Label": "Cups",
+            "Mandarin": "杯",
+            "Pinyin": "Bēi",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Forks",
+            "Label": "Forks",
+            "Mandarin": "货叉",
+            "Pinyin": "Huò chā",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Glasses",
+            "Label": "Glasses",
+            "Mandarin": "眼镜",
+            "Pinyin": "Yăn jìng",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Hat",
+            "Label": "Hat",
+            "Mandarin": "帽子",
+            "Pinyin": "Mào zi",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Knives",
+            "Label": "Knives",
+            "Mandarin": "刀",
+            "Pinyin": "Dāo",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Napkins",
+            "Label": "Napkins",
+            "Mandarin": "餐巾纸",
+            "Pinyin": "Cān jīn zhǐ",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Pans",
+            "Label": "Pans",
+            "Mandarin": "平底锅",
+            "Pinyin": "Píng dǐ guō",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Pants",
+            "Label": "Pants",
+            "Mandarin": "裤子",
+            "Pinyin": "Kù zi",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Plates",
+            "Label": "Plates",
+            "Mandarin": "盘子",
+            "Pinyin": "Pán zi",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Pots",
+            "Label": "Pots",
+            "Mandarin": "花盆",
+            "Pinyin": "Huā pén",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Shirt",
+            "Label": "Shirt",
+            "Mandarin": "衬衫",
+            "Pinyin": "Chèn shān",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Shoes",
+            "Label": "Shoes",
+            "Mandarin": "鞋",
+            "Pinyin": "Xié",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Socks",
+            "Label": "Socks",
+            "Mandarin": "袜子",
+            "Pinyin": "Wà zi",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Spoons",
+            "Label": "Spoons",
+            "Mandarin": "勺子",
+            "Pinyin": "Sháo zi",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Straws",
+            "Label": "Straws",
+            "Mandarin": "吸管",
+            "Pinyin": "Xī guǎn",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Underwear",
+            "Label": "Underwear",
+            "Mandarin": "内衣",
+            "Pinyin": "Nèi yī",
+            "Category": "Objects",
+            "Subcategory": "Clothing"
+        },
+        {
+            "English": "Bed",
+            "Label": "Bed",
+            "Mandarin": "床",
+            "Pinyin": "Chuáng",
+            "Category": "Objects",
+            "Subcategory": "Furniture"
+        },
+        {
+            "English": "Chair",
+            "Label": "Chair",
+            "Mandarin": "椅子",
+            "Pinyin": "Yǐ zi",
+            "Category": "Objects",
+            "Subcategory": "Furniture"
+        },
+        {
+            "English": "Couch / Bench",
+            "Label": "Couch / Bench",
+            "Mandarin": "长椅",
+            "Pinyin": "Cháng yǐ",
+            "Category": "Objects",
+            "Subcategory": "Furniture"
+        },
+        {
+            "English": "Table",
+            "Label": "Table",
+            "Mandarin": "桌子",
+            "Pinyin": "Zhuō zi",
+            "Category": "Objects",
+            "Subcategory": "Furniture"
+        },
+        {
+            "English": "Dollar",
+            "Label": "Dollar",
+            "Mandarin": "美元",
+            "Pinyin": "Měi yuán",
+            "Category": "Objects",
+            "Subcategory": "Misc"
+        },
+        {
+            "English": "Money",
+            "Label": "Money",
+            "Mandarin": "钱",
+            "Pinyin": "Qián miàn",
+            "Category": "Objects",
+            "Subcategory": "Misc"
+        },
+        {
+            "English": "Column / Pillar",
+            "Label": "Column / Pillar",
+            "Mandarin": "柱子",
+            "Pinyin": "Zhù zi",
+            "Category": "Objects",
+            "Subcategory": "Structure"
+        },
+        {
+            "English": "Door",
+            "Label": "Door",
+            "Mandarin": "门",
+            "Pinyin": "Mén",
+            "Category": "Objects",
+            "Subcategory": "Structure"
+        },
+        {
+            "English": "Ladder",
+            "Label": "Ladder",
+            "Mandarin": "梯子",
+            "Pinyin": "Tī zi",
+            "Category": "Objects",
+            "Subcategory": "Structure"
+        },
+        {
+            "English": "Stairs",
+            "Label": "Stairs",
+            "Mandarin": "楼梯",
+            "Pinyin": "Lóu tī",
+            "Category": "Objects",
+            "Subcategory": "Structure"
+        },
+        {
+            "English": "Window",
+            "Label": "Window",
+            "Mandarin": "窗户",
+            "Pinyin": "Chuāng hù",
+            "Category": "Objects",
+            "Subcategory": "Structure"
+        },
+        {
+            "English": "Air Conditioner",
+            "Label": "Air Conditioner",
+            "Mandarin": "冷气机",
+            "Pinyin": "Lěng qì jī",
+            "Category": "Objects",
+            "Subcategory": "Technology"
+        },
+        {
+            "English": "Camera",
+            "Label": "Camera",
+            "Mandarin": "相机",
+            "Pinyin": "Xiàng jī",
+            "Category": "Objects",
+            "Subcategory": "Technology"
+        },
+        {
+            "English": "Cellphone",
+            "Label": "Cellphone",
+            "Mandarin": "手机",
+            "Pinyin": "Shǒu jī",
+            "Category": "Objects",
+            "Subcategory": "Technology"
+        },
+        {
+            "English": "Computer",
+            "Label": "Computer",
+            "Mandarin": "电脑",
+            "Pinyin": "Diàn năo",
+            "Category": "Objects",
+            "Subcategory": "Technology"
+        },
+        {
+            "English": "Games",
+            "Label": "Games",
+            "Mandarin": "游戏",
+            "Pinyin": "Yóu xì",
+            "Category": "Objects",
+            "Subcategory": "Technology"
+        },
+        {
+            "English": "Heater",
+            "Label": "Heater",
+            "Mandarin": "加热器",
+            "Pinyin": "Jiā rè qì",
+            "Category": "Objects",
+            "Subcategory": "Technology"
+        },
+        {
+            "English": "Oven",
+            "Label": "Oven",
+            "Mandarin": "烤箱",
+            "Pinyin": "Kǎo xiāng",
+            "Category": "Objects",
+            "Subcategory": "Technology"
+        },
+        {
+            "English": "Phone",
+            "Label": "Phone",
+            "Mandarin": "电话",
+            "Pinyin": "Diàn huà",
+            "Category": "Objects",
+            "Subcategory": "Technology"
+        },
+        {
+            "English": "Refrigerator",
+            "Label": "Refrigerator",
+            "Mandarin": "冰箱",
+            "Pinyin": "Bīng xiāng",
+            "Category": "Objects",
+            "Subcategory": "Technology"
+        },
+        {
+            "English": "Toaster",
+            "Label": "Toaster",
+            "Mandarin": "烤面包机",
+            "Pinyin": "Kǎo miàn bāo jī",
+            "Category": "Objects",
+            "Subcategory": "Technology"
+        },
+        {
+            "English": "Bicycle",
+            "Label": "Bicycle",
+            "Mandarin": "自行车",
+            "Pinyin": "Zì xíng chē",
+            "Category": "Objects",
+            "Subcategory": "Vehicle"
+        },
+        {
+            "English": "Boat / Ship",
+            "Label": "Boat / Ship",
+            "Mandarin": "小船",
+            "Pinyin": "Xiǎo chuán",
+            "Category": "Objects",
+            "Subcategory": "Vehicle"
+        },
+        {
+            "English": "Bus",
+            "Label": "Bus",
+            "Mandarin": "巴士",
+            "Pinyin": "Bā shì",
+            "Category": "Objects",
+            "Subcategory": "Vehicle"
+        },
+        {
+            "English": "Cable Car",
+            "Label": "Cable Car",
+            "Mandarin": "有轨电车",
+            "Pinyin": "Yǒu guǐ diànchē",
+            "Category": "Objects",
+            "Subcategory": "Vehicle"
+        },
+        {
+            "English": "Car",
+            "Label": "Car",
+            "Mandarin": "汽车",
+            "Pinyin": "Qì chē",
+            "Category": "Objects",
+            "Subcategory": "Vehicle"
+        },
+        {
+            "English": "Motorcycle",
+            "Label": "Motorcycle",
+            "Mandarin": "摩托车",
+            "Pinyin": "Mó tuō chē",
+            "Category": "Objects",
+            "Subcategory": "Vehicle"
+        },
+        {
+            "English": "Plane / Aircraft",
+            "Label": "Plane / Aircraft",
+            "Mandarin": "飞机",
+            "Pinyin": "Fēi jī",
+            "Category": "Objects",
+            "Subcategory": "Vehicle"
+        },
+        {
+            "English": "Taxi",
+            "Label": "Taxi",
+            "Mandarin": "出租车",
+            "Pinyin": "Chūzū chē",
+            "Category": "Objects",
+            "Subcategory": "Vehicle"
+        },
+        {
+            "English": "Train",
+            "Label": "Train",
+            "Mandarin": "火车",
+            "Pinyin": "Huǒ chē",
+            "Category": "Objects",
+            "Subcategory": "Vehicle"
+        },
+        {
+            "English": "Truck",
+            "Label": "Truck",
+            "Mandarin": "卡车",
+            "Pinyin": "Kǎ chē",
+            "Category": "Objects",
+            "Subcategory": "Vehicle"
+        },
+        {
+            "English": "Vehicle",
+            "Label": "Vehicle",
+            "Mandarin": "车",
+            "Pinyin": "Chē",
+            "Category": "Objects",
+            "Subcategory": "Vehicle"
+        }
+    ],
+    "Occasions": [
+        {
+            "English": "Anniversary",
+            "Label": "Anniversary",
+            "Mandarin": "周年纪念日",
+            "Pinyin": "Zhōu nián jì niàn rì",
+            "Category": "Occasions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Birthday",
+            "Label": "Birthday",
+            "Mandarin": "生日",
+            "Pinyin": "Shēn grì",
+            "Category": "Occasions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Christmas",
+            "Label": "Christmas",
+            "Mandarin": "圣诞节",
+            "Pinyin": "Shèng dàn jié",
+            "Category": "Occasions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "New Year's",
+            "Label": "New Year's",
+            "Mandarin": "新年",
+            "Pinyin": "Xīn nián",
+            "Category": "Occasions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Valentine's Day",
+            "Label": "Valentine's Day",
+            "Mandarin": "情人节",
+            "Pinyin": "Qíng rén jié",
+            "Category": "Occasions",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Wedding",
+            "Label": "Wedding",
+            "Mandarin": "婚礼",
+            "Pinyin": "Hūn lǐ",
+            "Category": "Occasions",
+            "Subcategory": "General"
+        }
+    ],
+    "Relationships": [
+        {
+            "English": "Aunt (Dad's Older Brother's Wife)",
+            "Label": "Aunt (Dad's Older Brother's Wife)",
+            "Mandarin": "伯母",
+            "Pinyin": "Bó fǔ",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Aunt (Dad's Sister)",
+            "Label": "Aunt (Dad's Sister)",
+            "Mandarin": "姑妈",
+            "Pinyin": "Gū mā",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Aunt (Dad's Younger Brother's Wife)",
+            "Label": "Aunt (Dad's Younger Brother's Wife)",
+            "Mandarin": "婶婶",
+            "Pinyin": "Shěn shěn",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Aunt (Mom's Brother's Wife)",
+            "Label": "Aunt (Mom's Brother's Wife)",
+            "Mandarin": "舅妈",
+            "Pinyin": "Juì mā",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Aunt (Mom's Sister)",
+            "Label": "Aunt (Mom's Sister)",
+            "Mandarin": "阿姨",
+            "Pinyin": "Ā yí",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Boyfriend",
+            "Label": "Boyfriend",
+            "Mandarin": "男朋友",
+            "Pinyin": "Nán péng yǒu",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Boys",
+            "Label": "Boys",
+            "Mandarin": "男生",
+            "Pinyin": "Nán sheng",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Brother (Older)",
+            "Label": "Older Brother",
+            "Mandarin": "哥哥",
+            "Pinyin": "Gēgē",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Brother (Younger)",
+            "Label": "Younger Brother",
+            "Mandarin": "弟弟",
+            "Pinyin": "Dìdì",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Child",
+            "Label": "Child",
+            "Mandarin": "孩子",
+            "Pinyin": "Háizi",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Dad",
+            "Label": "Dad",
+            "Mandarin": "爸爸",
+            "Pinyin": "Bàba",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Daughter",
+            "Label": "Daughter",
+            "Mandarin": "女儿",
+            "Pinyin": "Nǚ'ér",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Fiancé",
+            "Label": "Fiancé",
+            "Mandarin": "未婚夫",
+            "Pinyin": "Wèi hūn fū",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Girlfriend",
+            "Label": "Girlfriend",
+            "Mandarin": "女朋友",
+            "Pinyin": "Nǚ péng yǒu",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Girls",
+            "Label": "Girls",
+            "Mandarin": "女生",
+            "Pinyin": "Nǔ sheng",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Husband",
+            "Label": "Husband",
+            "Mandarin": "丈夫",
+            "Pinyin": "Zhàng fū",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Mom",
+            "Label": "Mom",
+            "Mandarin": "妈妈",
+            "Pinyin": "Māmā",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Parents",
+            "Label": "Parents",
+            "Mandarin": "爸妈",
+            "Pinyin": "Bà mā",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Sister (Older)",
+            "Label": "Older Sister",
+            "Mandarin": "姐姐",
+            "Pinyin": "Jiě jiě",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Sister (Younger)",
+            "Label": "Younger Sister",
+            "Mandarin": "妹妹",
+            "Pinyin": "Mèi mei",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Son",
+            "Label": "Son",
+            "Mandarin": "儿子",
+            "Pinyin": "Érzi",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Uncle (Dad's Older Brother)",
+            "Label": "Uncle (Dad's Older Brother)",
+            "Mandarin": "伯父",
+            "Pinyin": "Bó fù",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Uncle (Dad's Sister's Husband)",
+            "Label": "Uncle (Dad's Sister's Husband)",
+            "Mandarin": "姑丈",
+            "Pinyin": "Gū zhàng",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Uncle (Dad's Younger Brother)",
+            "Label": "Uncle (Dad's Younger Brother)",
+            "Mandarin": "叔父",
+            "Pinyin": "Shū fu",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Uncle (Mom's Brother)",
+            "Label": "Uncle (Mom's Brother)",
+            "Mandarin": "舅舅",
+            "Pinyin": "Jiù jiu",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Uncle (Mom's Sister's Husband)",
+            "Label": "Uncle (Mom's Sister's Husband)",
+            "Mandarin": "姨丈",
+            "Pinyin": "Yí zhàng",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Wife",
+            "Label": "Wife",
+            "Mandarin": "妻子",
+            "Pinyin": "Qī zi",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        }
+    ],
+    "Time": [
+        {
+            "English": "After",
+            "Label": "After",
+            "Mandarin": "后",
+            "Pinyin": "Hòu",
+            "Category": "Time",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Afternoon",
+            "Label": "Afternoon",
+            "Mandarin": "下午",
+            "Pinyin": "Xiàwǔ",
+            "Category": "Time",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Before",
+            "Label": "Before",
+            "Mandarin": "前",
+            "Pinyin": "Qián",
+            "Category": "Time",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Early",
+            "Label": "Early",
+            "Mandarin": "早",
+            "Pinyin": "Zǎo",
+            "Category": "Time",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Evening / Night",
+            "Label": "Evening / Night",
+            "Mandarin": "晚上",
+            "Pinyin": "Wǎn shàng",
+            "Category": "Time",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Hour",
+            "Label": "Hour",
+            "Mandarin": "小时",
+            "Pinyin": "Xiǎo shí",
+            "Category": "Time",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Late",
+            "Label": "Late",
+            "Mandarin": "晚",
+            "Pinyin": "Wǎn",
+            "Category": "Time",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Midnight",
+            "Label": "Midnight",
+            "Mandarin": "半夜",
+            "Pinyin": "Bàn yè",
+            "Category": "Time",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Minute",
+            "Label": "Minute",
+            "Mandarin": "分",
+            "Pinyin": "Fēn",
+            "Category": "Time",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Morning",
+            "Label": "Morning",
+            "Mandarin": "早上",
+            "Pinyin": "Zǎo shang",
+            "Category": "Time",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Morning (Late)",
+            "Label": "Late Morning",
+            "Mandarin": "上午",
+            "Pinyin": "Shàngwǔ",
+            "Category": "Time",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Noon",
+            "Label": "Noon",
+            "Mandarin": "中午",
+            "Pinyin": "Zhōng wǔ",
+            "Category": "Time",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Now",
+            "Label": "Now",
+            "Mandarin": "现在",
+            "Pinyin": "Xiàn zài",
+            "Category": "Time",
+            "Subcategory": "General"
+        },
+        {
+            "English": "O'clock",
+            "Label": "O'clock",
+            "Mandarin": "点钟",
+            "Pinyin": "Diǎn zhōng",
+            "Category": "Time",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Second",
+            "Label": "Second",
+            "Mandarin": "秒",
+            "Pinyin": "Miǎo",
+            "Category": "Time",
+            "Subcategory": "General"
+        }
+    ],
+    "Verbs": [
+        {
+            "English": "Cooking",
+            "Label": "Cooking",
+            "Mandarin": "烹饪",
+            "Pinyin": "Pēng rèn",
+            "Category": "Verbs",
+            "Subcategory": "Activities"
+        },
+        {
+            "English": "Dancing",
+            "Label": "Dancing",
+            "Mandarin": "跳舞",
+            "Pinyin": "Tiào wǔ",
+            "Category": "Verbs",
+            "Subcategory": "Activities"
+        },
+        {
+            "English": "Drinking",
+            "Label": "Drinking",
+            "Mandarin": "喝",
+            "Pinyin": "Hēi sè",
+            "Category": "Verbs",
+            "Subcategory": "Activities"
+        },
+        {
+            "English": "Eating",
+            "Label": "Eating",
+            "Mandarin": "吃",
+            "Pinyin": "Chī",
+            "Category": "Verbs",
+            "Subcategory": "Activities"
+        },
+        {
+            "English": "Exercising",
+            "Label": "Exercising",
+            "Mandarin": "锻炼",
+            "Pinyin": "Duàn liàn",
+            "Category": "Verbs",
+            "Subcategory": "Activities"
+        },
+        {
+            "English": "Hiking",
+            "Label": "Hiking",
+            "Mandarin": "远足",
+            "Pinyin": "Yuǎn zú",
+            "Category": "Verbs",
+            "Subcategory": "Activities"
+        },
+        {
+            "English": "Learning",
+            "Label": "Learning",
+            "Mandarin": "在学",
+            "Pinyin": "Zài xué",
+            "Category": "Verbs",
+            "Subcategory": "Activities"
+        },
+        {
+            "English": "Photography",
+            "Label": "Photography",
+            "Mandarin": "摄影",
+            "Pinyin": "Shè yǐng",
+            "Category": "Verbs",
+            "Subcategory": "Activities"
+        },
+        {
+            "English": "Relaxing",
+            "Label": "Relaxing",
+            "Mandarin": "放松",
+            "Pinyin": "Fàng sōng",
+            "Category": "Verbs",
+            "Subcategory": "Activities"
+        },
+        {
+            "English": "Running",
+            "Label": "Running",
+            "Mandarin": "运行",
+            "Pinyin": "Yùn xíng",
+            "Category": "Verbs",
+            "Subcategory": "Activities"
+        },
+        {
+            "English": "Shopping",
+            "Label": "Shopping",
+            "Mandarin": "购物",
+            "Pinyin": "Gòu wù",
+            "Category": "Verbs",
+            "Subcategory": "Activities"
+        },
+        {
+            "English": "Sleeping",
+            "Label": "Sleeping",
+            "Mandarin": "睡眠",
+            "Pinyin": "Shuì mián",
+            "Category": "Verbs",
+            "Subcategory": "Activities"
+        },
+        {
+            "English": "Speaking",
+            "Label": "Speaking",
+            "Mandarin": "说话",
+            "Pinyin": "Shuō huà",
+            "Category": "Verbs",
+            "Subcategory": "Activities"
+        },
+        {
+            "English": "Studying",
+            "Label": "Studying",
+            "Mandarin": "学习",
+            "Pinyin": "Xué xí",
+            "Category": "Verbs",
+            "Subcategory": "Activities"
+        },
+        {
+            "English": "Go to",
+            "Label": "Go to",
+            "Mandarin": "去",
+            "Pinyin": "Qù",
+            "Category": "Verbs",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Like",
+            "Label": "Like",
+            "Mandarin": "喜欢",
+            "Pinyin": "Xǐ huān",
+            "Category": "Verbs",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Traveling",
+            "Label": "Traveling",
+            "Mandarin": "旅行",
+            "Pinyin": "Lǚ xíng",
+            "Category": "Verbs",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Want To / Going To",
+            "Label": "Want To / Going To",
+            "Mandarin": "要",
+            "Pinyin": "Yào",
+            "Category": "Verbs",
+            "Subcategory": "General"
+        },
+        {
+            "English": "Would Like To / Miss Doing",
+            "Label": "Would Like To / Miss Doing",
+            "Mandarin": "想",
+            "Pinyin": "Xiǎng",
+            "Category": "Verbs",
+            "Subcategory": "General"
+        }
+    ]
+}
