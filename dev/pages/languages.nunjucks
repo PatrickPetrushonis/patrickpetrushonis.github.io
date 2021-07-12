@@ -7,11 +7,10 @@
 
   <div class="content" style="padding-top:100px;">
   	<h1>Language Practice</h1>
-    <a id="language-toggle" data-english="true" class="button center wide" href="javascript:void(0)">English (to Mandarin)</a>
-  	<h2 id="language-phrase" class="center" style="min-height:48px;font-weight:400;">China</h2>
+    <a id="language-toggle" class="button center wide" href="javascript:void(0)">English</a>
+  	<h2 id="language-phrase" class="center" style="min-height:48px;font-weight:400;"></h2>
   	<p id="language-helper" class="center" style="min-height:24px;"></p>
     <a id="language-next" data-english="true" class="button center wide" href="javascript:void(0)">Next Phrase</a>
-
   </div>
 
 {% endblock %}

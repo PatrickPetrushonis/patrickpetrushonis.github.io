@@ -1,67 +1,83 @@
-// TODO: Make this call more reliable; should occur before j$(document).ready() callback
-var mandarinData = jQuery.getJSON("../app/data/mandarin.json");
-var selectedPhrase = {};
+// Globally stored language object
+var language;
 
-// 
-function GetRandomPhrase() {
-    var possiblePhrases = [];
-
-    for (var x = 0; x < mandarinData.responseJSON["Expressions"].length; x++) {
-        possiblePhrases.push(mandarinData.responseJSON["Expressions"][x]);
-    }
-
-    if (possiblePhrases.length > 0) {
-        var phraseIndex = Math.floor(Math.random() * possiblePhrases.length);
-        selectedPhrase = possiblePhrases[phraseIndex];
-    
-        var languageToggle = document.getElementById("language-toggle");
-        var isEnglish = (languageToggle.getAttribute("data-english") == "true") ? true : false;
-        ConvertLanguage(isEnglish);
-
-        var phraseId = "language-phrase";
-        var helperId = "language-helper";
-    
-        var languagePhrase = document.getElementById(phraseId);
-        var languageHelper = document.getElementById(helperId);
-
-        languagePhrase.text = isEnglish ? selectedPhrase.Label : selectedPhrase.Mandarin;
-        languageHelper.text = isEnglish ? "" : selectedPhrase.Pinyin;
-    
-        $("#" + phraseId).text(languagePhrase.text);
-        $("#" + helperId).text(languageHelper.text);
-    }
-}
-
-// Convert current phrase to opposing language
-function ConvertLanguage(isEnglish) {
-    var phraseId = "language-phrase";
-    var helperId = "language-helper";
-
-    var languagePhrase = document.getElementById(phraseId);
-    var languageHelper = document.getElementById(helperId);
-
-    languagePhrase.text = isEnglish ? selectedPhrase.Label : selectedPhrase.Mandarin;
-    languageHelper.text = isEnglish ? "" : selectedPhrase.Pinyin;
-
-    $("#" + phraseId).text(languagePhrase.text);
-    $("#" + helperId).text(languageHelper.text);
-}
+$(document).ready(function() { 
+    // Initialize language object on page load
+    language = new languageObj();
+    language.init();
+});
 
 $('#language-toggle').click(function() {
-    var isEnglish = (this.getAttribute("data-english") == "true") ? true : false;
-    isEnglish = !isEnglish;
-
-    this.setAttribute("data-english", isEnglish);
-    this.text = isEnglish ? "English (to Mandarin)" : "Mandarin (to English)";
-
-    ConvertLanguage(isEnglish)
+    if (language != undefined) { language.toggleEnglish(); }
 });
 
 $('#language-next').click(function() {   
-    GetRandomPhrase();
+    if (language != undefined) {  language.getRandomPhrase(); }
 });
 
-$(document).ready(function() { 
-    // TODO: Make this call more reliable; should occur after jQuery.getJSON() call
-    GetRandomPhrase();
-});
+function languageObj() {
+    this.languageData = {},
+    this.phrases = [],
+    this.phraseCurrent = {},
+    this.phraseCategory = "Expressions",
+    this.phraseId = "language-phrase",
+    this.helperId = "language-helper",
+    this.toggleId = "language-toggle",
+    this.languagePhrase = {},
+    this.languageHelper = {},
+    this.languageToggle = {},
+    this.isEnglish = true,
+    /** 
+     * Retrieve language data from specified json file
+     */
+    this.init = function() {
+        var self = this;
+        
+        self.languagePhrase = document.getElementById(self.phraseId);
+        self.languageHelper = document.getElementById(self.helperId);
+        self.languageToggle = document.getElementById(self.toggleId);
+        
+        jQuery.getJSON("../app/data/mandarin.json", function(data) {            
+            self.languageData = data;
+            self.getRandomPhrase()
+        });
+    }, 
+    /** 
+     * Retrieve random phrase from language data
+     */
+    this.getRandomPhrase = function() {
+        var self = this;
+        self.phrases = [];
+    
+        for (var x = 0; x < self.languageData[self.phraseCategory].length; x++) {
+            self.phrases.push(self.languageData[self.phraseCategory][x]);
+        }
+    
+        if (self.phrases.length > 0) {
+            var phraseIndex = Math.floor(Math.random() * self.phrases.length);
+            self.phraseCurrent = self.phrases[phraseIndex];
+            self.convertLanguage();
+        }
+    },
+    /** 
+     * Convert current phrase to current language (english or non-english)
+     */
+    this.convertLanguage = function() {  
+        var self = this;
+
+        self.languagePhrase.text = self.isEnglish ? self.phraseCurrent.Label : self.phraseCurrent.Mandarin;
+        self.languageHelper.text = self.isEnglish ? "" : self.phraseCurrent.Pinyin;
+    
+        $("#" + self.phraseId).text(self.languagePhrase.text);
+        $("#" + self.helperId).text(self.languageHelper.text);
+    },
+    /** 
+     * Changes language from english to non-english (and vice-versa)
+     */
+    this.toggleEnglish = function() {
+        var self = this;
+        self.isEnglish = !self.isEnglish;
+        self.languageToggle.text = self.isEnglish ? "English" : "Mandarin";
+        self.convertLanguage();
+    }
+}
