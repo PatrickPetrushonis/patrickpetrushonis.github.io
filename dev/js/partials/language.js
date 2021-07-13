@@ -1,24 +1,22 @@
-// Globally stored language object
-var language;
-
 $(document).ready(function() { 
     // Initialize language object on page load
-    language = new languageObj();
+    var language = new languageObj();
     language.init();
-});
 
-$('#language-toggle').click(function() {
-    if (language != undefined) { language.toggleEnglish(); }
-});
+    $('#language-toggle').on("click", function() {
+        language.toggleEnglish();
+    });
 
-$('#language-next').click(function() {   
-    if (language != undefined) {  language.getRandomPhrase(); }
+    $('#language-next').on("click", function() {
+        language.getRandomPhrase();
+    });
 });
 
 function languageObj() {
     this.languageData = {},
     this.phrases = [],
     this.phraseCurrent = {},
+    this.phraseCategories = [],
     this.phraseCategory = "Expressions",
     this.phraseId = "language-phrase",
     this.helperId = "language-helper",
@@ -48,10 +46,16 @@ function languageObj() {
     this.getRandomPhrase = function() {
         var self = this;
         self.phrases = [];
-    
-        for (var x = 0; x < self.languageData[self.phraseCategory].length; x++) {
-            self.phrases.push(self.languageData[self.phraseCategory][x]);
+
+        for (var key in self.languageData) {
+            self.phraseCategories.push(key);
         }
+        
+        self.phraseCategories.forEach(function(category) {            
+            self.languageData[category].forEach(function(phrase) {
+                self.phrases.push(phrase);
+            });
+        });
     
         if (self.phrases.length > 0) {
             var phraseIndex = Math.floor(Math.random() * self.phrases.length);
@@ -77,7 +81,7 @@ function languageObj() {
     this.toggleEnglish = function() {
         var self = this;
         self.isEnglish = !self.isEnglish;
-        self.languageToggle.text = self.isEnglish ? "English" : "Mandarin";
+        //self.languageToggle.text = self.isEnglish ? "English" : "Mandarin";
         self.convertLanguage();
     }
 }
