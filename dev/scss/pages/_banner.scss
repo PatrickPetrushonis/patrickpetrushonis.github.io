@@ -18,6 +18,7 @@
 .banner__image--code { @include banner('code', center left); }
 .banner__image--coffee { @include banner('coffee', center); }
 .banner__image--nature { @include banner('nature', center); }
+.banner__image--space { @include banner('space', center); }
 
 .banner__trianglify-canvas {
   position: absolute;

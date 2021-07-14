@@ -35,6 +35,12 @@ function languageObj() {
         self.languagePhrase = document.getElementById(self.phraseId);
         self.languageHelper = document.getElementById(self.helperId);
         self.languageToggle = document.getElementById(self.toggleId);
+
+        if (self.languagePhrase == undefined || 
+            self.languageHelper == undefined || 
+            self.languageToggle == undefined) { 
+            return; 
+        }
         
         jQuery.getJSON("../app/data/mandarin.json", function(data) {            
             self.languageData = data;            
