@@ -94,8 +94,8 @@ function languageObj() {
         if (self.phraseIndex < 0) { return; }
         var phrase = self.phrases[self.phraseIndex];
 
-        self.languagePhrase.text = self.isEnglish ? phrase.Label : phrase.Mandarin;
-        self.languageHelper.text = self.isEnglish ? "" : phrase.Pinyin;
+        self.languagePhrase.text = self.isEnglish ? phrase.English : phrase.Mandarin;
+        self.languageHelper.text = self.isEnglish ? phrase.Helper : phrase.Pinyin;
     
         $("#" + self.phraseId).text(self.languagePhrase.text);
         $("#" + self.helperId).text(self.languageHelper.text);
