@@ -47,6 +47,7 @@
   },
   "false": {},
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "seedrandom": "^3.0.5"
   }
 }

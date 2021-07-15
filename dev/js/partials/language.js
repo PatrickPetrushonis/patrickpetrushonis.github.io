@@ -26,6 +26,7 @@ function languageObj() {
     this.languageHelper = {},
     this.languageToggle = {},
     this.isEnglish = true,
+    this.randomSeed = 0,
     /** 
      * Retrieve language data from specified json file
      */
@@ -59,20 +60,21 @@ function languageObj() {
                 });
             });
 
-            self.phrases = self.shuffleArray(self.phrases);
+            self.randomSeed = Math.random();
+            self.phrases = self.shuffleArray(self.phrases, new Math.seedrandom(self.randomSeed));
             self.getNextPhrase();
         });
     },
     /** 
      * Fisher-Yates (aka Knuth) Shuffle
      */
-    this.shuffleArray = function(array) {
+    this.shuffleArray = function(array, seed) {
         var currentIndex = array.length;
         var randomIndex; 
         var temp;
 
         while (--currentIndex > 0){
-            randomIndex = Math.floor(Math.random()*(currentIndex + 1));
+            randomIndex = Math.floor(seed() * (currentIndex + 1));
             temp = array[randomIndex];
             array[randomIndex] = array[currentIndex];
             array[currentIndex] = temp;
