@@ -4,6 +4,7 @@
 // =require ../node_modules/seedrandom/seedrandom.min.js
 
 // Custom JavaScript partials
+// =require partials/cookies.js
 // =require partials/footer.js
 // =require partials/header.js
 // =require partials/scroll.js

@@ -60,10 +60,33 @@ function languageObj() {
                 });
             });
 
-            self.randomSeed = Math.random();
+            // Retrieve most recent shuffle seed from cookie
+            var seed = self.getCookie('lang-seed');
+            self.randomSeed = (seed) ? seed : Math.random();
+            self.setCookie('lang-seed', self.randomSeed);
+
+            // Shuffle phrases with random seed
             self.phrases = self.shuffleArray(self.phrases, new Math.seedrandom(self.randomSeed));
-            self.getNextPhrase();
+            
+            // Retrieve most recent phrase index from cookie
+            var phrase = self.getCookie('lang-phrase');
+
+            // Update text with current phrase
+            if (phrase) {
+                self.phraseIndex = parseInt(phrase);
+                self.updatePhrase();
+            }
+            else {
+                self.getNextPhrase();
+            }
         });
+    },
+    this.setCookie = function(key, value) {
+        var cookieDuration = 60 * 60 * 24 * 7;
+        docCookies.setItem(key, value, cookieDuration, '/');
+    },
+    this.getCookie = function(key) {
+        return docCookies.getItem(key);
     },
     /** 
      * Fisher-Yates (aka Knuth) Shuffle
@@ -100,6 +123,7 @@ function languageObj() {
         var self = this;
 
         if (self.phraseIndex < 0) { return; }
+        self.setCookie('lang-phrase', self.phraseIndex);
         var phrase = self.phrases[self.phraseIndex];
 
         self.languagePhrase.text = self.isEnglish ? phrase.English : phrase.Mandarin;
