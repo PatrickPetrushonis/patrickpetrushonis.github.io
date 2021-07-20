@@ -47,7 +47,7 @@
   },
   "false": {},
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "pdfjs": "^2.4.4",
     "seedrandom": "^3.0.5"
   }
