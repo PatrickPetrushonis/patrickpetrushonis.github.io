@@ -578,92 +578,11 @@
             "Subcategory": "Day"
         },
         {
-            "ID": "Month",
-            "English": "Month",
-            "Helper": "",
-            "Mandarin": "月",
-            "Pinyin": "Yuè",
-            "Category": "Date",
-            "Subcategory": "Month"
-        },
-        {
-            "ID": "Month (Last)",
-            "English": "Last Month",
-            "Helper": "",
-            "Mandarin": "上个月",
-            "Pinyin": "Shàng gè yuè",
-            "Category": "Date",
-            "Subcategory": "Month"
-        },
-        {
-            "ID": "Month (Next)",
-            "English": "Next Month",
-            "Helper": "",
-            "Mandarin": "下个月",
-            "Pinyin": "Xià gè yuè",
-            "Category": "Date",
-            "Subcategory": "Month"
-        },
-        {
-            "ID": "Month Date 01 (January)",
-            "English": "January",
-            "Helper": "",
-            "Mandarin": "一 月",
-            "Pinyin": "Yī yuè",
-            "Category": "Date",
-            "Subcategory": "Month"
-        },
-        {
-            "ID": "Month Date 02 (February)",
-            "English": "February",
-            "Helper": "",
-            "Mandarin": "二 月",
-            "Pinyin": "Èr yuè",
-            "Category": "Date",
-            "Subcategory": "Month"
-        },
-        {
-            "ID": "Month Date 03 (March)",
-            "English": "March",
-            "Helper": "",
-            "Mandarin": "三 月",
-            "Pinyin": "Sān yuè",
-            "Category": "Date",
-            "Subcategory": "Month"
-        },
-        {
             "ID": "Month Date 04 (April)",
             "English": "April",
             "Helper": "",
             "Mandarin": "四 月",
             "Pinyin": "Sì yuè",
-            "Category": "Date",
-            "Subcategory": "Month"
-        },
-        {
-            "ID": "Month Date 05 (May)",
-            "English": "May",
-            "Helper": "",
-            "Mandarin": "五 月",
-            "Pinyin": "Wǔ yuè",
-            "Category": "Date",
-            "Subcategory": "Month"
-        },
-        {
-            "ID": "Month Date 06 (June)",
-            "English": "June",
-            "Helper": "",
-            "Mandarin": "六 月",
-            "Pinyin": "Liù yuè",
-            "Category": "Date",
-            "Subcategory": "Month"
-        },
-        {
-            "ID": "Month Date 07 (July)",
-            "English": "July",
-            "Helper": "",
-            "Mandarin": "七 月",
-            "Pinyin": "Qī yuè",
             "Category": "Date",
             "Subcategory": "Month"
         },
@@ -677,20 +596,92 @@
             "Subcategory": "Month"
         },
         {
-            "ID": "Month Date 09 (September)",
-            "English": "September",
+            "ID": "Month Date 12 (December)",
+            "English": "December",
             "Helper": "",
-            "Mandarin": "九 月",
-            "Pinyin": "Jiǔ yuè",
+            "Mandarin": "十二 月",
+            "Pinyin": "Shí'èr yuè",
             "Category": "Date",
             "Subcategory": "Month"
         },
         {
-            "ID": "Month Date 10 (October)",
-            "English": "October",
+            "ID": "Month Date 02 (February)",
+            "English": "February",
             "Helper": "",
-            "Mandarin": "十 月",
-            "Pinyin": "Shí yuè",
+            "Mandarin": "二 月",
+            "Pinyin": "Èr yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "ID": "Month Date 01 (January)",
+            "English": "January",
+            "Helper": "",
+            "Mandarin": "一 月",
+            "Pinyin": "Yī yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "ID": "Month Date 07 (July)",
+            "English": "July",
+            "Helper": "",
+            "Mandarin": "七 月",
+            "Pinyin": "Qī yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "ID": "Month Date 06 (June)",
+            "English": "June",
+            "Helper": "",
+            "Mandarin": "六 月",
+            "Pinyin": "Liù yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "ID": "Month (Last)",
+            "English": "Last Month",
+            "Helper": "",
+            "Mandarin": "上个月",
+            "Pinyin": "Shàng gè yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "ID": "Month Date 03 (March)",
+            "English": "March",
+            "Helper": "",
+            "Mandarin": "三 月",
+            "Pinyin": "Sān yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "ID": "Month Date 05 (May)",
+            "English": "May",
+            "Helper": "",
+            "Mandarin": "五 月",
+            "Pinyin": "Wǔ yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "ID": "Month",
+            "English": "Month",
+            "Helper": "",
+            "Mandarin": "月",
+            "Pinyin": "Yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "ID": "Month (Next)",
+            "English": "Next Month",
+            "Helper": "",
+            "Mandarin": "下个月",
+            "Pinyin": "Xià gè yuè",
             "Category": "Date",
             "Subcategory": "Month"
         },
@@ -704,20 +695,29 @@
             "Subcategory": "Month"
         },
         {
-            "ID": "Month Date 12 (December)",
-            "English": "December",
+            "ID": "Month Date 10 (October)",
+            "English": "October",
             "Helper": "",
-            "Mandarin": "十二 月",
-            "Pinyin": "Shí'èr yuè",
+            "Mandarin": "十 月",
+            "Pinyin": "Shí yuè",
             "Category": "Date",
             "Subcategory": "Month"
         },
         {
-            "ID": "Week",
-            "English": "Week",
+            "ID": "Month Date 09 (September)",
+            "English": "September",
             "Helper": "",
-            "Mandarin": "星期",
-            "Pinyin": "Xīng qí",
+            "Mandarin": "九 月",
+            "Pinyin": "Jiǔ yuè",
+            "Category": "Date",
+            "Subcategory": "Month"
+        },
+        {
+            "ID": "Weekday 5 (Friday)",
+            "English": "Friday",
+            "Helper": "",
+            "Mandarin": "星期五",
+            "Pinyin": "Xīng qí wǔ",
             "Category": "Date",
             "Subcategory": "Week"
         },
@@ -727,42 +727,6 @@
             "Helper": "",
             "Mandarin": "星期一",
             "Pinyin": "Xīng qí yī",
-            "Category": "Date",
-            "Subcategory": "Week"
-        },
-        {
-            "ID": "Weekday 2 (Tuesday)",
-            "English": "Tuesday",
-            "Helper": "",
-            "Mandarin": "星期二",
-            "Pinyin": "Xīng qí'èr",
-            "Category": "Date",
-            "Subcategory": "Week"
-        },
-        {
-            "ID": "Weekday 3 (Wednesday)",
-            "English": "Wednesday",
-            "Helper": "",
-            "Mandarin": "星期三",
-            "Pinyin": "Xīng qí sān",
-            "Category": "Date",
-            "Subcategory": "Week"
-        },
-        {
-            "ID": "Weekday 4 (Thursday)",
-            "English": "Thursday",
-            "Helper": "",
-            "Mandarin": "星期四",
-            "Pinyin": "Xīng qí sì",
-            "Category": "Date",
-            "Subcategory": "Week"
-        },
-        {
-            "ID": "Weekday 5 (Friday)",
-            "English": "Friday",
-            "Helper": "",
-            "Mandarin": "星期五",
-            "Pinyin": "Xīng qí wǔ",
             "Category": "Date",
             "Subcategory": "Week"
         },
@@ -785,13 +749,40 @@
             "Subcategory": "Week"
         },
         {
-            "ID": "Year",
-            "English": "Year",
+            "ID": "Weekday 4 (Thursday)",
+            "English": "Thursday",
             "Helper": "",
-            "Mandarin": "年",
-            "Pinyin": "Nián",
+            "Mandarin": "星期四",
+            "Pinyin": "Xīng qí sì",
             "Category": "Date",
-            "Subcategory": "Year"
+            "Subcategory": "Week"
+        },
+        {
+            "ID": "Weekday 2 (Tuesday)",
+            "English": "Tuesday",
+            "Helper": "",
+            "Mandarin": "星期二",
+            "Pinyin": "Xīng qí'èr",
+            "Category": "Date",
+            "Subcategory": "Week"
+        },
+        {
+            "ID": "Weekday 3 (Wednesday)",
+            "English": "Wednesday",
+            "Helper": "",
+            "Mandarin": "星期三",
+            "Pinyin": "Xīng qí sān",
+            "Category": "Date",
+            "Subcategory": "Week"
+        },
+        {
+            "ID": "Week",
+            "English": "Week",
+            "Helper": "",
+            "Mandarin": "星期",
+            "Pinyin": "Xīng qí",
+            "Category": "Date",
+            "Subcategory": "Week"
         },
         {
             "ID": "Year (Last)",
@@ -808,6 +799,15 @@
             "Helper": "",
             "Mandarin": "明年",
             "Pinyin": "Míng nián",
+            "Category": "Date",
+            "Subcategory": "Year"
+        },
+        {
+            "ID": "Year",
+            "English": "Year",
+            "Helper": "",
+            "Mandarin": "年",
+            "Pinyin": "Nián",
             "Category": "Date",
             "Subcategory": "Year"
         }
@@ -1387,20 +1387,20 @@
             "Subcategory": "Alcohol"
         },
         {
-            "ID": "Drink",
-            "English": "Drink",
-            "Helper": "",
-            "Mandarin": "饮料",
-            "Pinyin": "Yǐn liào",
-            "Category": "Drinks",
-            "Subcategory": "General"
-        },
-        {
             "ID": "Milk (Cow)",
             "English": "Cow Milk",
             "Helper": "",
             "Mandarin": "牛奶",
             "Pinyin": "Niú nǎi",
+            "Category": "Drinks",
+            "Subcategory": "General"
+        },
+        {
+            "ID": "Drink",
+            "English": "Drink",
+            "Helper": "",
+            "Mandarin": "饮料",
+            "Pinyin": "Yǐn liào",
             "Category": "Drinks",
             "Subcategory": "General"
         },
@@ -1484,6 +1484,15 @@
             "Helper": "",
             "Mandarin": "马上回来",
             "Pinyin": "Mǎ shàng huí lái",
+            "Category": "Expressions",
+            "Subcategory": "General"
+        },
+        {
+            "ID": "Can I use it?",
+            "English": "Can I use it?",
+            "Helper": "",
+            "Mandarin": "我可以用吗",
+            "Pinyin": "Wǒ kě yǐ yòng ma",
             "Category": "Expressions",
             "Subcategory": "General"
         },
@@ -1888,6 +1897,15 @@
             "Subcategory": "General"
         },
         {
+            "ID": "Mushroom (Enoki)",
+            "English": "Enoki Mushrooms",
+            "Helper": "",
+            "Mandarin": "金针菇",
+            "Pinyin": "Jīn zhēn gū",
+            "Category": "Food",
+            "Subcategory": "General"
+        },
+        {
             "ID": "Fish",
             "English": "Fish",
             "Helper": "",
@@ -1947,15 +1965,6 @@
             "Helper": "",
             "Mandarin": "蘑菇",
             "Pinyin": "Mó gū",
-            "Category": "Food",
-            "Subcategory": "General"
-        },
-        {
-            "ID": "Mushroom (Enoki)",
-            "English": "Enoki Mushrooms",
-            "Helper": "",
-            "Mandarin": "金针菇",
-            "Pinyin": "Jīn zhēn gū",
             "Category": "Food",
             "Subcategory": "General"
         },
@@ -2171,6 +2180,24 @@
             "Subcategory": "General"
         },
         {
+            "ID": "Bathroom (Restroom)",
+            "English": "Bathroom",
+            "Helper": "Restroom",
+            "Mandarin": "卫生间",
+            "Pinyin": "Wèi shēng jiān",
+            "Category": "Locations",
+            "Subcategory": "General"
+        },
+        {
+            "ID": "Bathroom (Toilet)",
+            "English": "Bathroom",
+            "Helper": "Toilet",
+            "Mandarin": "洗手间",
+            "Pinyin": "Xǐ shǒu jiān",
+            "Category": "Locations",
+            "Subcategory": "General"
+        },
+        {
             "ID": "Beach",
             "English": "Beach",
             "Helper": "",
@@ -2211,7 +2238,7 @@
             "English": "Ocean",
             "Helper": "",
             "Mandarin": "海洋",
-            "Pinyin": "Hǎiyáng",
+            "Pinyin": "Hǎi yáng",
             "Category": "Locations",
             "Subcategory": "General"
         },
@@ -2230,6 +2257,15 @@
             "Helper": "",
             "Mandarin": "学校",
             "Pinyin": "Xuéxiào",
+            "Category": "Locations",
+            "Subcategory": "General"
+        },
+        {
+            "ID": "Sea",
+            "English": "Sea",
+            "Helper": "",
+            "Mandarin": "海",
+            "Pinyin": "Hǎi",
             "Category": "Locations",
             "Subcategory": "General"
         }
@@ -2809,7 +2845,7 @@
             "English": "Cable Car",
             "Helper": "",
             "Mandarin": "有轨电车",
-            "Pinyin": "Yǒu guǐ diànchē",
+            "Pinyin": "Yǒu guǐ diàn chē",
             "Category": "Objects",
             "Subcategory": "Vehicle"
         },
@@ -2998,29 +3034,11 @@
             "Subcategory": "General"
         },
         {
-            "ID": "Brother (Older)",
-            "English": "Older Brother",
-            "Helper": "",
-            "Mandarin": "哥哥",
-            "Pinyin": "Gēgē",
-            "Category": "Relationships",
-            "Subcategory": "General"
-        },
-        {
-            "ID": "Brother (Younger)",
-            "English": "Younger Brother",
-            "Helper": "",
-            "Mandarin": "弟弟",
-            "Pinyin": "Dìdì",
-            "Category": "Relationships",
-            "Subcategory": "General"
-        },
-        {
             "ID": "Child",
             "English": "Child",
             "Helper": "",
             "Mandarin": "孩子",
-            "Pinyin": "Háizi",
+            "Pinyin": "Hái zi",
             "Category": "Relationships",
             "Subcategory": "General"
         },
@@ -3029,7 +3047,7 @@
             "English": "Dad",
             "Helper": "",
             "Mandarin": "爸爸",
-            "Pinyin": "Bàba",
+            "Pinyin": "Bà ba",
             "Category": "Relationships",
             "Subcategory": "General"
         },
@@ -3083,16 +3101,16 @@
             "English": "Mom",
             "Helper": "",
             "Mandarin": "妈妈",
-            "Pinyin": "Māmā",
+            "Pinyin": "Mā mā",
             "Category": "Relationships",
             "Subcategory": "General"
         },
         {
-            "ID": "Parents",
-            "English": "Parents",
+            "ID": "Brother (Older)",
+            "English": "Older Brother",
             "Helper": "",
-            "Mandarin": "爸妈",
-            "Pinyin": "Bà mā",
+            "Mandarin": "哥哥",
+            "Pinyin": "Gē gē",
             "Category": "Relationships",
             "Subcategory": "General"
         },
@@ -3106,11 +3124,11 @@
             "Subcategory": "General"
         },
         {
-            "ID": "Sister (Younger)",
-            "English": "Younger Sister",
+            "ID": "Parents",
+            "English": "Parents",
             "Helper": "",
-            "Mandarin": "妹妹",
-            "Pinyin": "Mèi mei",
+            "Mandarin": "爸妈",
+            "Pinyin": "Bà mā",
             "Category": "Relationships",
             "Subcategory": "General"
         },
@@ -3119,7 +3137,7 @@
             "English": "Son",
             "Helper": "",
             "Mandarin": "儿子",
-            "Pinyin": "Érzi",
+            "Pinyin": "Ér zi",
             "Category": "Relationships",
             "Subcategory": "General"
         },
@@ -3176,6 +3194,24 @@
             "Pinyin": "Qī zi",
             "Category": "Relationships",
             "Subcategory": "General"
+        },
+        {
+            "ID": "Brother (Younger)",
+            "English": "Younger Brother",
+            "Helper": "",
+            "Mandarin": "弟弟",
+            "Pinyin": "Dì dì",
+            "Category": "Relationships",
+            "Subcategory": "General"
+        },
+        {
+            "ID": "Sister (Younger)",
+            "English": "Younger Sister",
+            "Helper": "",
+            "Mandarin": "妹妹",
+            "Pinyin": "Mèi mei",
+            "Category": "Relationships",
+            "Subcategory": "General"
         }
     ],
     "Time": [
@@ -3193,7 +3229,7 @@
             "English": "Afternoon",
             "Helper": "",
             "Mandarin": "下午",
-            "Pinyin": "Xiàwǔ",
+            "Pinyin": "Xià wǔ",
             "Category": "Time",
             "Subcategory": "General"
         },
@@ -3274,7 +3310,7 @@
             "English": "Morning",
             "Helper": "Late",
             "Mandarin": "上午",
-            "Pinyin": "Shàngwǔ",
+            "Pinyin": "Shàng wǔ",
             "Category": "Time",
             "Subcategory": "General"
         },
@@ -3482,8 +3518,8 @@
             "ID": "Traveling",
             "English": "Traveling",
             "Helper": "",
-            "Mandarin": "旅行",
-            "Pinyin": "Lǚ xíng",
+            "Mandarin": "旅游",
+            "Pinyin": "Lǚ yóu",
             "Category": "Verbs",
             "Subcategory": "General"
         },
