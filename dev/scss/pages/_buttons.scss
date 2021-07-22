@@ -26,6 +26,10 @@
     &.wide {
         max-width: 240px;
     }
+
+    &.full {
+        max-width: 100%;
+    }
 }
 
 .button__return-top {

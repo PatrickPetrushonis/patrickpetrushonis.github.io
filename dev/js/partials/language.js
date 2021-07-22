@@ -10,11 +10,16 @@ $(document).ready(function() {
     $('#language-next').on("click", function() {
         language.getNextPhrase();
     });
+
+    $('#language-review').on("click", function() {
+        language.getAddPhraseToReview();
+    });
 });
 
 function languageObj() {
     this.languageData = {},
     this.phrases = [],
+    this.phrasesReview = [],
     this.phraseIndices = [],
     this.phraseCategories = [],
     this.phraseCategory = "",
@@ -115,6 +120,18 @@ function languageObj() {
 
         self.phraseIndex = (self.phraseIndex < phrasesCount - 1) ? self.phraseIndex + 1 : 0;
         self.updatePhrase();
+    },
+    /** 
+     * Store this phrase in list of phrases to review; then get next phrase
+     */
+    this.getAddPhraseToReview = function() {
+        var self = this;
+        if (self.phrases.length <= self.phraseIndex) { return; }
+
+        self.phrasesReview.push(self.phrases[self.phraseIndex].ID);
+        self.setCookie('lang-review', self.phrasesReview);
+
+        self.getNextPhrase();
     },
     /** 
      * Convert current phrase to current language (english or non-english)
