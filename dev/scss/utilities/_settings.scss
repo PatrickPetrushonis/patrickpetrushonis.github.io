@@ -25,11 +25,10 @@ iframe {
 	@include breakpoint($small-screen) { display: none; }
 }
 
-.center {
-	margin-right: auto !important;
-	margin-left: auto !important;
-	display: block !important;
-	text-align: center !important;
+.hide-on-mobile {
+	display: none;
+
+	@include breakpoint($small-screen) { display: block; }
 }
 
 .hide {
@@ -38,32 +37,65 @@ iframe {
 	display: none;
 }
 
+.center {
+	margin-right: auto !important;
+	margin-left: auto !important;
+	display: block !important;
+	text-align: center !important;
+}
+
 .marg-top-0 { 
-	margin-top: 0; 
+	margin-top: 0 !important; 
 }
 
 .marg-bottom-0 { 
-	margin-bottom: 0; 
+	margin-bottom: 0 !important; 
 }
 
 .marg-left-0 { 
-	margin-left: 0; 
+	margin-left: 0 !important; 
 }
 
 .marg-right-0 { 
-	margin-right: 0; 
+	margin-right: 0 !important; 
+}
+
+.pad-top-0 { 
+	padding-top: 0 !important; 
+}
+
+.pad-bottom-0 { 
+	padding-bottom: 0 !important; 
+}
+
+.pad-left-0 { 
+	padding-left: 0 !important; 
+}
+
+.pad-right-0 { 
+	padding-right: 0 !important; 
 }
 
 h1 {
-  margin: 44px auto 22px;
-  font-size: 44px;
+  margin: 0 auto 22px;
+  font-size: 36px;
   text-align: center;
+
+  @include breakpoint($small-screen) { 
+	margin: 44px auto 22px;
+  	font-size: 44px;
+  }
 }
 
 h2 {
-  margin: 44px auto 22px;
-  font-size: 33px;
+  margin: 0 auto 11px;
+  font-size: 28px;
   text-align: center;
+
+  @include breakpoint($small-screen) { 
+	margin: 44px auto 22px;
+	font-size: 33px;
+  }
 }
 
 p {

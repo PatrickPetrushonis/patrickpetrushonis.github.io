@@ -31,7 +31,7 @@
         </div>
       </div>
     </div>
-    <div class="banner__container banner__container--slim">
+    <div class="banner__container banner__container--slim hide-on-mobile">
       <div class="banner__image--coffee"></div>
     </div>
     <div class="section__container">
@@ -68,7 +68,7 @@
 
       </div>        
     </div>
-    <div class="banner__container banner__container--slim">
+    <div class="banner__container banner__container--slim hide-on-mobile">
       <div class="banner__image--space"></div>
     </div>
     <div class="section__container">

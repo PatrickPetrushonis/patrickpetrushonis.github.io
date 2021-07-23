@@ -1,7 +1,11 @@
 
 .section__container {
   margin: 0 auto;
-  padding: 0 0 44px;
+  padding: 0 0 11px;
+
+  @include breakpoint($small-screen) { 
+    padding: 0 0 44px;
+  }
 
   hr:after { background-color: color(gray, light); }
 }
@@ -19,7 +23,11 @@
 .section__content {
   margin: 0 auto;
   max-width: $large-screen;
-  padding: 22px 22px 44px;
+  padding: 11px 22px 11px;
+
+  @include breakpoint($small-screen) { 
+    padding: 22px 22px 44px;
+  }
 }
 
 .section__title {
