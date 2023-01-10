@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/PatrickPetrushonis/patrickpetrushonis.github.io#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.12",
+    "browser-sync": "^2.27.11",
     "del": "^3.0.0",
     "fs": "0.0.1-security",
     "graceful-fs": "^4.1.11",
