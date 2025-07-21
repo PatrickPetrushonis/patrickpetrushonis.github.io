@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/patrickpetrushonis.github.io/static/css/main.17030fd2.css",
+    "main.js": "/patrickpetrushonis.github.io/static/js/main.b36f7a6f.js",
+    "static/media/banner-nature.jpg": "/patrickpetrushonis.github.io/static/media/banner-nature.e10b380153cabc1b6ddd.jpg",
+    "static/media/banner-code.jpg": "/patrickpetrushonis.github.io/static/media/banner-code.288effce67a0433c63cd.jpg",
+    "static/media/banner-coffee.jpg": "/patrickpetrushonis.github.io/static/media/banner-coffee.83ecdc95909eff29fb6e.jpg",
+    "static/media/banner-space.jpg": "/patrickpetrushonis.github.io/static/media/banner-space.273d2f832eb5b4de75d2.jpg",
+    "static/media/logo-github.svg": "/patrickpetrushonis.github.io/static/media/logo-github.570af70232642ec5f3dd.svg",
+    "static/media/logo-linkedin.svg": "/patrickpetrushonis.github.io/static/media/logo-linkedin.79f66fa9cd0560b4baf2.svg",
+    "index.html": "/patrickpetrushonis.github.io/index.html",
+    "static/media/logo-codepen.svg": "/patrickpetrushonis.github.io/static/media/logo-codepen.f60e9614bf2e9fb21482.svg",
+    "main.17030fd2.css.map": "/patrickpetrushonis.github.io/static/css/main.17030fd2.css.map",
+    "main.b36f7a6f.js.map": "/patrickpetrushonis.github.io/static/js/main.b36f7a6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17030fd2.css",
+    "static/js/main.b36f7a6f.js"
+  ]
+}
