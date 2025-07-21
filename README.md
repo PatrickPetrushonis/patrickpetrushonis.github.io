@@ -1,135 +1,104 @@
-Portfolio of Patrick Petrushonis
-
----
+# Portfolio of Patrick Petrushonis
 
 ## Table of Contents
-
-* Description
-* Installation
-* Configuration
-* Execution
-
----
+- Description
+- Installation
+- Development
 
 ## Description
+Modern React-based personal portfolio website, migrated from a Gulp/Nunjucks static site to provide better performance, maintainability, and development experience.
 
-Static personal portfolio website using GitHub pages.
-
----
+### Technology Stack:
+React 18 - Component-based UI framework
+React Router - Client-side routing
+Sass - CSS preprocessing
+Vite/Create React App - Modern build tooling
+ES6 Modules - Modern JavaScript
 
 ## Installation
+### Prerequisites
+Node.js (v16+) - JavaScript runtime
+npm - Package manager (included with Node.js)
+Git - Version control
 
-First and foremost, the development environment requires the appropriate development tools.
+### Setup
 
-1. Requires manual installation via executable
-	
-	* Git
-	* Node.JS
+Clone the repository:
+```
+git clone https://github.com/patrickpetrushonis/patrick-portfolio.git
+cd patrick-portfolio
+```
 
-2. Requires manual installation via command line
+### Install dependencies:
+```
+npm install
+```
 
-	* Bower
-	* Gulp
-	* SASS
-	* Nunjucks
+### Verify installation:
+```
+npm start
+```
+The development server should start at http://localhost:3000
 
-### Git
+## Development
+### Available Commands
+Start development server:
+```
+npm start
+```
+- Launches the app in development mode
+- Automatic browser refresh on file changes
+- Error overlay for debugging
+- Accessible at http://localhost:3000
 
-Free and open source distributed version control system.
+Build for production:
+```
+npm run build
+```
+- Creates optimized production build in build/ folder
+- Minifies and optimizes all assets
+- Ready for deployment
 
-* [About](https://git-scm.com/about)
-* [Documentation](https://git-scm.com/doc)
-* [Download](https://git-scm.com/downloads)
+Test production build locally:
+```
+npm run build
+npx serve -s build
+Run tests:
+npm test
+```
 
-### Node.JS
+Eject configuration (irreversible):
+```
+npm run eject
+```
 
-JavaScript runtime built on Chrome's V8 JavaScript engine.
+### Project Structure
+```
+src/
+├── components/
+│   └── Layout/
+│       ├── Layout.jsx          # Main layout wrapper
+│       ├── Header.jsx          # Navigation header
+│       ├── Footer.jsx          # Site footer
+│       └── ScrollToTop.jsx     # Scroll-to-top button
+├── pages/
+│   └── Home.jsx                # Home page component
+├── utils/
+│   ├── scroll.js               # Scroll utilities & hooks
+│   ├── layout.js               # Layout helper hooks
+│   └── pre.js                  # Code formatting utilities
+├── styles/
+│   └── [SCSS files]            # Sass stylesheets
+├── data/
+│   └── data.json               # Site content data
+├── App.js                      # Root application component
+└── index.js                    # Application entry point
 
-* [About](https://nodejs.org/en/about/)
-* [Documentation](https://nodejs.org/en/docs/)
-* [Download](https://nodejs.org/en/download/)
-
-### NPM
-
-Package manager for JavaScript built upon Node.JS.
-
-* [Home](https://www.npmjs.com/)
-	* Provides search access to module library
-* [Features](https://www.npmjs.com/features)
-* [Documentation](https://docs.npmjs.com/)
-
-### Bower
-
-Package manager with extended libraries beyond NPM.
-
-* [Configuration](https://bower.io/docs/config/)
-* [Documentation](https://bower.io/docs/api/)
-* [Packages](https://bower.io/search/)
-
-### Gulp
-
-Automated streaming build system.
-
-* [Documentation](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
-* [Plugins](http://gulpjs.com/plugins/)
-
-### SASS
-
-Preprocessor extension for CSS.
-
-* [Guide](http://sass-lang.com/guide)
-* [Documentation](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
-
-### Nunjucks
-
-Templating engine for JavaScript and HTML.
-
-* [Templating](https://mozilla.github.io/nunjucks/templating.html)
-* [Documentation](https://mozilla.github.io/nunjucks/api.html)
-
----
-
-## Configuration
-
-### NPM
-
-Install all preselected node modules within the package.json
-
-		npm install
-
-Globally install gulp for access to 'gulp' command
-
-		npm install -g gulp
-
-Globally install bower for access to 'bower' command
-
-		npm install -g bower
-
-### Bower
-
-Install all bower components
-
-		bower install
-
----
-
-## Execution
-
-### Gulp Commands
-
-As this project is streamlined via the automated workflow of gulp, all compilation is handled with various gulp commands.
-
-Default and most useful command that executes all others:
-
-		gulp
-
-Commands for individual tasks:
-
-		gulp images
-		gulp nunjucks
-		gulp sass
-		gulp scripts
-		gulp watch
-		gulp sync
-
----
+public/
+├── app/
+│   ├── css/                    # Compiled stylesheets
+│   ├── img/                    # Images and icons
+│   ├── js/                     # JavaScript assets
+│   └── pdfs/                   # PDF documents
+└── index.html                  # HTML template
+```
