@@ -41,7 +41,7 @@ npm start
 The development server should start at http://localhost:3000
 
 ## Development
-### Available Commands
+### Commands
 Start development server:
 ```
 npm start
@@ -59,17 +59,9 @@ npm run build
 - Minifies and optimizes all assets
 - Ready for deployment
 
-Test production build locally:
+Build and deploy to production:
 ```
-npm run build
-npx serve -s build
-Run tests:
-npm test
-```
-
-Eject configuration (irreversible):
-```
-npm run eject
+npm run deploy
 ```
 
 ### Project Structure
