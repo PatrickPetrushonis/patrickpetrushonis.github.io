@@ -31,6 +31,12 @@ iframe {
 	@include breakpoint($small-screen) { display: block; }
 }
 
+.hide-on-mobile__inline {
+	display: none;
+
+	@include breakpoint($small-screen) { display: inline-block; }
+}
+
 .hide {
 	opacity: 0;
 	visibility: hidden;

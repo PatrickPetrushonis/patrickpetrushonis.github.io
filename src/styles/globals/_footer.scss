@@ -4,7 +4,7 @@
    left: 0;
    width: 100%;
    min-height: 55px;
-   background-color: color(gray, jet);
+   background-color: color(primary, dark);
    
    .footer-controls {
       margin: 0 auto;
@@ -16,7 +16,7 @@
       @include breakpoint($small-screen) { text-align: center; }
    }
 
-   span {
+   .footer-signature {
       margin: 11px;
       display: inline-block;
       color: color(gray, light);
@@ -46,8 +46,6 @@
       padding: 0 8px;
       float: left;
       
-      .social-github { @include social-icon('github'); }
-      .social-codepen { @include social-icon('codepen'); }
       .social-linkedin { @include social-icon('linkedin'); }
    }
 }

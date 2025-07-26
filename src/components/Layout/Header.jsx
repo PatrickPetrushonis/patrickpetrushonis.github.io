@@ -1,8 +1,6 @@
-// src/components/Layout/Header.jsx
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { smoothScrollTo, useSlimHeader } from '../../utils/scroll';
-//import './Header.scss';
 
 const Header = ({ pageRef }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -84,21 +82,11 @@ const Header = ({ pageRef }) => {
           <li>
             <a 
               className="button" 
-              href="#section-skills"
+              href="#section-projects"
               data="scroll"
-              onClick={(e) => handleScrollClick(e, '#section-skills')}
+              onClick={(e) => handleScrollClick(e, '#section-projects')}
             >
-              Skills
-            </a>
-          </li>
-          <li>
-            <a 
-              className="button" 
-              href="#section-resume"
-              data="scroll"
-              onClick={(e) => handleScrollClick(e, '#section-resume')}
-            >
-              Résumé
+              Projects
             </a>
           </li>
         </ul>

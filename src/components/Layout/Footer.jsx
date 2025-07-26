@@ -1,13 +1,11 @@
-// src/components/Layout/Footer.jsx
-//import './Footer.scss';
-
 const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-controls">    
-        <span>
+        <span className="footer-signature">
           Created by
           <br className="mobile-only" />
+          <span className="hide-on-mobile__inline">&nbsp;</span>
           Patrick Petrushonis 
         </span>  
         <ul className="social-icon__container">

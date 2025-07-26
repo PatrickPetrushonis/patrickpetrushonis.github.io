@@ -1,25 +1,27 @@
 
-.content__skill {
+.content__project {
   p { 
     text-align: justify; 
   }
 }
 
-.skill__title {
+.project__title {
 	color: white;
 	padding: 66px 0 44px;
 }
 
-.skill__item {
-  height: 100%;
+.project__item {
+  display: flex;
   margin: 22px 0;
 }
 
-.skill__link {
+.project__link {
+  background: color(primary, light);
   border: 1px solid transparent;
-  display: block;
+  cursor: pointer;
   padding: 5.5px;
   transition: all 0.3s ease-out;
+  width: 100%;
 
   @include breakpoint($small-screen) { 
     padding: 22px;
@@ -34,15 +36,15 @@
   }
 }
 
-.skill__image {
+.project__image {
   display: block;
   height: auto;
   margin: 0 auto;
-  max-width: 100px;
-  width: 100%;
+  max-height: 128px;
+  max-width: 256px;
 }
 
-.skill__details {
+.project__details {
   border: 1px solid color(gray, mid);
   height: 0;
   margin: 0;

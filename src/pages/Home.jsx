@@ -1,18 +1,16 @@
-// src/pages/Home.jsx
 import { useState } from 'react';
-import { cookies } from '../utils/cookies';
-//import './Home.scss';
+//import { cookies } from '../utils/cookies';
 
 const Home = ({ data }) => {
-  const [selectedSkill, setSelectedSkill] = useState(0); // First skill selected by default
+  const [selectedProject, setSelectedProject] = useState(0); // First project selected by default
   
-  // Sort skills by order property, fallback to original array order
-  const skills = data?.skills ? 
-    [...data.skills].sort((a, b) => parseInt(a.order) - parseInt(b.order)) : 
+  // Sort projects by order property, fallback to original array order
+  const projects = data?.projects ? 
+    [...data.projects].sort((a, b) => parseInt(a.order) - parseInt(b.order)) : 
     [];
 
-  const handleSkillClick = (index) => {
-    setSelectedSkill(index);
+  const handleProjectClick = (index) => {
+    setSelectedProject(index);
   };
 
   return (
@@ -31,17 +29,20 @@ const Home = ({ data }) => {
             <div className="flex-content flex__small--alt">
               <div className="flex__small--12 flex__large--6">
                 <p>
-                  Technical leader throughout project life cycles with expertise in designing, 
-                  implementing, documenting, and testing systems in an Agile environment.
+                  Senior gameplay engineer with 5+ years shipping AAA titles including 
+                  Life is Strange: Double Exposure, Palia, and Ashes of Creation. Expertise 
+                  spans narrative systems, multiplayer networking, and performance optimization 
+                  across PC, console, and mobile platforms.
                 </p>
                 <p>
-                  Capable engineer who coorperates across disciplines to collaborate with designers 
-                  and non-technical developers in order to optimize development workflows and enhance 
-                  overall productivity.
+                  Translates creative vision into production-ready C++ systems and Blueprint frameworks. 
+                  Developed custom editor tools that accelerated content iteration workflows at Intrepid Studios, 
+                  Singularity6, and Deck Nine Games.
                 </p>
                 <p>
-                  Adaptive problem solver for fluid project scope and requirements with a focus on 
-                  maintaining the integrity of the overall creative vision.
+                  Delivers under shifting production timelines while maintaining code quality standards. 
+                  Experience ranges from intimate narrative adventures to large-scale MMORPGs with 
+                  thousands of concurrent players.
                 </p>
               </div>
               <div className="flex__small--12 flex__large--6 center">
@@ -60,68 +61,43 @@ const Home = ({ data }) => {
           <div className="banner__image--coffee"></div>
         </div>
 
-        {/* Skills Section */}
+        {/* Projects Section */}
         <div className="section__container">
           <div className="section__content">
-            <h2 className="section__title" id="section-skills">Skills</h2>
-            <hr className="section__rule--skills" />
+            <h2 className="section__title" id="section-projects">Projects</h2>
+            <hr className="section__rule--projects" />
             
-            {/* Skills Navigation */}
+            {/* Projects Navigation */}
             <div className="flex-content flex__small--alt">
-              {skills.map((skill, index) => (
-                <div key={skill.id} className="flex__small--3 skill__item">
-                  <a 
-                    className={`skill__link${index === selectedSkill ? ' selected' : ''}`}
-                    href="javascript:void(0);"
-                    onClick={() => handleSkillClick(index)}
+              {projects.map((project, index) => (
+                <div key={project.id} className="flex__small--3 project__item">
+                  <button 
+                    className={`project__link${index === selectedProject ? ' selected' : ''}`}
+                    onClick={() => handleProjectClick(index)}
                   >
                     <img 
-                      src={`/app/img/skill-${skill.id}.svg`} 
-                      className="skill__image"
-                      alt={skill.title}
+                      src={`/app/img/project-${project.id}.webp`} 
+                      className="project__image"
+                      alt={project.title}
                     />
-                  </a>
+                  </button>
                 </div>
               ))}
             </div>
 
-            {/* Skills Details */}
-            {skills.map((skill, index) => (
+            {/* Projects Details */}
+            {projects.map((project, index) => (
               <div 
-                key={`details-${skill.id}`}
-                id={`skill-${skill.id}`}
-                className={`skill__details${index === selectedSkill ? ' selected' : ''}`}
+                key={`details-${project.id}`}
+                id={`project-${project.id}`}
+                className={`project__details${index === selectedProject ? ' selected' : ''}`}
               >
-                <h3>{skill.title}</h3>
-                <div dangerouslySetInnerHTML={{ __html: skill.details }} />
+                <h3>{project.title}</h3>
+                <div dangerouslySetInnerHTML={{ __html: project.details }} />
               </div>
             ))}
           </div>        
-        </div>
-
-        {/* Space Banner */}
-        <div className="banner__container banner__container--slim hide-on-mobile">
-          <div className="banner__image--space"></div>
-        </div>
-
-        {/* Resume Section */}
-        <div className="section__container">
-          <div className="section__content">
-            <h2 className="section__title" id="section-resume">Résumé</h2>
-            <hr className="section__rule--resume" />
-
-            <div className="flex-content">
-              <div className="flex__small--12">
-                <iframe 
-                  className="center" 
-                  src="/app/pdfs/PatrickPetrushonis-Resume.pdf" 
-                  title="resume" 
-                  frameBorder="0"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        </div>   
       </div>
     </>
   );

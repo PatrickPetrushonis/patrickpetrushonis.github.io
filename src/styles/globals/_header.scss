@@ -7,8 +7,8 @@
   z-index: $header-container;
   opacity: 0;
   
-  background-color: rgba(color(gray, light), 0.925);
-  border-bottom: 1px solid color(gray, mild);
+  background-color: color(primary, dark);
+  border-bottom: 1px solid color(primary, mid);
   transition: all 0.3s ease-out;
 
   &.fixed {
@@ -106,7 +106,7 @@
   top: 9.5px;
   width: 100%;
   height: 5px;
-  background: color(gray, dark);    
+  background: color(gray, light);    
 
   &:before, 
   &:after {
@@ -114,7 +114,7 @@
     width: 100%;
     height: 5px;
     content: "";
-    background: color(gray, dark);
+    background: color(gray, light);
     transition: all 0.3s ease-out;
   }
 
