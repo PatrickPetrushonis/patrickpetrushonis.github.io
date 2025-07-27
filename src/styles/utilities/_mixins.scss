@@ -5,40 +5,41 @@
 }
 
 @mixin social-icon($name) {
-	height: 22px;
-	width: 22px;
-	display: block;	
-	background: url('../../../public/app/img/logo-' + $name + '.svg') center no-repeat;
+	background-image: url('../../../public/app/img/logo-' + $name + '.svg');
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
+	display: block;	
+	height: 22px;
 	transition: all 0.3s ease-in-out;
+	width: 22px;
 
 	&:hover { transform: translateY(-0.25rem); }
 }
 
 @mixin rule-icon($name) {
-	margin: 0 0 22px;
-	padding: 0;
-	display: block;
-	overflow: visible;
-	position: relative;
-	height: 1px;
-
 	border: 0;
 	border-top: 1px solid color(gray, mid);
+	display: block;
+	height: 1px;
+	margin: 0 0 22px;
+	overflow: visible;
+	padding: 0;
+	position: relative;
 
  	&:after {
-		display: block;
-	    position: absolute;
-	    top: 0;
-	    left: 50%;
-	    width: 22px;
-	    height: 22px;
-	    content: "";
-	    background-image: url('../../../public/app/img/rule-' + $name + '.png');
+	    background-image: url('../../../public/app/img/rule-' + $name + '.svg');
 	    background-position: center;
 	    background-repeat: no-repeat;
 	    background-size: cover;
+	    content: "";
+		display: block;
+	    height: 12px;
+	    left: 50%;
+	    position: absolute;
+	    top: 0;
 	    transform: translateY(-50%) translateX(-50%);
+	    width: 12px;
 	}
 }
 
