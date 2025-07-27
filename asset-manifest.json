@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.8132c400.css",
+    "main.css": "/static/css/main.7778d8c6.css",
     "main.js": "/static/js/main.72d510f1.js",
     "static/media/banner-nature.jpg": "/static/media/banner-nature.e10b380153cabc1b6ddd.jpg",
     "static/media/banner-code.jpg": "/static/media/banner-code.288effce67a0433c63cd.jpg",
     "static/media/banner-coffee.jpg": "/static/media/banner-coffee.83ecdc95909eff29fb6e.jpg",
     "static/media/banner-space.jpg": "/static/media/banner-space.273d2f832eb5b4de75d2.jpg",
+    "static/media/rule-resume.svg": "/static/media/rule-resume.4daf413363da100443e0.svg",
+    "static/media/rule-about.svg": "/static/media/rule-about.7e123d5c3315e2a61f80.svg",
+    "static/media/rule-projects.svg": "/static/media/rule-projects.d602806a975741718402.svg",
     "static/media/logo-linkedin.svg": "/static/media/logo-linkedin.79f66fa9cd0560b4baf2.svg",
     "index.html": "/index.html",
-    "main.8132c400.css.map": "/static/css/main.8132c400.css.map",
+    "main.7778d8c6.css.map": "/static/css/main.7778d8c6.css.map",
     "main.72d510f1.js.map": "/static/js/main.72d510f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.8132c400.css",
+    "static/css/main.7778d8c6.css",
     "static/js/main.72d510f1.js"
   ]
 }
