@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d6506a7e.css",
+    "main.css": "/static/css/main.8132c400.css",
     "main.js": "/static/js/main.72d510f1.js",
     "static/media/banner-nature.jpg": "/static/media/banner-nature.e10b380153cabc1b6ddd.jpg",
     "static/media/banner-code.jpg": "/static/media/banner-code.288effce67a0433c63cd.jpg",
@@ -8,11 +8,11 @@
     "static/media/banner-space.jpg": "/static/media/banner-space.273d2f832eb5b4de75d2.jpg",
     "static/media/logo-linkedin.svg": "/static/media/logo-linkedin.79f66fa9cd0560b4baf2.svg",
     "index.html": "/index.html",
-    "main.d6506a7e.css.map": "/static/css/main.d6506a7e.css.map",
+    "main.8132c400.css.map": "/static/css/main.8132c400.css.map",
     "main.72d510f1.js.map": "/static/js/main.72d510f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6506a7e.css",
+    "static/css/main.8132c400.css",
     "static/js/main.72d510f1.js"
   ]
 }
