@@ -1,3 +1,5 @@
+@use '../utilities' as *;
+
 html,
 body {
 	margin: 0;
@@ -19,67 +21,6 @@ iframe {
 	@include breakpoint($medium-screen) { 
 		min-height: 1140px !important;
 	}
-}
-
-.mobile-only {
-	@include breakpoint($small-screen) { display: none; }
-}
-
-.hide-on-mobile {
-	display: none;
-
-	@include breakpoint($small-screen) { display: block; }
-}
-
-.hide-on-mobile__inline {
-	display: none;
-
-	@include breakpoint($small-screen) { display: inline-block; }
-}
-
-.hide {
-	opacity: 0;
-	visibility: hidden;
-	display: none;
-}
-
-.center {
-	margin-right: auto !important;
-	margin-left: auto !important;
-	display: block !important;
-	text-align: center !important;
-}
-
-.marg-top-0 { 
-	margin-top: 0 !important; 
-}
-
-.marg-bottom-0 { 
-	margin-bottom: 0 !important; 
-}
-
-.marg-left-0 { 
-	margin-left: 0 !important; 
-}
-
-.marg-right-0 { 
-	margin-right: 0 !important; 
-}
-
-.pad-top-0 { 
-	padding-top: 0 !important; 
-}
-
-.pad-bottom-0 { 
-	padding-bottom: 0 !important; 
-}
-
-.pad-left-0 { 
-	padding-left: 0 !important; 
-}
-
-.pad-right-0 { 
-	padding-right: 0 !important; 
 }
 
 h1 {
@@ -138,3 +79,14 @@ li {
 	text-shadow: rgba(color(gray, jet), 0.1) 0 0 1px;
 }
 
+.main-container {
+  position: relative;
+  height: auto;
+  min-height: 100%;
+  background-color: color(gray, light);
+  color: color(gray, jet);
+}
+
+.main-content {
+  margin: 0 auto;
+}

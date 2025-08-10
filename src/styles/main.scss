@@ -1,19 +1,11 @@
-@import
-'utilities/variables',
-'utilities/functions',
-'utilities/mixins',
-'utilities/settings';
+@use 'components/header';
+@use 'components/footer';
+@use 'components/layout';
+@use 'components/main';
 
-@import
-'globals/header',
-'globals/footer',
-'globals/layout';
+@use 'pages/banner';
+@use 'pages/buttons';
+@use 'pages/projects';
+@use 'pages/sections';
 
-@import
-'pages/banner',
-'pages/buttons',
-'pages/contact',
-'pages/code',
-'pages/main',
-'pages/projects',
-'pages/sections';
+@use 'utilities/helpers';
