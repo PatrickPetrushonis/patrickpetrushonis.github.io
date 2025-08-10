@@ -68,7 +68,7 @@
     text-align: center;
     background: color(primary, light);
 
-    &.selected { background: darken(color(primary, mid), 10); }
+    &.selected { background: color(primary, mid); }
   }
 }
 

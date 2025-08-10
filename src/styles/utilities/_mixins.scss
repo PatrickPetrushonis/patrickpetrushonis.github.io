@@ -5,7 +5,7 @@
 }
 
 @mixin social-icon($name) {
-	background-image: url('../../../public/app/img/logo-' + $name + '.svg');
+	background-image: url('../../../app/img/logo-' + $name + '.svg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -28,7 +28,7 @@
 	position: relative;
 
  	&:after {
-	    background-image: url('../../../public/app/img/rule-' + $name + '.svg');
+	    background-image: url('../../../app/img/rule-' + $name + '.svg');
 	    background-position: center;
 	    background-repeat: no-repeat;
 	    background-size: cover;
@@ -44,7 +44,7 @@
 }
 
 @mixin banner($name, $mobile-pos) {
-	background: url('../../../public/app/img/banner-' + $name + '.jpg');
+	background: url('../../../app/img/banner-' + $name + '.jpg');
 	background-position: $mobile-pos;
 	background-repeat: no-repeat;
 	background-size: cover;
