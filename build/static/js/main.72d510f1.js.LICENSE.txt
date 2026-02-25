@@ -1,6 +1,6 @@
 /**
  * @license React
- * react-dom-client.production.js
+ * react-dom-client.production.ts
  *
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -10,7 +10,7 @@
 
 /**
  * @license React
- * react-dom.production.js
+ * react-dom.production.ts
  *
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -20,7 +20,7 @@
 
 /**
  * @license React
- * react-jsx-runtime.production.js
+ * react-jsx-runtime.production.ts
  *
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -30,7 +30,7 @@
 
 /**
  * @license React
- * react.production.js
+ * react.production.ts
  *
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -40,7 +40,7 @@
 
 /**
  * @license React
- * scheduler.production.js
+ * scheduler.production.ts
  *
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *

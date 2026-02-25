@@ -1,4 +1,4 @@
-// src/utils/scroll.js - Enhanced scroll utilities
+// src/utils/scroll.ts - Enhanced scroll utilities
 import { useEffect, useState } from 'react';
 
 export const smoothScrollTo = (targetId, offset = 77) => {

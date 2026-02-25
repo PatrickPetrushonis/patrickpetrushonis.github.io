@@ -1,4 +1,4 @@
-// src/utils/pre.js - Pre element formatting
+// src/utils/pre.ts - Pre element formatting
 export const formatPreElements = () => {
   const preElements = document.querySelectorAll('pre');
   

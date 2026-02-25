@@ -1,4 +1,4 @@
-// src/utils/layout.js - Layout utilities
+// src/utils/layout.ts - Layout utilities
 import { useEffect, useState } from 'react';
 
 export const useFooterPadding = () => {

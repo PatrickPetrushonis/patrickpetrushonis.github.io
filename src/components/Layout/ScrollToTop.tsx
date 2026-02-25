@@ -1,4 +1,4 @@
-// src/components/Layout/ScrollToTop.jsx
+// src/components/Layout/ScrollToTop.tsx
 import { useScrollVisibility } from '../../utils/scroll';
 import { smoothScrollTo } from '../../utils/scroll';
 

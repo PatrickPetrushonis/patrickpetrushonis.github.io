@@ -1,4 +1,4 @@
-// src/utils/cookies.js - Modern ES6 version of docCookies
+// src/utils/cookies.ts - Modern ES6 version of docCookies
 export const cookies = {
   getItem: (key) => {
     if (!key || !cookies.hasItem(key)) return null;

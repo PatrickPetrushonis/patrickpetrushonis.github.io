@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7778d8c6.css",
-    "main.js": "/static/js/main.72d510f1.js",
+    "main.ts": "/static/js/main.72d510f1.ts",
     "static/media/banner-nature.jpg": "/static/media/banner-nature.e10b380153cabc1b6ddd.jpg",
     "static/media/banner-code.jpg": "/static/media/banner-code.288effce67a0433c63cd.jpg",
     "static/media/banner-coffee.jpg": "/static/media/banner-coffee.83ecdc95909eff29fb6e.jpg",
@@ -12,10 +12,10 @@
     "static/media/logo-linkedin.svg": "/static/media/logo-linkedin.79f66fa9cd0560b4baf2.svg",
     "index.html": "/index.html",
     "main.7778d8c6.css.map": "/static/css/main.7778d8c6.css.map",
-    "main.72d510f1.js.map": "/static/js/main.72d510f1.js.map"
+    "main.72d510f1.ts.map": "/static/js/main.72d510f1.ts.map"
   },
   "entrypoints": [
     "static/css/main.7778d8c6.css",
-    "static/js/main.72d510f1.js"
+    "static/js/main.72d510f1.ts"
   ]
 }
