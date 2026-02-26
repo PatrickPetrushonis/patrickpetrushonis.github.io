@@ -1,12 +1,33 @@
-# React + Vite
+# Patrick's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React 19 + TypeScript + Vite portfolio site.
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js 20+ (LTS)
+- npm 10+
 
-## Expanding the ESLint configuration
+## Setup
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Commands
+
+- `npm run dev` - Start dev server
+- `npm run build` - Type-check and build for production
+- `npm run preview` - Preview production build
+- `npm run type-check` - Run TypeScript type checking only
+
+## Tech Stack
+
+- React 19.1.0
+- TypeScript 5.9.3
+- Vite 7.1.1
+- React Router 7.7.0
+- Sass 1.89.2
+
+## Node Version
+
+This project uses `.nvmrc` to specify Node version. Run `nvm use` to switch to the correct version.
