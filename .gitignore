@@ -2,7 +2,7 @@
 node_modules/
 
 # Build output (only when deploying with gh-pages branch)
-#dist
+dist
 
 # TypeScript
 *.tsbuildinfo
