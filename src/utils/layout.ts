@@ -8,7 +8,7 @@ export const useFooterPadding = () => {
     const calculateFooterHeight = () => {
       const footer = document.querySelector('.footer-container');
       if (footer) {
-        setFooterHeight(footer.offsetHeight);
+        setFooterHeight((footer as HTMLElement).offsetHeight);
       }
     };
 

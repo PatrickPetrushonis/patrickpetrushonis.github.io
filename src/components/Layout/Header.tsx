@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { smoothScrollTo, useSlimHeader } from '../../utils/scroll';
 
-const Header = ({ pageRef }) => {
+const Header = ({ pageRef: _pageRef }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === '/';
@@ -73,7 +73,7 @@ const Header = ({ pageRef }) => {
             <a 
               className="button" 
               href="#section-about"
-              data="scroll"
+              data-scroll="true"
               onClick={(e) => handleScrollClick(e, '#section-about')}
             >
               About
@@ -83,7 +83,7 @@ const Header = ({ pageRef }) => {
             <a 
               className="button" 
               href="#section-projects"
-              data="scroll"
+              data-scroll="true"
               onClick={(e) => handleScrollClick(e, '#section-projects')}
             >
               Projects
