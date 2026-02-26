@@ -1,9 +1,0 @@
-@use 'variables' as *;
-
-@use "sass:map";
-
-@function color($color, $tone: 'light') {
-	@if map.has-key($color-map, $color) {
-		@return map.get(map.get($color-map, $color), $tone);
-	}
-}
