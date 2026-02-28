@@ -29,20 +29,16 @@ const Home = ({ data }) => {
             <div className="flex-content flex__small--alt">
               <div className="flex__small--12 flex__large--6">
                 <p>
-                  Senior gameplay engineer with 5+ years shipping AAA titles including 
-                  Life is Strange: Double Exposure, Palia, and Ashes of Creation. Expertise 
-                  spans narrative systems, multiplayer networking, and performance optimization 
-                  across PC, console, and mobile platforms.
+                  Senior software engineer with 10+ years shipping games across PC, console, and mobile (including Ashes of Creation, Palia, and Life is Strange) at studios ranging from indie to AAA. 
                 </p>
                 <p>
-                  Translates creative vision into production-ready C++ systems and Blueprint frameworks. 
-                  Developed custom editor tools that accelerated content iteration workflows at Intrepid Studios, 
-                  Singularity6, and Deck Nine Games.
+                  Specializes in C++ gameplay systems, multiplayer networking, and cross-platform CI/CD in Unreal Engine, with parallel full-stack web work in Angular, React, and Vue spanning client and agency projects. 
                 </p>
                 <p>
-                  Delivers under shifting production timelines while maintaining code quality standards. 
-                  Experience ranges from intimate narrative adventures to large-scale MMORPGs with 
-                  thousands of concurrent players.
+                  SDK and platform experience spans Steamworks, PlayFab, Xbox Live, and Nintendo Switch, with recent work building multi-platform ADO pipelines and managing client libraries for Microsoft game services.
+                </p>
+                <p>
+                  Consistently builds the tooling and infrastructure that lets designers and engineers move faster without breaking things. Owns systems end-to-end, from architecture and implementation to documentation, testing, and live-service maintenance. 
                 </p>
               </div>
               <div className="flex__small--12 flex__large--6 center">
