@@ -19,6 +19,7 @@ npm run dev
 - `npm run build` - Type-check and build for production
 - `npm run preview` - Preview production build
 - `npm run type-check` - Run TypeScript type checking only
+- `npm run deploy` - Type-check, build for production, then deploy to gh-pages branch
 
 ## Tech Stack
 
