@@ -2,7 +2,7 @@
 
 .section__container {
   margin: 0 auto;
-  padding: 0 0 11px;
+  padding: 0;
 
   @include breakpoint($small-screen) { 
     padding: 0 0 44px;

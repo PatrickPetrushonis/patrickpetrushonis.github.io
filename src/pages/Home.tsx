@@ -15,11 +15,11 @@ const Home = ({ data }) => {
 
   return (
     <>
-      {/* Banner Section */}
+      {/* Banner Section 
       <div className="banner__container">
         <div className="banner__image--code"></div>
       </div>
-
+      */}
       <div className="content">
         {/* About Section */}
         <div className="section__container">
@@ -27,6 +27,13 @@ const Home = ({ data }) => {
             <h2 className="section__title" id="section-about">About</h2>
             <hr className="section__rule--about" />
             <div className="flex-content flex__small--alt">
+              <div className="flex__small--12 flex__large--6 center">
+                <img 
+                  className="banner__portrait" 
+                  src="/app/img/profile-image.jpg" 
+                  alt="Patrick Petrushonis"
+                />
+              </div>
               <div className="flex__small--12 flex__large--6">
                 <p>
                   Senior software engineer with 10+ years shipping games across PC, console, and mobile (including Ashes of Creation, Palia, and Life is Strange) at studios ranging from indie to AAA. 
@@ -41,21 +48,15 @@ const Home = ({ data }) => {
                   Consistently builds the tooling and infrastructure that lets designers and engineers move faster without breaking things. Owns systems end-to-end, from architecture and implementation to documentation, testing, and live-service maintenance. 
                 </p>
               </div>
-              <div className="flex__small--12 flex__large--6 center">
-                <img 
-                  className="banner__portrait" 
-                  src="/app/img/profile-image.jpg" 
-                  alt="Patrick Petrushonis"
-                />
-              </div>
             </div>
           </div>
         </div>
 
-        {/* Coffee Banner */}
+        {/* Coffee Banner 
         <div className="banner__container banner__container--slim hide-on-mobile">
           <div className="banner__image--coffee"></div>
         </div>
+        */}
 
         {/* Projects Section */}
         <div className="section__container">

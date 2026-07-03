@@ -11,15 +11,18 @@
 }
 
 [class^="flex__small--"] {
-  flex: 1 1 100%;
-  max-width: 100%;
   padding: 0 5.5px;
 }
 
 [class^="flex__large--"] {
+  padding: 0 11px;
+}
+
+[class^="flex__small--"],
+[class^="flex__large--"] {
   flex: 1 1 100%;
   max-width: 100%;
-  padding: 0 11px;
+  margin: 0 0 22px;
 }
 
 .flex__small--1 {  
