@@ -36,7 +36,7 @@ const Header = ({ pageRef: _pageRef }) => {
   };
 
   return (
-    <div className={`header-container fixed ${isSlim ? 'header-container--slim' : ''}`}>
+    <div className={`header-container fixed${isSlim ? ' header-container--slim' : ''}`}>
       <div className="header-controls">
         <div className="header-logo">
           {isHomePage ? (

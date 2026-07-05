@@ -30,19 +30,14 @@ const Layout = ({ children, pagename = 'Home' }) => {
 
   return (
     <>
-      <div id="section-top" className="main-container">
-        <div 
-          className="main-content"
-          style={{ paddingBottom: `${footerHeight}px` }}
-        >
-          <Header pageRef={pageRef} />
-          
-          {children}
+      <div id="section-top" className="main-content" style={{ paddingBottom: `${footerHeight}px` }}>
+        <Header pageRef={pageRef} />
+        
+        {children}
 
-          {pagename !== 'Home' && <ScrollToTop pageRef={pageRef} />}
+        {pagename !== 'Home' && <ScrollToTop pageRef={pageRef} />}
 
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </>
   );

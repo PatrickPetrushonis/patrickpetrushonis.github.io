@@ -28,8 +28,7 @@ h1 {
   font-size: 36px;
   text-align: center;
 
-  @include breakpoint($small-screen) { 
-	margin: 22px auto 22px;
+  @include breakpoint($small-screen) {
   	font-size: 44px;
   }
 }
@@ -40,8 +39,8 @@ h2 {
   text-align: center;
 
   @include breakpoint($small-screen) { 
-	margin: 22px auto 22px;
-	font-size: 33px;
+	  margin: 0 auto 22px;
+	  font-size: 33px;
   }
 }
 
